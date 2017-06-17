@@ -1,4 +1,6 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -16,18 +18,31 @@ namespace procesos_app.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        [Required]
+        public int Id2 { get; set; }
+        [Required]
+        [MaxLength(13)]
+        public char Cedula { get; set; }
+        [MaxLength(256)]
+        public string InstitutionalEmail { get; set; }
+        [Required]
+        public DateTime JoinDate { get; set; }
+        [Required]
+        public DateTime BirthDay { get; set; }
+        [Required]
+        [MaxLength(25)]
+        public string Genrer { get; set; }
+        
+
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class UserRoles : IdentityRole
     {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
-        {
-        }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
+        [Required]
+        public DateTime HoraInicio { get; set; }
+        [Required]
+        public DateTime HoraFinal { get; set; }
     }
+
 }
