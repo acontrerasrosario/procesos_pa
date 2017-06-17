@@ -8,6 +8,19 @@ namespace procesos_app.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.Careers",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false, maxLength: 120),
+                        NoTrimester = c.Int(nullable: false),
+                        NoCredito = c.Int(nullable: false),
+                        NoSubjetcs = c.Int(nullable: false),
+                        NoSubjects = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -102,6 +115,7 @@ namespace procesos_app.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Careers");
         }
     }
 }

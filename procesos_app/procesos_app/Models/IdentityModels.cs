@@ -27,22 +27,97 @@ namespace procesos_app.Models
         [MaxLength(256)]
         public string InstitutionalEmail { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         public DateTime JoinDate { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         public DateTime BirthDay { get; set; }
         [Required]
         [MaxLength(25)]
         public string Genrer { get; set; }
+        [MaxLength(100)]
+        public string Tanda { get; set; }
+        [MaxLength(100)]
+        public string Dispnibilidad { get; set; }
         
 
     }
 
-    public class UserRoles : IdentityRole
+
+    public class Areas
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+    }
+
+    public class Career
     {
         [Required]
-        public DateTime HoraInicio { get; set; }
+        public int Id { get; set; }
         [Required]
-        public DateTime HoraFinal { get; set; }
+        [MaxLength(120)]
+        public string Name { get; set; }
+        public int NoTrimester { get; set; } // Cant. de trimestre que tiene la carrera
+        public int NoCredito { get; set; } // Cant. de creditos que tiene
+        public int NoSubjetcs { get; set; } // cant. de materias que tiene
+
+        public Areas Area { get; set; }
+
+    }
+
+    public class Trimester
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime Inicio { get; set; }
+        public DateTime Fin { get; set; }
+    }
+
+
+    public class Subject
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int QtyCredits { get; set; }
+    }
+
+
+
+    public class UserCareer
+    {
+        [Required]
+        public int Id { get; set; }
+
+        public ApplicationUser User { get; set; }
+        public Career Career { get; set; }
+        
+        public int QtyApprovedQuarter { get; set; } // cant. trimestres cursados
+        public int QtyApprovedCredits { get; set; } // cant. creditos aprobados
+        public int QtyApprovedSubjects { get; set; } // cant. materias aprobados
+        public double QuarterlyIndex { get; set; } // Indice Trimestral
+        public double GeneralIndex { get; set; } // Indice General
+        public string Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
+    }
+
+    
+
+
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+
+        public DbSet<Career> Career { get; set; }
+        public DbSet<Areas> Areas { get; set; }
+        
+        public ApplicationDbContext()
+            : base("ProcesosDB", throwIfV1Schema: false)
+        {
+        }
+
+        public static ApplicationDbContext Create()
+        {
+            return new ApplicationDbContext();
+        }
     }
 
 }
