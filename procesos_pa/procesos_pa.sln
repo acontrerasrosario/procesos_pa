@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "procesos_pa", "procesos_pa\procesos_pa.csproj", "{5DA4DC81-B704-4E3E-AB70-454C9238CBF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROCESOS_PA", "PROCESOS_PA\PROCESOS_PA.csproj", "{9BCEA39A-FE7A-4E97-B9D8-354BFEA527AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DA4DC81-B704-4E3E-AB70-454C9238CBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DA4DC81-B704-4E3E-AB70-454C9238CBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DA4DC81-B704-4E3E-AB70-454C9238CBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DA4DC81-B704-4E3E-AB70-454C9238CBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCEA39A-FE7A-4E97-B9D8-354BFEA527AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCEA39A-FE7A-4E97-B9D8-354BFEA527AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCEA39A-FE7A-4E97-B9D8-354BFEA527AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCEA39A-FE7A-4E97-B9D8-354BFEA527AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

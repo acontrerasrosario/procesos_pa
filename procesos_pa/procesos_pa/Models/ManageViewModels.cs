@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace procesos_pa.Models
+namespace PROCESOS_PA.Models
 {
     public class IndexViewModel
     {

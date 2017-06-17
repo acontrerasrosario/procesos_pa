@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace procesos_pa.Models
+namespace PROCESOS_PA.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

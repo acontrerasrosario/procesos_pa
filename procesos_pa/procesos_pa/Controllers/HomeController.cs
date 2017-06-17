@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace procesos_pa.Controllers
+namespace PROCESOS_PA.Controllers
 {
     public class HomeController : Controller
     {

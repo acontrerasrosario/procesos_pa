@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using procesos_pa.Models;
+using PROCESOS_PA.Models;
 
-namespace procesos_pa
+namespace PROCESOS_PA
 {
     public class EmailService : IIdentityMessageService
     {

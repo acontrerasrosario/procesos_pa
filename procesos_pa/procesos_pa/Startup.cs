@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(procesos_pa.Startup))]
-namespace procesos_pa
+[assembly: OwinStartupAttribute(typeof(PROCESOS_PA.Startup))]
+namespace PROCESOS_PA
 {
     public partial class Startup
     {

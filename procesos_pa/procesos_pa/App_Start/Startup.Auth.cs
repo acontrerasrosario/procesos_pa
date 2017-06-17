@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using procesos_pa.Models;
+using PROCESOS_PA.Models;
 
-namespace procesos_pa
+namespace PROCESOS_PA
 {
     public partial class Startup
     {

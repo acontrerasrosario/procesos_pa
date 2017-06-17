@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using procesos_pa.Models;
+using PROCESOS_PA.Models;
 
-namespace procesos_pa.Controllers
+namespace PROCESOS_PA.Controllers
 {
     [Authorize]
     public class AccountController : Controller

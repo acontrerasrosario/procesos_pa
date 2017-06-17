@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("procesos_pa")]
+[assembly: AssemblyTitle("PROCESOS_PA")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("procesos_pa")]
+[assembly: AssemblyProduct("PROCESOS_PA")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("152d0406-d26a-469b-92b5-c145dbc98bbc")]
+[assembly: Guid("dc8ad97f-8e8f-4b68-a30a-1840ef3e2cf9")]
 
 // Version information for an assembly consists of the following four values:
 //

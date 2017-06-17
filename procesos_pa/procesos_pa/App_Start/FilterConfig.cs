@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace procesos_pa
+namespace PROCESOS_PA
 {
     public class FilterConfig
     {

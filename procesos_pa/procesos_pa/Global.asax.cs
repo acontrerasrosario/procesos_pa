@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace procesos_pa
+namespace PROCESOS_PA
 {
     public class MvcApplication : System.Web.HttpApplication
     {
