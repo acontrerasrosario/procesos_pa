@@ -96,6 +96,7 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\ApplicationInsights.config
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -194,3 +195,7 @@ C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\proceso
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+=======
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+>>>>>>> bfba1cc4fee7087cef7cc3133144021efaef842d
