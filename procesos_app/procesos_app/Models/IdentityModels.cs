@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Security.Claims;
@@ -39,10 +40,14 @@ namespace procesos_app.Models
         public string Tanda { get; set; }
         [MaxLength(100)]
         public string Dispnibilidad { get; set; }
-        
+        [MaxLength(100)]
+        public string UserType { get; set; }
 
+        public List<Areas> Area { get; set; }
+        public int AreaId { get; set; }
     }
 
+    
 
     public class Areas
     {
@@ -64,6 +69,16 @@ namespace procesos_app.Models
 
         public Areas Area { get; set; }
 
+        public List<Subject> Subject { get; set; }
+
+    }
+
+    public class Subject
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int QtyCredits { get; set; }
+        public List<Career> Career { get; set; }
     }
 
     public class Trimester
@@ -74,15 +89,45 @@ namespace procesos_app.Models
         public DateTime Fin { get; set; }
     }
 
+    public class UserSection
+    {
+        public int Id { get; set; }
+        public Section Section { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+        public double FinalScore { get; set; }
+        public string Status { get; set; }
+        
 
-    public class Subject
+    }
+
+    public class Section
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int QtyCredits { get; set; }
+        public Subject Subject { get; set; }
+        public int SubjectId { get; set; }
+        public Trimester Trimester { get; set; }
+        public int TrimesterId { get; set; }
+        public string SecType { get; set; }
+        public object Horario { get; set; }
+        public ClassRoom ClassRoom { get; set; }
+        public int ClassRoomId { get; set; }
     }
 
+    public class Builder
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 
+    public class ClassRoom
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Builder Builder { get; set; }
+        public int BuilderId { get; set; }
+
+    }  
 
     public class UserCareer
     {
