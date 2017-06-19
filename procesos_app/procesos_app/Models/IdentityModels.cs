@@ -108,7 +108,7 @@ namespace procesos_app.Models
         public DateTime Fin { get; set; }
     }
 
-    public class UserSection
+    public class StudentSection
     {
         public int Id { get; set; }
         public Section Section { get; set; }
@@ -119,6 +119,16 @@ namespace procesos_app.Models
         
 
     }
+
+    public class TeacherSection
+    {
+        public int Id { get; set; }
+        public Section Section { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+        
+
+    }
+
 
     public class Section
     {
@@ -137,10 +147,10 @@ namespace procesos_app.Models
         public ClassRoom ClassRoom { get; set; }
         // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
         // un horario tiene varias secciones
-        public List<Period> Period { get; set; }
+        public List<Schedule> Schedule { get; set; }
     }
 
-    public class Period
+    public class Schedule
     {
         public int Id { get; set; }
         [Required]
@@ -210,10 +220,10 @@ namespace procesos_app.Models
         public DbSet<Builder> Builders { get; set; }
         public DbSet<ClassRoom> ClassRooms { get; set; }
         public DbSet<Section> Sections { get; set; }
-        public DbSet<UserSection> UserSections { get; set; }
+        public DbSet<StudentSection> UserSections { get; set; }
         public DbSet<Trimester> Trimesters { get; set; }
         public DbSet<Subject> Subjects { get; set; }
-        public DbSet<Period> Periods { get; set; }
+        public DbSet<Schedule> Schedule { get; set; }
 
 
         public ApplicationDbContext()

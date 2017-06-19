@@ -97,3 +97,4 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
