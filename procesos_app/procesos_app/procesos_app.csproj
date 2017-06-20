@@ -204,12 +204,12 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-<<<<<<< HEAD
+
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-=======
+
     <Compile Include="App_Data\IdentityModels.cs" />
->>>>>>> 9da70888d2c269e5aa8cd3b280b174f5a5c6b544
+
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -274,11 +274,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
     <Folder Include="App_Data\" />
-=======
+
     <Folder Include="Models\API\" />
->>>>>>> 9da70888d2c269e5aa8cd3b280b174f5a5c6b544
+
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
