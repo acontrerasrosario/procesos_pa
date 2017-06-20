@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace procesos_app.Models
-{
+{    
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
@@ -24,17 +26,18 @@ namespace procesos_app.Models
         [Required]
         [MaxLength(13)]
         public char Cedula { get; set; }
+        [DataType(DataType.EmailAddress)]
         [MaxLength(256)]
         public string InstitutionalEmail { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         public DateTime JoinDate { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         public DateTime BirthDay { get; set; }
         [Required]
         [MaxLength(25)]
         public string Genrer { get; set; }
-<<<<<<< HEAD
-=======
         [MaxLength(100)]
         public string Tanda { get; set; }
         [MaxLength(100)]
@@ -153,19 +156,31 @@ namespace procesos_app.Models
         [Required]
         public string Name { get; set; } // Day + StartTime + EndTime
 
->>>>>>> bfba1cc4fee7087cef7cc3133144021efaef842d
         
+        public DateTime StartTime { get; set; } // permite ser null si es virtual
+        public DateTime EndTime { get; set; } // permite ser null si es virtual
 
+
+        // permite ser null si es virtual
+        public int Day { get; set; } // Que dia toca (0-5) (Lun,Mar,Mier,Jue,Vie,Sab)
+        // Trimestre al que pertenece ese horario (puede cambiar)
+        public Trimester Trimester { get; set; }
+        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
+        // un horario tiene varias secciones
+        public List<Section> Section { get; set; }
     }
 
-    public class UserRoles : IdentityRole
+    public class Builder
     {
+        public int Id { get; set; }
         [Required]
-        public DateTime HoraInicio { get; set; }
+        public string Name { get; set; } // Nombre del edificio
+    }
+
+    public class ClassRoom
+    {
+        public int Id { get; set; }
         [Required]
-<<<<<<< HEAD
-        public DateTime HoraFinal { get; set; }
-=======
         public string Name { get; set; } // Nombre del aula
         // Edificio al que pertenece
         public Builder Builder { get; set; }
@@ -216,13 +231,20 @@ namespace procesos_app.Models
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //Configure domain classes using modelBuilder here
+
+           
+            base.OnModelCreating(modelBuilder);
+        }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
 
 
->>>>>>> bfba1cc4fee7087cef7cc3133144021efaef842d
     }
 
 }

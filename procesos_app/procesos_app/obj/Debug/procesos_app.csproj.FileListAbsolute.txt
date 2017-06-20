@@ -127,40 +127,6 @@ C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\roslyn\VBCSCo
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll.config
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\procesos_app.pdb
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Owin.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Helpers.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Mvc.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Optimization.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Razor.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
-C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\WebGrease.dll
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Helpers.xml
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\bin\System.Web.Mvc.xml
@@ -198,9 +164,7 @@ C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\proceso
 =======
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
-<<<<<<< HEAD
 >>>>>>> bfba1cc4fee7087cef7cc3133144021efaef842d
-=======
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\ApplicationInsights.config
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csc.exe
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -302,3 +266,4 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 >>>>>>> 9da70888d2c269e5aa8cd3b280b174f5a5c6b544
+C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
