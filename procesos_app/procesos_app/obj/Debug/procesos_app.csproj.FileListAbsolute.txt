@@ -98,3 +98,10 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrati
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
