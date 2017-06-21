@@ -4,7 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
 namespace procesos_app.Models
-{
+{   //KLK!!!!!
     public class IndexViewModel
     {
         public bool HasPassword { get; set; }
