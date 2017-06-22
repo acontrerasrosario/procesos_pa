@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using procesos_app.Models.Enums;
 
 namespace procesos_app.Models
+{    
 {
     
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
@@ -249,6 +250,15 @@ namespace procesos_app.Models
             public CareerStatusEnum.CareerStatus Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //Configure domain classes using modelBuilder here
+
+           
+            base.OnModelCreating(modelBuilder);
+        }
+
+        public static ApplicationDbContext Create()
 
 
 
