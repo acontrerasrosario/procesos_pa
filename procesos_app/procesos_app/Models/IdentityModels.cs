@@ -7,9 +7,11 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using procesos_app.Models.Enums;
 
 namespace procesos_app.Models
 {
+    
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
@@ -26,7 +28,7 @@ namespace procesos_app.Models
 
         [Required]
         [MaxLength(13)]
-        public char Cedula { get; set; }
+        public string Cedula { get; set; }
 
         [DataType(DataType.EmailAddress)]
         [MaxLength(256)]
@@ -37,19 +39,16 @@ namespace procesos_app.Models
         public DateTime BirthDay { get; set; }
 
         [Required]
-        [MaxLength(25)]
-        public string Genrer { get; set; }
+        public GenrerEnum.Genrer Genrer { get; set; }
 
-        [MaxLength(100)]
-        public string Tanda { get; set; }
+        
+        public TandaEnum.Tanda Tanda { get; set; }
 
         [MaxLength(100)]
         public string Dispnibilidad { get; set; }
 
         // AREA
         public Areas Area { get; set; }
-
-        public int AreaId { get; set; }
 
         // Trimestre (saber trimestre en el que ingreso)
         public Trimester Trimester { get; set; } // trimestre de ingreso
@@ -136,7 +135,7 @@ namespace procesos_app.Models
         public double FinalScore { get; set; }
 
         [Required]
-        public string Status { get; set; } // CURSANDO, FINISHED (PASO MATERIA), RETIRO, QUEMO
+        public StatusSectionEnum.SectionStatus Status { get; set; } // CURSANDO, FINISHED (PASO MATERIA), RETIRO, QUEMO
 
 
     }
@@ -168,7 +167,7 @@ namespace procesos_app.Models
         // Aqui es para saber en que trimestre pertenece la seccion
         public Trimester Trimester { get; set; }
 
-        public string SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
+        public SectionTypeEnum.SectionType SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
 
         // Aula en la que dan la clase - Un Aula tiene varias Secciones (Uno a Mucho)
         public ClassRoom ClassRoom { get; set; }
@@ -191,7 +190,7 @@ namespace procesos_app.Models
 
 
         // permite ser null si es virtual
-        public int Day { get; set; } // Que dia toca (0-5) (Lun,Mar,Mier,Jue,Vie,Sab)
+        public DayEnum.DaysOfWeek Day { get; set; } // Que dia toca (0-5) (Lun,Mar,Mier,Jue,Vie,Sab)
 
         // Trimestre al que pertenece ese horario (puede cambiar)
         public Trimester Trimester { get; set; }
@@ -247,7 +246,7 @@ namespace procesos_app.Models
             public double GeneralIndex { get; set; } // Indice General
 
             [Required] // Estado inicial ACTIVO
-            public string Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
+            public CareerStatusEnum.CareerStatus Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
         }
 
 
@@ -262,13 +261,14 @@ namespace procesos_app.Models
             public DbSet<Builder> Builders { get; set; }
             public DbSet<ClassRoom> ClassRooms { get; set; }
             public DbSet<Section> Sections { get; set; }
-            public DbSet<StudentSection> UserSections { get; set; }
+            public DbSet<StudentSection> StudentSection { get; set; }
             public DbSet<Trimester> Trimesters { get; set; }
             public DbSet<Subject> Subjects { get; set; }
             public DbSet<Schedule> Schedule { get; set; }
+            public DbSet<TeacherSection> TeacherSection { get; set; }
 
 
-            public ApplicationDbContext()
+        public ApplicationDbContext()
                 : base("ProcesosDB", throwIfV1Schema: false)
             {
             }

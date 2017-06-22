@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace procesos_app.Models
@@ -79,6 +80,28 @@ namespace procesos_app.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Range(1040000,1099999,ErrorMessage = "Inserte un formato valido por favor.")]
+        
+        [Display(Name = "Id Estudiantil")]
+        public int Id2 { get; set; }
+
+        [Required]
+        [StringLength(13, ErrorMessage = "La Cedula debe tener 13 numero de caracteres")]
+        [Display(Name = "Cedula")]
+        public string Cedula { get; set; }
+
+        [Required]
+        [Display(Name = "Cumpleaños")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
+        public DateTime Birthday { get; set; }
+
+        [Required]
+        [Display(Name = "Genero")]
+        public Enums.GenrerEnum.Genrer Genrer { get; set; }
+
     }
 
     public class ResetPasswordViewModel

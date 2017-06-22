@@ -111,18 +111,57 @@ namespace procesos_app.Models.API
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
             userInDb.UserName = user.UserName;
-            userInDb.AreaId = user.AreaId;
+            userInDb.Area = user.Area;
             userInDb.BirthDay = user.BirthDay;
             userInDb.Dispnibilidad = user.Dispnibilidad;
             userInDb.Cedula = user.Cedula;
             userInDb.Genrer = user.Genrer;
             userInDb.Tanda = user.Tanda;
-            userInDb.Trimester = user.Trimester;
-            
+            userInDb.InstitutionalEmail = user.InstitutionalEmail;
+            userInDb.Email = user.Email;
+            userInDb.PhoneNumber = user.PhoneNumber;
+
+            _context.SaveChanges();
 
         }
 
-        
+        public void UpdateStudent(string id, ApplicationUser user)
+        {
+            if (!ModelState.IsValid)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+
+            var userInDb = _context.Users.FirstOrDefault(u => u.Id == id);
+
+            if (userInDb == null)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            userInDb.UserName = user.UserName;
+            userInDb.BirthDay = user.BirthDay;
+            userInDb.Cedula = user.Cedula;
+            userInDb.Genrer = user.Genrer;
+            userInDb.Tanda = user.Tanda;
+            userInDb.InstitutionalEmail = user.InstitutionalEmail;
+            userInDb.Email = user.Email;
+            userInDb.PhoneNumber = user.PhoneNumber;
+            
+            _context.SaveChanges();
+            
+        }
+
+        // DELETE /api/customer/1
+        public void DeleteUser(string id)
+        {
+            var userInDb = _context.Users.FirstOrDefault(u => u.Id == id);
+
+            if (userInDb == null)
+               throw new HttpResponseException(HttpStatusCode.NotFound);
+
+
+            _context.Users.Remove(userInDb);
+        }
+
+
 
 
 
