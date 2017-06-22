@@ -1,5 +1,4 @@
 diff a/procesos_app/procesos_app/procesos_app.csproj b/procesos_app/procesos_app/procesos_app.csproj	(rejected hunks)
-@@ -204,12 +204,12 @@
      </Compile>
      <Compile Include="Migrations\Configuration.cs" />
      <Compile Include="Models\AccountViewModels.cs" />
@@ -7,7 +6,6 @@ diff a/procesos_app/procesos_app/procesos_app.csproj b/procesos_app/procesos_app
 +
      <Compile Include="Models\ApplicationDbContext.cs" />
      <Compile Include="Models\IdentityModels.cs" />
--=======
 +
      <Compile Include="App_Data\IdentityModels.cs" />
 ->>>>>>> 9da70888d2c269e5aa8cd3b280b174f5a5c6b544

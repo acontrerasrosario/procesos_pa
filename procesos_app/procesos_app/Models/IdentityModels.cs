@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using procesos_app.Models.Enums;
 
 namespace procesos_app.Models
-{    
 {
     
+
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
@@ -42,7 +42,7 @@ namespace procesos_app.Models
         [Required]
         public GenrerEnum.Genrer Genrer { get; set; }
 
-        
+
         public TandaEnum.Tanda Tanda { get; set; }
 
         [MaxLength(100)]
@@ -103,11 +103,12 @@ namespace procesos_app.Models
 
         // Recursividad por prerequisitos
         public Subject Subject1 { get; set; } // Prerequisito
-        
+
         public int PreRequisitCredits { get; set; } // prerequisito creditos
 
         // Carrera - Mucho a Mucho
         public List<Career> Career { get; set; }
+
         // una materia tiene un area y un area tiene muchas carreras
         public Areas Areas { get; set; }
     }
@@ -212,91 +213,85 @@ namespace procesos_app.Models
     }
 
     public class ClassRoom
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; } // Nombre del aula
+
+        // Edificio al que pertenece
+        public Builder Builder { get; set; }
+
+    }
+
+    public class UserCareer
+    {
+        [Required]
+        public int Id { get; set; }
+
+        public ApplicationUser User { get; set; }
+        public Career Career { get; set; }
+
+        [Required] // resultados con valor inicial 0
+        public int QtyApprovedQuarter { get; set; } // cant. trimestres cursados
+
+        [Required] // resultados con valor inicial 0
+        public int QtyApprovedCredits { get; set; } // cant. creditos aprobados
+
+        [Required] // resultados con valor inicial 0
+        public int QtyApprovedSubjects { get; set; } // cant. materias aprobados
+
+        [Required] // Aqui se calculara, pero en el primer trimestre su indice es 4.0
+        public double QuarterlyIndex { get; set; } // Indice Trimestral
+
+        [Required] // Aqui se calculara, pero en el primer trimestre su indice es 4.0
+        public double GeneralIndex { get; set; } // Indice General
+
+        [Required] // Estado inicial ACTIVO
+        public CareerStatusEnum.CareerStatus Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
+    }
+
+
+
+
+
+
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    {
+
+        public DbSet<Career> Careers { get; set; }
+        public DbSet<Areas> Areas { get; set; }
+        public DbSet<UserCareer> UserCareers { get; set; }
+        public DbSet<Builder> Builders { get; set; }
+        public DbSet<ClassRoom> ClassRooms { get; set; }
+        public DbSet<Section> Sections { get; set; }
+        public DbSet<StudentSection> StudentSection { get; set; }
+        public DbSet<Trimester> Trimesters { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Schedule> Schedule { get; set; }
+        public DbSet<TeacherSection> TeacherSection { get; set; }
+
+
+        public ApplicationDbContext()
+            : base("ProcesosDB", throwIfV1Schema: false)
         {
-            public int Id { get; set; }
-
-            [Required]
-            public string Name { get; set; } // Nombre del aula
-
-            // Edificio al que pertenece
-            public Builder Builder { get; set; }
-
-        }
-
-        public class UserCareer
-        {
-            [Required]
-            public int Id { get; set; }
-
-            public ApplicationUser User { get; set; }
-            public Career Career { get; set; }
-
-            [Required] // resultados con valor inicial 0
-            public int QtyApprovedQuarter { get; set; } // cant. trimestres cursados
-
-            [Required] // resultados con valor inicial 0
-            public int QtyApprovedCredits { get; set; } // cant. creditos aprobados
-
-            [Required] // resultados con valor inicial 0
-            public int QtyApprovedSubjects { get; set; } // cant. materias aprobados
-
-            [Required] // Aqui se calculara, pero en el primer trimestre su indice es 4.0
-            public double QuarterlyIndex { get; set; } // Indice Trimestral
-
-            [Required] // Aqui se calculara, pero en el primer trimestre su indice es 4.0
-            public double GeneralIndex { get; set; } // Indice General
-
-            [Required] // Estado inicial ACTIVO
-            public CareerStatusEnum.CareerStatus Status { get; set; } //GRADUADO,INACTIVO, ACTIVO, BLOQUEADO
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Configure domain classes using modelBuilder here
 
-           
+
             base.OnModelCreating(modelBuilder);
         }
 
         public static ApplicationDbContext Create()
-
-
-
-        public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         {
-
-            public DbSet<Career> Careers { get; set; }
-            public DbSet<Areas> Areas { get; set; }
-            public DbSet<UserCareer> UserCareers { get; set; }
-            public DbSet<Builder> Builders { get; set; }
-            public DbSet<ClassRoom> ClassRooms { get; set; }
-            public DbSet<Section> Sections { get; set; }
-            public DbSet<StudentSection> StudentSection { get; set; }
-            public DbSet<Trimester> Trimesters { get; set; }
-            public DbSet<Subject> Subjects { get; set; }
-            public DbSet<Schedule> Schedule { get; set; }
-            public DbSet<TeacherSection> TeacherSection { get; set; }
-
-
-        public ApplicationDbContext()
-                : base("ProcesosDB", throwIfV1Schema: false)
-            {
-            }
-
-            protected override void OnModelCreating(DbModelBuilder modelBuilder)
-            {
-                //Configure domain classes using modelBuilder here
-
-
-                base.OnModelCreating(modelBuilder);
-            }
-
-            public static ApplicationDbContext Create()
-            {
-                return new ApplicationDbContext();
-            }
-
-
+            return new ApplicationDbContext();
         }
 
+
     }
+
+    
+}
