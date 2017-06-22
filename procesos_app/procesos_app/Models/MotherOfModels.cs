@@ -14,7 +14,8 @@ namespace procesos_app.Models
         public Builder Builders { get; set; }
         public ClassRoom ClassRooms { get; set; }
         public Section Sections { get; set; }
-        public StudentSection UserSections { get; set; }
+        public StudentSection StudentSection { get; set; }
+        public TeacherSection TeacherSection { get; set; }
         public Trimester Trimesters { get; set; }
         public Subject Subjects { get; set; }
         public Schedule Schedule { get; set; }

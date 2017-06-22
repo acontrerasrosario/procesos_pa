@@ -151,7 +151,7 @@ namespace procesos_app.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email , Id2 = model.Id2, Cedula = model.Cedula ,BirthDay = model.Birthday,Genrer = model.Genrer};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
