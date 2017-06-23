@@ -320,6 +320,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\AngularJS\" />
+    <Folder Include="Scripts\AngularJS\" />
     <Folder Include="UI\" />
   </ItemGroup>
   <ItemGroup>
