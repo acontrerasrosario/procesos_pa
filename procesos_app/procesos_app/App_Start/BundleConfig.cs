@@ -26,6 +26,10 @@ namespace procesos_app
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-lumen.css",
                       "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                "~/Scripts/AngularJS/angular.min.js",
+                "~/Scripts/AngularJS/jquery-3.2.1.min.js",
+                "~/Scripts/AngularJS/NgRoute.js"));
         }
     }
 }

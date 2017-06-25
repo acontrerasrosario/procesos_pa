@@ -209,3 +209,6 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources

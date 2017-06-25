@@ -163,7 +163,7 @@ namespace procesos_app.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Choose", "Home");
                 }
                 AddErrors(result);
             }
@@ -392,7 +392,7 @@ namespace procesos_app.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         //
@@ -445,11 +445,12 @@ namespace procesos_app.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
+            
             if (Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "ApplicationUsers");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Security;
+using AutoMapper;
 
 namespace procesos_app.Models.API
 {
@@ -17,68 +18,78 @@ namespace procesos_app.Models.API
             _context = new ApplicationDbContext();
         }
 
-        // GET /api/students
+        // GET /api/users/GetStudents
         public IEnumerable<ApplicationUser> GetStudents()
         {
-            var students = from s in _context.Users
-                join r in _context.Roles
-                on s.Roles equals r.Users
-                where r.Name == "ESTUDIANTE"
-                select s;
+           
 
-            return students.ToList();
+            var studentRole = _context.Roles.FirstOrDefault(x => x.Name == "ESTUDIANTE");
+
+            var allStudents = _context.Users
+                .Where(x => x.Roles
+                    .Select(role => role.RoleId)
+                    .Contains(studentRole.Id)
+                );
+
+            return allStudents.ToList();
         }
 
-        // GET /api/teacher
-        public IEnumerable<ApplicationUser> GetTeacher()
+        // GET /api/users/GetTeachers
+        public IEnumerable<ApplicationUser> GetTeachers()
         {
-            var teacher = from s in _context.Users
-                join r in _context.Roles
-                on s.Roles equals r.Users
-                where r.Name == "PROFESOR"
-                select s;
+            var teacherRole = _context.Roles.FirstOrDefault(x => x.Name == "PROFESOR");
 
-            return teacher.ToList();
+            var allTeachers = _context.Users
+                .Where(x => x.Roles
+                    .Select(role => role.RoleId)
+                    .Contains(teacherRole.Id)
+                );
+
+            return allTeachers.ToList();
         }
 
         // GET /api/users
         public IEnumerable<ApplicationUser> GetAllUsers()
         {
-            return _context.Users.ToList();
+            return _context.Users.ToList(); ;
         }
 
 
-        // GET /api/users/1
+        // GET /api/users/GetStudents/1
         public IEnumerable<ApplicationUser> GetStudents(int id)
         {
-            var students = from s in _context.Users
-                        join r in _context.Roles
-                        on s.Roles equals r.Users
-                        where r.Name == "ESTUDIANTE" && s.Id2 == id
-                        select s;
+            var studentRole = _context.Roles.FirstOrDefault(x => x.Name == "ESTUDIANTE");
+
+            var student = _context.Users
+                .Where(x => x.Roles
+                    .Select(role => role.RoleId) 
+                    .Contains(studentRole.Id) && x.Id2 == id 
+                );
 
 
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
-            return students.ToList();
+            return student.ToList();
 
         }
 
-        // GET /api/users/1
+        // GET /api/users/GetTeachers/1
         public IEnumerable<ApplicationUser> GetTeachers(int id)
         {
-            var students = from s in _context.Users
-                join r in _context.Roles
-                on s.Roles equals r.Users
-                where r.Name == "PROFESOR" && s.Id2 == id
-                select s;
+            var teacherRole = _context.Roles.FirstOrDefault(x => x.Name == "PROFESOR");
+
+            var teachers = _context.Users
+                .Where(x => x.Roles
+                                .Select(role => role.RoleId)
+                                .Contains(teacherRole.Id) && x.Id2 == id
+                );
 
 
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
-            return students.ToList();
+            return teachers.ToList();
 
         }
 
@@ -86,29 +97,35 @@ namespace procesos_app.Models.API
         [HttpPost]
         public ApplicationUser CreateUser(ApplicationUser user)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+
 
 
             _context.Users.Add(user);
             _context.SaveChanges();
+
+
             return user;
         }
 
 
-        
+
         // PUT /api/teacher/1
         [HttpPut]
         public void UpdateTeacher(int id, ApplicationUser user)
         {
-            if(!ModelState.IsValid)
-                throw  new HttpResponseException(HttpStatusCode.BadRequest);
+            if (!ModelState.IsValid)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
 
 
             var userInDb = _context.Users.FirstOrDefault(u => u.Id2 == id);
 
             if (userInDb == null)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            //Mapper.Map<UserDto, ApplicationUser>;
 
             userInDb.UserName = user.UserName;
             userInDb.Area = user.Area;
@@ -144,9 +161,9 @@ namespace procesos_app.Models.API
             userInDb.InstitutionalEmail = user.InstitutionalEmail;
             userInDb.Email = user.Email;
             userInDb.PhoneNumber = user.PhoneNumber;
-            
+
             _context.SaveChanges();
-            
+
         }
 
         // DELETE /api/customer/1
@@ -155,7 +172,7 @@ namespace procesos_app.Models.API
             var userInDb = _context.Users.FirstOrDefault(u => u.Id == id);
 
             if (userInDb == null)
-               throw new HttpResponseException(HttpStatusCode.NotFound);
+                throw new HttpResponseException(HttpStatusCode.NotFound);
 
 
             _context.Users.Remove(userInDb);
