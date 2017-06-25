@@ -203,6 +203,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Controllers\EstudianteController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+>>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -262,7 +267,11 @@
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+<<<<<<< HEAD
     <Content Include="Content\Images\logo_top.png" />
+=======
+    <Content Include="Content\images\logo_top.png" />
+>>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -280,6 +289,7 @@
     <Content Include="Scripts\AngularJS\NgRoute.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Estudiante.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -321,10 +331,22 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_LayoutEstudiante.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
+=======
+    <Content Include="Views\Registro\Registar.cshtml" />
+    <Content Include="Views\Registro\Asignar.cshtml" />
+    <Content Include="Views\Registro\Revision.cshtml" />
+    <Content Include="Views\Estudiante\Inicio.cshtml" />
+    <Content Include="Views\Estudiante\_Inicio.cshtml" />
+    <Content Include="Views\Estudiante\_Seleccion.cshtml" />
+    <Content Include="Views\Estudiante\_ProgramaAsignatura.cshtml" />
+    <Content Include="Views\Estudiante\_OfertaAcademica.cshtml" />
+    <Content Include="Views\Shared\_Prueba.cshtml" />
+>>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
