@@ -1,0 +1,57 @@
+﻿@model procesos_app.Models.MotherOfModels
+
+@{
+    ViewBag.Title = "Registar";
+}
+
+<div class="row">
+    <h3>Registrar Asignatura</h3>
+    <hr />
+</div>
+
+<div class="row">
+    <div class="form-group">
+        @Html.Label("Codigo Materia", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.Id, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Nombre Materia", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.Name, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Cantidad de Creditos", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.QtyCredits, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Carrera", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.Career, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Materias Requeridas", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.Subject1, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Creditos Requeridos", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Subjects.PreRequisitCredits, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <br>
+            <input type="submit" class="btn btn-primary" value="Guardar" />
+            @Html.ActionLink("Regresar", "Index", "Home", new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>
+
