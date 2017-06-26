@@ -209,11 +209,9 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
-<<<<<<< HEAD
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
-=======
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\ApplicationInsights.config
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -325,4 +323,6 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
->>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources

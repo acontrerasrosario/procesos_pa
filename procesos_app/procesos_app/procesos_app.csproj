@@ -203,12 +203,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Controllers\EstudianteController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
->>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProfesorController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -267,11 +265,7 @@
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-<<<<<<< HEAD
     <Content Include="Content\Images\logo_top.png" />
-=======
-    <Content Include="Content\images\logo_top.png" />
->>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -311,7 +305,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -331,22 +324,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Shared\_LayoutEstudiante.cshtml" />
-    <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
-    <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
-=======
-    <Content Include="Views\Registro\Registar.cshtml" />
-    <Content Include="Views\Registro\Asignar.cshtml" />
-    <Content Include="Views\Registro\Revision.cshtml" />
     <Content Include="Views\Estudiante\Inicio.cshtml" />
-    <Content Include="Views\Estudiante\_Inicio.cshtml" />
-    <Content Include="Views\Estudiante\_Seleccion.cshtml" />
-    <Content Include="Views\Estudiante\_ProgramaAsignatura.cshtml" />
-    <Content Include="Views\Estudiante\_OfertaAcademica.cshtml" />
-    <Content Include="Views\Shared\_Prueba.cshtml" />
->>>>>>> ae7c59d8246aba865775b2000d45b5d7e1d93474
+    <Content Include="Views\Shared\_LayoutEstudiante.cshtml" />
+    <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
+    <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Registro\Index.cshtml" />
+    <Content Include="Views\Profesor\Index.cshtml" />
+    <Content Include="Views\Estudiante\Seleccion.cshtml" />
+    <Content Include="Views\Estudiante\Preseleccion.cshtml" />
+    <Content Include="Views\Estudiante\Retiro.cshtml" />
+    <Content Include="Views\Estudiante\Revision.cshtml" />
+    <Content Include="Views\Estudiante\ProgramaAsignatura.cshtml" />
+    <Content Include="Views\Estudiante\EvaluacionProfesoral.cshtml" />
+    <Content Include="Views\Estudiante\OfertaAcademica.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

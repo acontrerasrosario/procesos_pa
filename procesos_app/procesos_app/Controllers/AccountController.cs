@@ -156,14 +156,23 @@ namespace procesos_app.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Choose", "Home");
+                    if (User.IsInRole("ESTUDIANTE"))
+                    {
+                        return RedirectToAction("Inicio", "Estudiante");
+                    }
+                    if (User.IsInRole("ESTUDIANTE"))
+                    {
+                        return RedirectToAction("Index", "Profesor");
+                    }
+
+                    return RedirectToAction("Index", "Registro");
                 }
                 AddErrors(result);
             }
@@ -450,7 +459,17 @@ namespace procesos_app.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "ApplicationUsers");
+
+            if (User.IsInRole("ESTUDIANTE"))
+            {
+                return RedirectToAction("Inicio", "Estudiante");
+            }
+            if (User.IsInRole("PROFESOR"))
+            {
+                return RedirectToAction("Index", "Profesor");
+            }
+            
+            return RedirectToAction("Index", "Registro");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
