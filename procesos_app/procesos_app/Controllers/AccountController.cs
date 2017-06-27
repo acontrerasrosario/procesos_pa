@@ -173,6 +173,7 @@ namespace procesos_app.Controllers
                     }
 
                     return RedirectToAction("Index", "Registro");
+                    return RedirectToAction("Choose", "Home");
                 }
                 AddErrors(result);
             }
@@ -470,6 +471,7 @@ namespace procesos_app.Controllers
             }
             
             return RedirectToAction("Index", "Registro");
+            return RedirectToAction("Index", "ApplicationUsers");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
