@@ -173,7 +173,6 @@ namespace procesos_app.Controllers
                     }
 
                     return RedirectToAction("Index", "Registro");
-                    return RedirectToAction("Choose", "Home");
                 }
                 AddErrors(result);
             }
