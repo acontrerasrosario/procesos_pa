@@ -1,4 +1,5 @@
-﻿@{
+﻿@model procesos_app.Models.MotherOfModels
+@{
     ViewBag.Title = "Inicio";
     Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
 }
@@ -8,6 +9,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
+@* CHEKIAR PORQUE NO SALE!!!!!!!! *@
+
 
 <style>
     .section-title {
@@ -51,53 +56,53 @@
         <h4 class="HBG">Datos Generales</h4>
     </div>
     <div class="row section_info">
-        <div class="col-xs-4">
+        <div class="col-xs-5">
             <div>
-                @Html.Label("ID:", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+                <b> @Html.Label("ID:", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.Id, new { @class = "form-control" })<br />
             </div>   
             <div>
-                @Html.Label("Programa", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+                <b> @Html.Label("Programa", htmlAttributes: new { @class = "control-label" }) </b><br />
+                @Html.DisplayFor(m => m.UserCareers.Career,  new { @class = "form-control" })<br />
             </div> 
             <div>
-                @Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+                <b>@Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("NORMAL", new { @class = "form-control" })<br />
             </div> 
             <div>
-                @Html.Label("Trimestre Ingreso", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+                <b> @Html.Label("Trimestre Ingreso", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("AGOSTO - OCUTUBRE 2014",  new { @class = "form-control" })<br />
             </div> 
             <div>
-                @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
-            </div> 
-        </div>
-
-        <div class="col-xs-4">
-            <div>
-                @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
-            </div>
-            <div>
-                @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
-            </div>
-            <div>
-                @Html.Label("Creditos Convalidados ", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
-            </div>
-            <div>
-                @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
-            </div>
-            <div>
-                @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })<br />
-                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+                <b> @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("FEBRERO - ABRIL 2017",  new { @class = "form-control" })<br />
             </div> 
         </div>
 
-        <div class="col-xs-4">
+        <div class="col-xs-5 tex">
+            <div>
+                <b> @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QuarterlyIndex, new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.GeneralIndex,  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Creditos Convalidados ", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("0",  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedCredits,  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedQuarter,  new { @class = "form-control" })<br />
+            </div> 
+        </div>
+
+        <div class="col-xs-2">
             <div>
               FOTO
             </div>
@@ -116,31 +121,44 @@
 
 
 <div class="col-md-5">
-    <div>
-        <h4 class="HBG">Graficas WIN!</h4>
-    </div>
     <div class="col-xs-6">
         <canvas id="Materias" width="100" height="100" style="background:#72AF47"></canvas><br />
-        <canvas id="Trimestres" width="100" height="100" style="background:#171414"></canvas>
+        <canvas id="Trimestres" width="100" height="100" style="background:#E02F32"></canvas>
     </div>
     <div class="col-xs-6">
         <canvas id="Indice" width="100" height="100" style="background:#F5F5F5"></canvas><br />
-        <canvas id="Creditos" width="100" height="100" style="background:#171414"></canvas>
+        <canvas id="Creditos" width="100" height="100" style="background: #404040"></canvas>
     </div>
     <script>
         var Materias = document.getElementById("Materias").getContext('2d');
         var myChart = new Chart(Materias, {
             type: 'doughnut',
             data: {
-                labels: ["Apr", "Tot"],
                 datasets: [{
                     backgroundColor: [
-                        "#ffffff",
-                        "#808080"
+                        "#FFFFFF",
+                        "#9dca79"
                     ],
-                    data: [0.70, 0.30]
+                    borderColor: [
+                        "#FFFFFF",
+                        "#9dca79"
+                    ],
+                    data: [40, 23]
                     
                 }]
+            },
+            options: {
+                layout: {
+                    padding: {       
+                        bottom: 10
+                    }      
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '40 Materias de 63'
+                }
             }
         });
 
@@ -149,16 +167,32 @@
         var myChart = new Chart(Trimestres, {
             type: 'doughnut',
             data: {
-                labels: ["Apr", "Tot"],
                 datasets: [{
                     backgroundColor: [
-                        "#171414",
-                        "#ffffff"
+                        "#f27f78",
+                        "#FFFFFF"
                     ],
-                    data: [0.57, 0.43]
-
+                    borderColor: [
+                        "#f27f78",
+                        "#FFFFFF"
+                    ],
+                    data: [12, 9]
 
                 }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '12 Trimestres de 21'
+
+                }
             }
         });
 
@@ -167,16 +201,32 @@
         var myChart = new Chart(Indice, {
             type: 'doughnut',
             data: {
-                labels: ["Apr", "Tot"],
                 datasets: [{
                     backgroundColor: [
-                        "#72AF47",
-                        "#ffffff"
+                        "#444",
+                        "#FFFFFF"
                     ],
-                    data: [0.75, 0.25]
-
+                    borderColor: [
+                        "#444",
+                        "#FFFFFF"
+                    ],
+                    data: [2.97, 1.03]
 
                 }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#444",
+                    text: '2.97 Indice de 4'
+
+                }
             }
         });
 
@@ -184,16 +234,32 @@
         var myChart = new Chart(Creditos, {
             type: 'doughnut',
             data: {
-                labels: ["Apr", "Tot"],
                 datasets: [{
-                    backgroundColor: [     
-                        "#171414",
-                        "#ffffff"
+                    backgroundColor: [
+                        "#FFFFFF",
+                        "#666364"
                     ],
-                    data: [0.70, 0.30]
-
+                    borderColor: [
+                        "#FFFFFF",
+                        "#666364"
+                    ],
+                    data: [162, 91]
 
                 }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '162 Creditos de 253'
+
+                }
             }
         });
     </script>

@@ -243,6 +243,7 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\procesos_app.pdb
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
@@ -279,6 +280,7 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.xml
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Http.xml
@@ -320,9 +322,7 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
-C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.dll
-C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.xml
-C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
