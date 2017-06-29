@@ -339,10 +339,13 @@
     <Content Include="Views\Estudiante\ProgramaAsignatura.cshtml" />
     <Content Include="Views\Estudiante\EvaluacionProfesoral.cshtml" />
     <Content Include="Views\Estudiante\OfertaAcademica.cshtml" />
+    <Content Include="Views\Profesor\PubMT.cshtml" />
+    <Content Include="Views\Shared\_LayoutPubMT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AngularJS\" />
+    <Folder Include="obj\" />
     <Folder Include="UI\Directives\" />
     <Folder Include="UI\Modules\" />
     <Folder Include="UI\Pages\" />
