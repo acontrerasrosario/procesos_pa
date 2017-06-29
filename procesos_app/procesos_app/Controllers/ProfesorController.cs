@@ -13,7 +13,5 @@ namespace procesos_app.Controllers
         {
             return View();
         }
-
-
     }
 }

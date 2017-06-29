@@ -98,13 +98,6 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\ApplicationInsights.config
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -136,6 +129,7 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll.config
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
@@ -172,6 +166,7 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Deploy
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.xml
@@ -204,14 +199,21 @@ C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCol
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
 C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.dll
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
-C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.dll
-C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.xml
-C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\ApplicationInsights.config
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -322,7 +324,9 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
-C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.pdb

@@ -1,9 +1,3 @@
-﻿@{
-    ViewBag.Title = "Inicio";
-    Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
-}
-
-<h2>Bienvenido estudiante --> @User.Identity.Name</h2>
 ﻿@model procesos_app.Models.MotherOfModels
 @{
     ViewBag.Title = "Inicio";
@@ -37,15 +31,17 @@
         margin: 20px 10px;
         background-color: white;
     }
+
     .section_info {
         margin: 20px;
     }
 
-    .HBG {   
+    .HBG {
         padding: 7px 10px;
         background-color: #404040;
         color: #FFF;
     }
+
     .block-dashboard {
         width: 160px;
         height: 187px;
@@ -53,12 +49,12 @@
         padding: 10px;
     }
 </style>
-<div >   
- <h3 class="section-title"> TABLERO DE INDICADORES </h3>
+<div>
+    <h3 class="section-title"> TABLERO DE INDICADORES </h3>
     <hr />
 </div>
 <div class="col-md-7">
-    <div >
+    <div>
         <h4 class="HBG">Datos Generales</h4>
     </div>
     <div class="row section_info">
@@ -66,23 +62,23 @@
             <div>
                 <b> @Html.Label("ID:", htmlAttributes: new { @class = "control-label" })</b><br />
                 @Html.DisplayFor(m => m.UserCareers.Id, new { @class = "form-control" })<br />
-            </div>   
+            </div>
             <div>
                 <b> @Html.Label("Programa", htmlAttributes: new { @class = "control-label" }) </b><br />
-                @Html.DisplayFor(m => m.UserCareers.Career,  new { @class = "form-control" })<br />
-            </div> 
+                @Html.DisplayFor(m => m.UserCareers.Career, new { @class = "form-control" })<br />
+            </div>
             <div>
                 <b>@Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label" })</b><br />
                 @Html.Display("NORMAL", new { @class = "form-control" })<br />
-            </div> 
+            </div>
             <div>
                 <b> @Html.Label("Trimestre Ingreso", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.Display("AGOSTO - OCUTUBRE 2014",  new { @class = "form-control" })<br />
-            </div> 
+                @Html.Display("AGOSTO - OCUTUBRE 2014", new { @class = "form-control" })<br />
+            </div>
             <div>
                 <b> @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.Display("FEBRERO - ABRIL 2017",  new { @class = "form-control" })<br />
-            </div> 
+                @Html.Display("FEBRERO - ABRIL 2017", new { @class = "form-control" })<br />
+            </div>
         </div>
 
         <div class="col-xs-5 tex">
@@ -92,25 +88,25 @@
             </div>
             <div>
                 <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.DisplayFor(m => m.UserCareers.GeneralIndex,  new { @class = "form-control" })<br />
+                @Html.DisplayFor(m => m.UserCareers.GeneralIndex, new { @class = "form-control" })<br />
             </div>
             <div>
                 <b> @Html.Label("Creditos Convalidados ", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.Display("0",  new { @class = "form-control" })<br />
+                @Html.Display("0", new { @class = "form-control" })<br />
             </div>
             <div>
                 <b> @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.DisplayFor(m => m.UserCareers.QtyApprovedCredits,  new { @class = "form-control" })<br />
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedCredits, new { @class = "form-control" })<br />
             </div>
             <div>
                 <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.DisplayFor(m => m.UserCareers.QtyApprovedQuarter,  new { @class = "form-control" })<br />
-            </div> 
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedQuarter, new { @class = "form-control" })<br />
+            </div>
         </div>
 
         <div class="col-xs-2">
             <div>
-              FOTO
+                FOTO
             </div>
         </div>
 
@@ -150,14 +146,14 @@
                         "#9dca79"
                     ],
                     data: [40, 23]
-                    
+
                 }]
             },
             options: {
                 layout: {
-                    padding: {       
+                    padding: {
                         bottom: 10
-                    }      
+                    }
                 },
                 title: {
                     display: true,
@@ -276,7 +272,7 @@
         <h4 class="HBG">Asignaturas Seleccionadas - </h4>
     </div>
     <div class="row section_info">
-        <table class="table-bordered">
+        <table class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
                 <tr>
                     <th>Código</th>
@@ -402,6 +398,5 @@
                 </tr>
             </tbody>
         </table>
-    </div> 
+    </div>
 </div>
-
