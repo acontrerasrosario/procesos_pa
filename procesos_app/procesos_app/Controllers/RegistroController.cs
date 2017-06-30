@@ -23,5 +23,10 @@ namespace procesos_app.Controllers
             return View();
         }
 
+        // GET: Registro
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }

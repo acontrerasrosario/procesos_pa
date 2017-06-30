@@ -4,13 +4,36 @@
 }
 
 <h2>Bienvenido estudiante --> @User.Identity.Name</h2>
+﻿@model procesos_app.Models.MotherOfModels
+@{
+    ViewBag.Title = "Inicio";
+    Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
+}
+
+<h2>Bienvenido estudiante --> @User.Identity.Name</h2>
 @*<h2>Bienvenido estudiante --> @User.Identity.Name</h2>*@
+@*<h2>Bienvenido estudiante --> @User.Identity.Name</h2>*@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
+@* CHEKIAR PORQUE NO SALE!!!!!!!! *@
+
+
 <style>
     .section-title {
         padding-left: 0px;
         padding-top: 20px;
         font-weight: 100;
         margin: 0;
+    }
+
+    .light-bottom-border {
+        border-bottom: 1px solid #DEDEDE;
+    }
+
     }
 
     .light-bottom-border {
@@ -101,6 +124,60 @@
 
     </div>
 
+        <div class="col-xs-5">
+            <div>
+                <b> @Html.Label("ID:", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.Id, new { @class = "form-control" })<br />
+            </div>   
+            <div>
+                <b> @Html.Label("Programa", htmlAttributes: new { @class = "control-label" }) </b><br />
+                @Html.DisplayFor(m => m.UserCareers.Career,  new { @class = "form-control" })<br />
+            </div> 
+            <div>
+                <b>@Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("NORMAL", new { @class = "form-control" })<br />
+            </div> 
+            <div>
+                <b> @Html.Label("Trimestre Ingreso", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("AGOSTO - OCUTUBRE 2014",  new { @class = "form-control" })<br />
+            </div> 
+            <div>
+                <b> @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("FEBRERO - ABRIL 2017",  new { @class = "form-control" })<br />
+            </div> 
+        </div>
+
+        <div class="col-xs-5 tex">
+            <div>
+                <b> @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QuarterlyIndex, new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.GeneralIndex,  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Creditos Convalidados ", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.Display("0",  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedCredits,  new { @class = "form-control" })<br />
+            </div>
+            <div>
+                <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })</b><br />
+                @Html.DisplayFor(m => m.UserCareers.QtyApprovedQuarter,  new { @class = "form-control" })<br />
+            </div> 
+        </div>
+
+        <div class="col-xs-2">
+            <div>
+              FOTO
+            </div>
+        </div>
+
+    </div>
+
     <div>
         <h4 class="HBG">Alertas</h4>
     </div>
@@ -116,6 +193,148 @@
         <h4 class="HBG">Graficas WIN!</h4>
     </div>
       
+    <div class="col-xs-6">
+        <canvas id="Materias" width="100" height="100" style="background:#72AF47"></canvas><br />
+        <canvas id="Trimestres" width="100" height="100" style="background:#E02F32"></canvas>
+    </div>
+    <div class="col-xs-6">
+        <canvas id="Indice" width="100" height="100" style="background:#F5F5F5"></canvas><br />
+        <canvas id="Creditos" width="100" height="100" style="background: #404040"></canvas>
+    </div>
+    <script>
+        var Materias = document.getElementById("Materias").getContext('2d');
+        var myChart = new Chart(Materias, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    backgroundColor: [
+                        "#FFFFFF",
+                        "#9dca79"
+                    ],
+                    borderColor: [
+                        "#FFFFFF",
+                        "#9dca79"
+                    ],
+                    data: [40, 23]
+                    
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {       
+                        bottom: 10
+                    }      
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '40 Materias de 63'
+                }
+            }
+        });
+
+
+        var Trimestres = document.getElementById("Trimestres").getContext('2d');
+        var myChart = new Chart(Trimestres, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    backgroundColor: [
+                        "#f27f78",
+                        "#FFFFFF"
+                    ],
+                    borderColor: [
+                        "#f27f78",
+                        "#FFFFFF"
+                    ],
+                    data: [12, 9]
+
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '12 Trimestres de 21'
+
+                }
+            }
+        });
+
+
+        var Indice = document.getElementById("Indice").getContext('2d');
+        var myChart = new Chart(Indice, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    backgroundColor: [
+                        "#444",
+                        "#FFFFFF"
+                    ],
+                    borderColor: [
+                        "#444",
+                        "#FFFFFF"
+                    ],
+                    data: [2.97, 1.03]
+
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#444",
+                    text: '2.97 Indice de 4'
+
+                }
+            }
+        });
+
+        var Creditos = document.getElementById("Creditos").getContext('2d');
+        var myChart = new Chart(Creditos, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    backgroundColor: [
+                        "#FFFFFF",
+                        "#666364"
+                    ],
+                    borderColor: [
+                        "#FFFFFF",
+                        "#666364"
+                    ],
+                    data: [162, 91]
+
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        bottom: 10
+                    }
+                },
+                title: {
+                    display: true,
+                    position: 'bottom',
+                    fontColor: "#FFFFFF",
+                    text: '162 Creditos de 253'
+
+                }
+            }
+        });
+    </script>
 </div>
 
 <div class="col-md-12">
@@ -250,5 +469,7 @@
             </tbody>
         </table>
     </div>
+    </div> 
+</div>
 
 </div>
