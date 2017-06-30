@@ -19,5 +19,9 @@ namespace procesos_app.Models
         public Trimester Trimesters { get; set; }
         public Subject Subjects { get; set; }
         public Schedule Schedule { get; set; }
+
+        public IEnumerable<Section> ListaSection { get; set; }
+        public IEnumerable<Subject> ListaSubject { get; set; }
+        public IEnumerable<Areas> ListaArea { get; set; }
     }
 }

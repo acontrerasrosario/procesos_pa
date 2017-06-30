@@ -213,9 +213,12 @@
     <Compile Include="Controllers\SubjectsController.cs" />
     <Compile Include="Controllers\TrimestersController.cs" />
     <Compile Include="Controllers\EstudianteController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
+    <Compile Include="Controllers\SubjectsController.cs" />
+    <Compile Include="Controllers\TrimestersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -316,7 +319,7 @@
     <Content Include="Scripts\AngularJS\NgRoute.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Estudiante.js" />
+    <Content Include="Scripts\DetalleSeccion.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -366,14 +369,11 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Registro\Index.cshtml" />
     <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Estudiante\Seleccion.cshtml" />
     <Content Include="Views\Estudiante\Preseleccion.cshtml" />
     <Content Include="Views\Estudiante\Retiro.cshtml" />
     <Content Include="Views\Estudiante\Revision.cshtml" />
-    <Content Include="Views\Estudiante\ProgramaAsignatura.cshtml" />
-    <Content Include="Views\Estudiante\EvaluacionProfesoral.cshtml" />
     <Content Include="Views\Estudiante\OfertaAcademica.cshtml" />
     <Content Include="Views\Trimesters\Create.cshtml" />
     <Content Include="Views\Trimesters\Delete.cshtml" />
@@ -392,6 +392,7 @@
     <Content Include="Views\Registro\Index.cshtml" />
     <Content Include="Views\Profesor\PubMT.cshtml" />
     <Content Include="Views\Shared\_LayoutPubMT.cshtml" />
+    <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
