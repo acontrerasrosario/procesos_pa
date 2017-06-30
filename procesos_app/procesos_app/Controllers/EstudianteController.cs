@@ -73,12 +73,12 @@ namespace procesos_app.Controllers
             ApplicationDbContext _cont = new ApplicationDbContext();
             MotherOfModels modelo = new MotherOfModels();
 
-            var x = from z in _cont.Sections
+            modelo.ListaSection = from z in _cont.Sections
                     join c in _cont.Subjects on z.Subject.Id equals c.Id
                     where c.Id == id
                     select z;
 
-            return JsonConvert.SerializeObject(x);
+            return JsonConvert.SerializeObject(modelo);
         }
     }
 }
