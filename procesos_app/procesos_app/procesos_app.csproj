@@ -381,10 +381,18 @@
     <Content Include="Views\Home\Three.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
     <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
+    <Content Include="Views\Profesor\PubMT.cshtml" />
+    <Content Include="Views\Shared\_LayoutPubMT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AngularJS\" />
+    <Folder Include="obj\" />
+    <Folder Include="UI\Directives\" />
+    <Folder Include="UI\Modules\" />
+    <Folder Include="UI\Pages\" />
+    <Folder Include="UI\Services\" />
+    <Folder Include="UI\Templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

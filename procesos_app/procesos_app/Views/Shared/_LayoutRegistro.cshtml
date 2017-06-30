@@ -50,11 +50,26 @@
 <body class="colorBg">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+         
+       
+    </style>
+
+</head>
+
+
+
+
+<body class="colorBg">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+
             <div class="navbar-header">              
                 <a href="">
                     <img class="logo" src="~/Content/images/logo_top.png">
                 </a>
             </div>
+
             <div class="navbar-collapse collapse">                
                 @Html.Partial("_LoginPartial")
             </div>
@@ -81,6 +96,30 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+        <h3 class="BgColor">Opciones</h3>
+    </div> 
+    <div class="col-md-2 colorBg">
+        <input class="btn colorBg" value="Registrar Asignatura" /><br />
+        <input class="btn colorBg" value="Revision" /><br />
+        <input class="btn colorBg" value="Asignar" /><br />
+        
+
+    </div>
+
+    <div class="col-md-10 BgColor" id="Contenedor">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer></footer>
+        </div>
+    </div>
+       
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
 
 </body>
 </html>

@@ -13,5 +13,30 @@ namespace procesos_app.Controllers
         {
             return View();
         }
+
+        // GET: Profesor
+        public ActionResult PublicacionMediotermino()
+        {
+            return View();
+        }
+        
+        //GET: Proesor
+         public ActionResult PublicacionFinal()
+        {
+            return View();
+        }
+        
+        //GET: Proesor
+        public ActionResult PublicacionIncompleto()
+        {
+            return View();
+        }
+        
+        //GET: Proesor
+        public ActionResult Revision()
+        {
+            return View();
+        }
+
     }
 }
