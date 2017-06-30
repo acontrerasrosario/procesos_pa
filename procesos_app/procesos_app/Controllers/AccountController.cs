@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using procesos_app.Models;
@@ -75,7 +76,7 @@ namespace procesos_app.Controllers
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            var result = await SignInManager.PasswordSignInAsync(model.Id, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -120,7 +121,7 @@ namespace procesos_app.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -136,34 +137,68 @@ namespace procesos_app.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        
+        [Authorize(Roles = "Registro")]
         public ActionResult Register()
         {
+            
             return View();
         }
 
         //
         // POST: /Account/Register
         [HttpPost]
+        //[Authorize(Roles="Registro")]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email , Id2 = model.Id2, Cedula = model.Cedula ,BirthDay = model.Birthday,Genrer = model.Genrer};
+                var user = new ApplicationUser {
+                    UserName = model.Id2.ToString(),
+                    Email = model.Email,
+                    Id2 = model.Id2,
+                    Cedula = model.Cedula,
+                    BirthDay = model.Birthday,
+                    Genrer = model.Genrer,
+                    FirstName = model.FirstName,
+                    SecondName = model.SecondName,
+                    LastName = model.LastName,
+                    SecondLastName = model.SecondLastName
+                };
+                var userRole = new IdentityUserRole {RoleId = model.Type.ToString(), UserId = user.Id};
                 var result = await UserManager.CreateAsync(user, model.Password);
+
+                
                 if (result.Succeeded)
                 {
+
+                    await UserManager.AddToRoleAsync(user.Id, model.Type.ToString());
+                    //await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Choose", "Home");
+                    if (User.IsInRole("Estudiante"))
+                    {
+                        return RedirectToAction("Inicio", "Estudiante");
+                    }
+                    if (User.IsInRole("Profesor"))
+                    if (User.IsInRole("ESTUDIANTE"))
+                    {
+                        return RedirectToAction("Inicio", "Estudiante");
+                    }
+                    if (User.IsInRole("ESTUDIANTE"))
+                    {
+                        return RedirectToAction("Index", "Profesor");
+                    }
+
+                    return RedirectToAction("Index", "Registro");
                 }
                 AddErrors(result);
             }
@@ -450,7 +485,22 @@ namespace procesos_app.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "ApplicationUsers");
+
+            if (User.IsInRole("Estudiante"))
+            {
+                return RedirectToAction("Inicio", "Estudiante");
+            }
+            if (User.IsInRole("Profesor"))
+            if (User.IsInRole("ESTUDIANTE"))
+            {
+                return RedirectToAction("Inicio", "Estudiante");
+            }
+            if (User.IsInRole("PROFESOR"))
+            {
+                return RedirectToAction("Index", "Profesor");
+            }
+            
+            return RedirectToAction("Index", "Registro");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

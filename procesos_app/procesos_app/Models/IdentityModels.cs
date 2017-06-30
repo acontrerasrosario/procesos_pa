@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Security.Claims;
@@ -23,8 +24,24 @@ namespace procesos_app.Models
             // Add custom user claims here
             return userIdentity;
         }
+        
+        [Required]
+        [MaxLength(100)]
+        public string FirstName { get; set; }
+
+        
+        [MaxLength(100)]
+        public string SecondName { get; set; }
 
         [Required]
+        [MaxLength(100)]
+        public string LastName { get; set; }
+
+        [MaxLength(100)]
+        public string SecondLastName { get; set; }
+
+        [Required]
+        [Index(IsUnique = true)]
         public int Id2 { get; set; }
 
         [Required]
@@ -53,6 +70,7 @@ namespace procesos_app.Models
 
         // Trimestre (saber trimestre en el que ingreso)
         public Trimester Trimester { get; set; } // trimestre de ingreso
+        
     }
 
 

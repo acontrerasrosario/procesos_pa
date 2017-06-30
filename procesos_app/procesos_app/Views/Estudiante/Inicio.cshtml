@@ -1,55 +1,254 @@
-﻿@model procesos_app.Models.MotherOfModels
-
-@{
+﻿@{
     ViewBag.Title = "Inicio";
-    Layout = "~/Views/Shared/_Prueba.cshtml";
+    Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
 }
 
+<h2>Bienvenido estudiante --> @User.Identity.Name</h2>
+@*<h2>Bienvenido estudiante --> @User.Identity.Name</h2>*@
 <style>
-    .Cont {
-    color: #ff0000
+    .section-title {
+        padding-left: 0px;
+        padding-top: 20px;
+        font-weight: 100;
+        margin: 0;
     }
 
+    .light-bottom-border {
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .section {
+        padding: 5px 0;
+        margin: 20px 10px;
+        background-color: white;
+    }
+    .section_info {
+        margin: 20px;
+    }
+
+    .HBG {   
+        padding: 7px 10px;
+        background-color: #404040;
+        color: #FFF;
+    }
+    .block-dashboard {
+        width: 160px;
+        height: 187px;
+        display: inline-block;
+        padding: 10px;
+    }
 </style>
+<div >   
+ <h3 class="section-title"> TABLERO DE INDICADORES </h3>
+    <hr />
+</div>
+<div class="col-md-7">
+    <div >
+        <h4 class="HBG">Datos Generales</h4>
+    </div>
+    <div class="row section_info">
+        <div class="col-xs-4">
+            <div>
+                @Html.Label("ID:", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div>   
+            <div>
+                @Html.Label("Programa", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div> 
+            <div>
+                @Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div> 
+            <div>
+                @Html.Label("Trimestre Ingreso", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div> 
+            <div>
+                @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div> 
+        </div>
 
-<div class=" Cont">
-<ul>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-    <li>adsasd</li>
-</ul>    
+        <div class="col-xs-4">
+            <div>
+                @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div>
+            <div>
+                @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div>
+            <div>
+                @Html.Label("Creditos Convalidados ", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div>
+            <div>
+                @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div>
+            <div>
+                @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })<br />
+                @Html.Label(" ", htmlAttributes: new { @class = "control-label" })<br />
+            </div> 
+        </div>
 
+        <div class="col-xs-4">
+            <div>
+              FOTO
+            </div>
+        </div>
 
+    </div>
+
+    <div>
+        <h4 class="HBG">Alertas</h4>
+    </div>
+    <div class="row section_info">
+        <p class="alert-message"> Usted no tiene alertas </p>
+    </div>
 </div>
 
-@section Scripts {
 
-<script src="~/Scripts/Estudiante.js"></script>
 
-}
+<div class="col-md-5">
+    <div>
+        <h4 class="HBG">Graficas WIN!</h4>
+    </div>
+      
+</div>
 
+<div class="col-md-12">
+    <div>
+        <h4 class="HBG">Asignaturas Seleccionadas - </h4>
+    </div>
+    <div class="row section_info">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Asignatura</th>
+                    <th>Sec</th>
+                    <th>Aula</th>
+                    <th>Lun</th>
+                    <th>Ma</th>
+                    <th>Mi</th>
+                    <th>Ju</th>
+                    <th>Vi</th>
+                    <th>Sa</th>
+                    <th>Calif</th>
+                    <th>Profesor</th>
+                    <th>Eval</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="uk-text-center">ING211</td>
+                    <td class="">FORMULACION DE PROYECTOS</td>
+                    <td class="uk-text-center">03</td>
+                    <td class="uk-text-center">AJ301</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">16/18</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">16/18</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>HYLLERLINI ANABEL ESPINOSA CARABALLO</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS206</td>
+                    <td class="">BASE DE DATOS I</td>
+                    <td class="uk-text-center">01</td>
+                    <td class="uk-text-center">GC215</td>
+                    <td class="uk-text-center">20/22</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">20/22</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>ALBERTO MORILLO RODRIGUEZ</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS206</td>
+                    <td class="">BASE DE DATOS I</td>
+                    <td class="uk-text-center">70</td>
+                    <td class="uk-text-center">FD411</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">20/22</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>ALBERTO MORILLO RODRIGUEZ</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS307</td>
+                    <td class="">SISTEMAS OPERATIVOS</td>
+                    <td class="uk-text-center">01</td>
+                    <td class="uk-text-center">FD401, FD411</td>
+                    <td class="uk-text-center">18/20</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">18/20</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>ALBERTO MORILLO RODRIGUEZ</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS307</td>
+                    <td class="">SISTEMAS OPERATIVOS</td>
+                    <td class="uk-text-center">70</td>
+                    <td class="uk-text-center">FD411</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">18/20</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>ALBERTO MORILLO RODRIGUEZ</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS320</td>
+                    <td class="">PROGRAMACION AVANZADA</td>
+                    <td class="uk-text-center">01</td>
+                    <td class="uk-text-center">EP202</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">20/22</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center">20/22</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>SAMUEL ALEJANDRO LUCIANO LASSIS</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+                <tr>
+                    <td class="uk-text-center">INS320</td>
+                    <td class="">PROGRAMACION AVANZADA</td>
+                    <td class="uk-text-center">70</td>
+                    <td class="uk-text-center">VIRTU</td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"> </td>
+                    <td class="uk-text-center"></td>
+                    <td>SAMUEL ALEJANDRO LUCIANO LASSIS</td>
+                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

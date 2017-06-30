@@ -14,30 +14,47 @@ namespace procesos_app.Controllers
         {
             return View();
         }
+     
+        // GET: Estudiante
+        public ActionResult Seleccion()
+        {
+            return View();
+        }
+
+        // GET: Estudiante
+        public ActionResult Preseleccion()
+        {
+            return View();
+        }
+
+        // GET: Estudiante
+        public ActionResult Retiro()
+        {
+            return View();
+        }
 
         // get: Estudiante
-        public ActionResult _Inicio( )
+        public ActionResult Revision()
         {
             return View();
         }
 
         // GET: Estudiante
-        public ActionResult _Seleccion()
+        public ActionResult ProgramaAsignatura()
         {
             return View();
         }
 
         // GET: Estudiante
-        public ActionResult _ProgramaAsignatura()
+        public ActionResult EvaluacionProfesoral()
         {
             return View();
         }
 
         // GET: Estudiante
-        public ActionResult _OfertaAcademica()
+        public ActionResult OfertaAcademica()
         {
             return View();
         }
-
     }
 }

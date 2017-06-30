@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Security;
+using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity.EntityFramework;
+using procesos_app.Models;
 
 namespace procesos_app.Models
 {
@@ -50,9 +54,9 @@ namespace procesos_app.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "ID")]
+        
+        public string Id { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -65,6 +69,20 @@ namespace procesos_app.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Primer Nombre")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Segundo Nombre")]
+        public string SecondName { get; set; }
+
+        [Required]
+        [Display(Name = "Primer Apellido")]
+        public string LastName { get; set; }
+
+        [Display(Name = "Segundo Apellido")]
+        public string SecondLastName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -83,7 +101,6 @@ namespace procesos_app.Models
 
         [Required]
         [Range(1040000,1099999,ErrorMessage = "Inserte un formato valido por favor.")]
-        
         [Display(Name = "Id Estudiantil")]
         public int Id2 { get; set; }
 
@@ -101,6 +118,11 @@ namespace procesos_app.Models
         [Required]
         [Display(Name = "Genero")]
         public Enums.GenrerEnum.Genrer Genrer { get; set; }
+               
+
+        [Required]
+        [Display(Name = "Tipo de Usuario")]
+        public Enums.UserTypeEnum.UserType Type { get; set; }
 
     }
 
