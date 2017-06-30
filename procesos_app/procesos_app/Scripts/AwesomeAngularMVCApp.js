@@ -1,6 +1,6 @@
 ﻿var project = angular.module('procesos_pa', ['ngRoute']);
 
-project.controller('AddSubjectsController', AddSubjectsController);
+project.controller('LandingPageController', LandingPageController);
 
 var configFunction = function ($routeProvider) {
   $routeProvider.

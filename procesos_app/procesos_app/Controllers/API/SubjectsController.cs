@@ -34,31 +34,5 @@ namespace procesos_app.Controllers.API
             var SubjectsList = _context.Subjects.ToList();
             return SubjectsList;
         }
-
-
-
-        [HttpPost]
-        public HttpResponseMessage createSubject(Subject @new)
-        {
-            try
-            {
-                _context.Subjects.Add(new Subject
-                {
-                    Name = @new.Name,
-                    QtyCredits = @new.QtyCredits,
-                    PreRequisitCredits = @new.PreRequisitCredits,
-                    Subject1 = @new.Subject1
-                });
-                _context.SaveChanges();
-                return Request.CreateResponse(HttpStatusCode.Created);
-            }
-
-            catch (Exception e)
-            {
-                if (e.InnerException != null)
-                    return Request.CreateResponse(HttpStatusCode.InternalServerError);
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
-        }
     }
 }
