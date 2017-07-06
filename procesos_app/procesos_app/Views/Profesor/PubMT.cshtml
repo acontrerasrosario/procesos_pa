@@ -4,5 +4,48 @@
     Layout = "~/Views/Shared/_LayoutPubMT.cshtml";
 }
 
-@*<h2>Bienvenido profesor --> @User.Identity.Name</h2>*@
+
+
+<div>
+    <h3 class="Title">PUBLICACION DE MEDIOTERMINO</h3>
+</div>
+
+<div>
+    <h2 class="subtitle1">
+        @foreach (var item in Model.NombreTrimestre)
+            {
+            @item.Name;
+            }
+    </h2>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Seccion</th>
+            <th>Asignatuta</th>
+            <th>Inscritos</th>
+            <th>Retirados</th>
+            <th>Publicados</th>
+            <th>Calificacion Base</th>
+            <th>*EN BLANCO</th>
+        </tr>    
+    </thead>
+    <tbody>
+        @foreach (var item in model.quesiyoque)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Areas</td>
+                <td class="text-center">@item.QtyCredits</td>
+                <td class="text-center">
+                    <a id="@item.Id" class="open-Modal glyphicon glyphicon-eye-open" href="#" data-toggle="modal" data-target="#myModal"></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
 

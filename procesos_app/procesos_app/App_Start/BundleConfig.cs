@@ -26,10 +26,22 @@ namespace procesos_app
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-lumen.css",
                       "~/Content/site.css"));
+
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                 "~/Scripts/AngularJS/angular.min.js",
                 "~/Scripts/AngularJS/jquery-3.2.1.min.js",
                 "~/Scripts/AngularJS/NgRoute.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/Procesos_paAngular")
+                .IncludeDirectory("~/UI/Controllers", "*.js")
+                .Include("~/Scripts/AwesomeAngularMVCApp.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/materializecss").Include(
+                "~/Content/materialize.min.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/materializejs").Include(
+                "~/Scripts/materialize.min.js"));
+                
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Security;
 using AutoMapper;
+using procesos_app.Models;
 
-namespace procesos_app.Models.API
+namespace procesos_app.Controllers.API
 {
     public class UsersController : ApiController
     {

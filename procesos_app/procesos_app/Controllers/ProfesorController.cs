@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using procesos_app.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace procesos_app.Controllers
 {
@@ -15,9 +18,21 @@ namespace procesos_app.Controllers
         }
 
         // GET: Profesor
-        public ActionResult PublicacionMediotermino()
+        public ActionResult PubMT()
         {
-            return View();
+            ApplicationDbContext _algo = new ApplicationDbContext();
+            MotherOfModels modelo = new MotherOfModels();
+
+
+            modelo.NombreTrimestre = from c in _algo.Trimesters
+                                     where c.Id == 1
+                                     select c;
+
+            modelo.SeccionProfesor = from d in _algo.TeacherSection
+                                     where d.Section == 
+                                     select d;
+
+            return View(modelo);
         }
         
         //GET: Proesor
