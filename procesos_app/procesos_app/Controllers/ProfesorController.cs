@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Microsoft.AspNet.Identity;
 
 namespace procesos_app.Controllers
 {
@@ -22,32 +22,35 @@ namespace procesos_app.Controllers
         {
             ApplicationDbContext _algo = new ApplicationDbContext();
             MotherOfModels modelo = new MotherOfModels();
+            string usuarioactivo = User.Identity.GetUserId();
 
 
             modelo.NombreTrimestre = from c in _algo.Trimesters
                                      where c.Id == 1
                                      select c;
 
-            modelo.SeccionProfesor = from d in _algo.TeacherSection
-                                     where d.Section == 
-                                     select d;
+           modelo.ListaSection = from sc in _algo.Sections
+                                    join ts in _algo.TeacherSection on sc.Id equals ts.Section_Id1
+                                    join sb in _algo.Subjects on sc.Id equals sb.Id
+                                     where ts.ApplicationUser_Id == usuarioactivo
+                                     select sc;
 
             return View(modelo);
         }
         
-        //GET: Proesor
+        //GET: Profesor
          public ActionResult PublicacionFinal()
         {
             return View();
         }
         
-        //GET: Proesor
+        //GET: Profesor
         public ActionResult PublicacionIncompleto()
         {
             return View();
         }
         
-        //GET: Proesor
+        //GET: Profesor
         public ActionResult Revision()
         {
             return View();

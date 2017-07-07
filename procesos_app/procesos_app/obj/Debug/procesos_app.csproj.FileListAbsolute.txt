@@ -446,3 +446,6 @@ C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\proceso
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
 C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeignkey_teacersection.resources
+C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeignkey_teacersection2.resources
+C:\Users\luisc\Documents\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeignkey_teacersection3.resources

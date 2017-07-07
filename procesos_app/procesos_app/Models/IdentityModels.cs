@@ -163,7 +163,9 @@ namespace procesos_app.Models
     public class TeacherSection
     {
         public int Id { get; set; }
-        public Section Section { get; set; }
+        public string ApplicationUser_Id { get; set; }
+        public Section Section_Id { get; set; }
+        public int Section_Id1 { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
 
@@ -180,6 +182,7 @@ namespace procesos_app.Models
 
         // Materia - Una materia tiene varias secciones (Uno a Mucho)
         public Subject Subject { get; set; }
+        public int Subject_Id { get; set; }
 
         public int SubjectId { get; set; }
 
