@@ -51,18 +51,6 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
          
-       
-    </style>
-
-</head>
-
-
-
-
-<body class="colorBg">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-
-        <div class="container">
 
             <div class="navbar-header">              
                 <a href="">
@@ -85,20 +73,7 @@
         @Html.ActionLink("Materia", "Index", "Subjects", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
     </div>
 
-    <div id="Contenedor">
-        <div class="container BgColor col-md-10">
-            @RenderBody()
-        </div>
-    </div>
-       
-    
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-
         <h3 class="BgColor">Opciones</h3>
-    </div> 
     <div class="col-md-2 colorBg">
         <input class="btn colorBg" value="Registrar Asignatura" /><br />
         <input class="btn colorBg" value="Revision" /><br />

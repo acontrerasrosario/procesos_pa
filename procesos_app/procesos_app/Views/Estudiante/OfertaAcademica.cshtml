@@ -44,28 +44,24 @@
         display: inline-block;
         padding: 10px;
     }
+
+    .Tableback {
+        background: #c10d0d;
+        color: white;
+    }
 </style>
 
 <div>
     <h3 class="section-title text-center">OFERTA ACADEMICA [Inserte Trimestre Aqui]</h3>
     <hr />
 </div>
-@*<div>
-    <select class="selectpicker">
-        @foreach (var item in Model.ListaArea)
-        {
-            <option>@item.Name</option>
-        }
-    </select>
-
-</div>*@
 <div>
     <div>
         <h4 class="HBG">Asignaturas</h4>
     </div>
-    <div>
+    <div style="padding-left:20px; padding-right:20px;">
         <table id="OfertaA" class="table table-striped table-bordered" cellspacing="0" width="100%">
-            <thead>
+            <thead class="Tableback">
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>

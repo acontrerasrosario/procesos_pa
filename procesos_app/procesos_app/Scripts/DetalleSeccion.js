@@ -1,5 +1,6 @@
 ﻿
 $(document).on("click", ".open-Modal", function () {
+    
     var myDNI = $(this)[0].id;
 
     $.ajax({
@@ -9,19 +10,29 @@ $(document).on("click", ".open-Modal", function () {
         success: function (response) {
             var asd = response;
 
-            $("#IdSeccion").val(asd.ListaSection[0].Id);
-            $("#IdNombre").val(asd.ListaSection[0].Name);
-            $("#IdTipo").val(asd.ListaSection[0].SecType);
-            $("#IdAula").val(asd.ListaSection[0].ClassRoom);
+            var data = [];
+            for (var i = 0; i < asd.length; i++) {
+                data.push([
+                    asd[i].Id, asd[i].Name, asd[i].SecType, asd[i].ClassRoom,
+
+                ]);
+            }
+
+
+            $(function () {
+                $('#Prueba').DataTable({
+                    data: data
+                });
+
+            });
+
         },
         error: function (data) {
             alert("ERROR");
         }
     });
-
-
-
-    //$(".modal-body #DNI").val(myDNI);
 });
 
-   
+$(document).ready(function () {
+    $('#Seleccion').DataTable();
+});

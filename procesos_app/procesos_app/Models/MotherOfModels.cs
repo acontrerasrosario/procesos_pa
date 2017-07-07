@@ -23,5 +23,10 @@ namespace procesos_app.Models
         public IEnumerable<Section> ListaSection { get; set; }
         public IEnumerable<Subject> ListaSubject { get; set; }
         public IEnumerable<Areas> ListaArea { get; set; }
+        public ApplicationUser DataInicioUser { get; set; }
+        public UserCareer DataInicioUserCarrer { get; set; }
+        public Career DataInicioCarrer { get; set; }
+
+
     }
 }

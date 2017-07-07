@@ -5,9 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Procesos Intec</title>
-﻿<!DOCTYPE html>
-
-
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -32,10 +29,10 @@
         }
 
         .btn {
-            border: 0px;
+            border: 20px;
             font-weight: 100;
-            margin-bottom: 10px;
-            margin-top: 10px;
+            margin-bottom: 20px;
+         
         }
     </style>
 
@@ -62,12 +59,12 @@
         <h3 class="colorBg section-title-lyt"> Opciones</h3>
     </div>
     <div class="col-md-2 colorBg">
-        @Html.ActionLink("Inicio", "Inicio", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Seleccion", "Seleccion", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Preseleccion", "Preseleccion", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Retiro", "Retiro", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Revision", "Revision", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Oferta Academica", "OfertaAcademica", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
+        @Html.ActionLink(" Inicio", "Inicio", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon-home" })<br />
+        @Html.ActionLink(" Seleccion", "Seleccion", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon-file" })<br />
+        @Html.ActionLink(" Preseleccion", "Preseleccion", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon-file" })<br />
+        @Html.ActionLink(" Retiro", "Retiro", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon-share" })<br />
+        @Html.ActionLink(" Revision", "Revision", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon glyphicon-edit" })<br />
+        @Html.ActionLink(" Oferta Academica", "OfertaAcademica", "Estudiante", routeValues: null, htmlAttributes: new { @class = "btn colorBg glyphicon glyphicon-share" })<br />
     </div>
 
     <div id="Contenedor">

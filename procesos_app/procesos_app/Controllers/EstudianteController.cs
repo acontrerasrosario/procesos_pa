@@ -5,19 +5,66 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 
 namespace procesos_app.Controllers
 {
     public class EstudianteController : Controller
     {
-        
+        private ApplicationDbContext _context;
+
+        public EstudianteController()
+        {
+            _context = new ApplicationDbContext();
+        }
 
         // GET: Estudiante
         public ActionResult Inicio()
         {
-            return View();
+            MotherOfModels modelo = new MotherOfModels();
+            string currentUser = User.Identity.GetUserId();
+
+            var DataInicioUser = (from c in _context.Users
+                                 join d in _context.UserCareers
+                                 on c.Id equals d.User_Id
+                                 join z in _context.Careers
+                                 on d.Career_Id equals z.Id
+                                 where c.Id == currentUser
+                                 select c).FirstOrDefault();
+
+            var DataInicioUserCarrer = (from c in _context.Users
+                                       join d in _context.UserCareers
+                                       on c.Id equals d.User_Id
+                                       join z in _context.Careers
+                                       on d.Career_Id equals z.Id
+                                       where c.Id == currentUser
+                                       select d).FirstOrDefault();
+
+            var DataInicioCarrer = (from c in _context.Users
+                                   join d in _context.UserCareers
+                                   on c.Id equals d.User_Id
+                                   join z in _context.Careers
+                                   on d.Career_Id equals z.Id
+                                   where c.Id == currentUser
+                                   select z).FirstOrDefault();
+
+            modelo.DataInicioUser = DataInicioUser;
+            modelo.DataInicioUserCarrer = DataInicioUserCarrer;
+            modelo.DataInicioCarrer = DataInicioCarrer;
+
+            var nombre = new
+            {
+                DataInicioCarrer,
+                DataInicioUserCarrer,
+                DataInicioUser,
+                modelo
+            };
+
+            return View(modelo);
+
+
         }
-     
+
         // GET: Estudiante
         public ActionResult Seleccion()
         {
@@ -60,7 +107,7 @@ namespace procesos_app.Controllers
             //var LstAreas = (from x in _cont.Areas
             //          select x);
             var LstSubject = (from x in _cont.Subjects
-                      select x);
+                              select x);
 
             //modelo.ListaArea = LstAreas;
             modelo.ListaSubject = LstSubject;
@@ -73,12 +120,12 @@ namespace procesos_app.Controllers
             ApplicationDbContext _cont = new ApplicationDbContext();
             MotherOfModels modelo = new MotherOfModels();
 
-            modelo.ListaSection = from z in _cont.Sections
+            var x = from z in _cont.Sections
                     join c in _cont.Subjects on z.Subject.Id equals c.Id
                     where c.Id == id
                     select z;
 
-            return JsonConvert.SerializeObject(modelo);
+            return JsonConvert.SerializeObject(x);
         }
     }
 }

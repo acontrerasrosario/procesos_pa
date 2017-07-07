@@ -247,8 +247,13 @@ namespace procesos_app.Models
         [Required]
         public int Id { get; set; }
 
+        public string User_Id { get; set; }
+        public int Career_Id { get; set; }
+
         public ApplicationUser User { get; set; }
         public Career Career { get; set; }
+
+
 
         [Required] // resultados con valor inicial 0
         public int QtyApprovedQuarter { get; set; } // cant. trimestres cursados

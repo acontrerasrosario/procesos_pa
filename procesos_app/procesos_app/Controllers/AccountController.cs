@@ -491,13 +491,8 @@ namespace procesos_app.Controllers
                 return RedirectToAction("Inicio", "Estudiante");
             }
             if (User.IsInRole("Profesor"))
-            if (User.IsInRole("ESTUDIANTE"))
             {
-                return RedirectToAction("Inicio", "Estudiante");
-            }
-            if (User.IsInRole("PROFESOR"))
-            {
-                return RedirectToAction("Index", "Profesor");
+                return RedirectToAction("Inicio", "Profesor");
             }
             
             return RedirectToAction("Index", "Registro");
