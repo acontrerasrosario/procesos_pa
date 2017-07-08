@@ -265,6 +265,10 @@ namespace procesos_app.Models
         [Required]
         public int Id { get; set; }
 
+        public string User_Id { get; set; } // miguel
+        public int Career_Id { get; set; }  // miguel
+
+        
         public ApplicationUser User { get; set; }
         public Career Career { get; set; }
 

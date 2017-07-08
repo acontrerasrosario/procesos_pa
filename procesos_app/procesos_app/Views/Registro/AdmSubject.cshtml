@@ -30,7 +30,7 @@
 
             </thead>
             <tbody class="table-striped">
-                <tr ng-repeat="s in Subjects">
+                <tr ng-repeat="s in Subjects | orderBy: 'name'">
                     <td>{{s.name}}</td>
                     <td>{{s.qtyCredits}}</td>
                     <td>{{s.area}}</td>

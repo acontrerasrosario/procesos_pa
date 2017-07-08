@@ -71,22 +71,9 @@
 
     <div class="col-md-2 colorBg">
         @Html.ActionLink("Usuario", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-
-
-        <div class="dropdown">
-
-            <button class="btn colorBg dropdown-toggle" type="button" id="dropdownMenuMateria" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Materias  
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuMateria">
-                <li>@Html.ActionLink("Agregar materias", "NewSubject", "Registro", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })</li>
-                <li>
-                    @Html.ActionLink("Administrar Materias", "AdmSubject", "Registro", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-                </li>
-            </ul>
-        </div>
-
+        @Html.ActionLink("Agregar materias", "NewSubject", "Registro", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
+        @Html.ActionLink("Administrar Materias", "AdmSubject", "Registro", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
+            
 
 
 
