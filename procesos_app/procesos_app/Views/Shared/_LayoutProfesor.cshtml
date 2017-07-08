@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Procesos Intec</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .colorBg {
+            color: #ffffff;
+            background: #000000
+        }
+
+        .BgColor {
+            background: #ffffff;
+            color: #000000
+        }
+        .navbar{
+            color:#fff;            
+        }
+
+        .Bg2{
+            color:#fff;
+            background-color:#444;
+            margin-right:inherit;
+            align-content:center;            
+        }
+
+        .logo{
+            vertical-align:middle;
+            align-items: flex-start;
+        }
+
+        .col-md-10{
+            margin-left:10%;
+        }
+
+        .w3-sidebar{
+            color:#fff;
+            background-color:#444;
+        }
+
+        .w3-dropdown-hover{
+            color:#fff;
+            background-color:#444;
+        }
+        .nav{
+            color:#fff;
+           background-color:#444;
+           vertical-align:middle;
+           text-align:center;
+        }
+        .Menu{
+            vertical-align:middle;
+            max-width:200px;
+        }
+        #btn-1{
+            color: #fff;
+            background-color: #444;
+        }
+        
+        
+
+
+       
+    </style>
+
+</head>
+<body class="Body">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">              
+                <a href="">
+                    <img class="logo" src="~/Content/images/logo_top.png">
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse ">                
+                @Html.Partial("_LoginPartial")
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <h3 class="Bg2"> Opciones</h3>
+    </div> 
+    
+    <div class="Menu">
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">Publicacion</a>
+                    <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+                        <li><a href="#">Publicacion de Mediotermino</a></li>                        
+                        <li><a href="#">Publicacion Final</a></li>
+                        <li><a href="#">Publicacion de Incompleto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Revision</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    @*@<aside id="side-menu" class="aside" role="navigation">
+        <ul class="nav nav-list accordion">
+            <li class="nav-header">
+                <div class="link"></i>Publicacion<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="#">Publicacion de Mediotermino</a></li>
+                    <li><a href="#">Publicacion Final</a></li>
+                    <li><a href="#">Publicacion de Incompleto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Revision</a></li>
+        </ul>
+    </aside>
+
+
+
+    <div class="col-md-2 colorBg">
+            <button class="btn colorBg" value="Publicacion" />
+                <div class="dropdown-menu-right">
+                    <button class="btn colorBg" value="Pulicacion Medio Termino" /><br />
+    </div> 
+            <br />
+
+            
+            <button class="btn colorBg" value="Revision Calificaciones" /><br />
+            <button class="btn colorBg" value="Reportes" /><br />
+       </div>
+
+    <div class="w3-sidebar w3-bar-block w3-card-2">
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Publicacion<i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">Pulicacion de Mediotermino</a>
+                    <a href="#" class="w3-bar-item w3-button">Pulicacion Final</a>
+                    <a href="#" class="w3-bar-item w3-button">Pulicacion de Incompleto</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button">Revision de Calificaciones</a>
+        </div>*@
+    
+
+    <div class="col-md-10 BgColor" id="Contenedor">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer></footer>
+        </div>
+    </div>
+       
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
