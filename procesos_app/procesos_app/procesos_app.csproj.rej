@@ -1,9 +1,0 @@
-diff a/procesos_app/procesos_app/procesos_app.csproj b/procesos_app/procesos_app/procesos_app.csproj	(rejected hunks)
-@@ -203,6 +203,7 @@
-     <Compile Include="App_Start\Startup.Auth.cs" />
-     <Compile Include="App_Start\WebApiConfig.cs" />
-     <Compile Include="Controllers\AccountController.cs" />
-+<<<<<<< HEAD
- =======
-     <Compile Include="Controllers\EstudianteController.cs" />
-     <Compile Include="Controllers\HomeController.cs" />
