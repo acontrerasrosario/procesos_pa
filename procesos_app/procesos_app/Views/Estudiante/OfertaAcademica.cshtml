@@ -1,0 +1,103 @@
+﻿@model procesos_app.Models.MotherOfModels
+@{
+    ViewBag.Title = "OfertaAcademica";
+    Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
+}
+
+
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
+
+<style>
+    .section-title {
+        padding-left: 0px;
+        padding-top: 20px;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    .light-bottom-border {
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .section {
+        padding: 5px 0;
+        margin: 20px 10px;
+        background-color: white;
+    }
+
+    .section_info {
+        margin: 20px;
+    }
+
+    .HBG {
+        padding: 7px 10px;
+        background-color: #404040;
+        color: #FFF;
+    }
+
+    .block-dashboard {
+        width: 160px;
+        height: 187px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .Tableback {
+        background: #c10d0d;
+        color: white;
+    }
+</style>
+
+<div>
+    <h3 class="section-title text-center">OFERTA ACADEMICA [Inserte Trimestre Aqui]</h3>
+    <hr />
+</div>
+<div>
+    <div>
+        <h4 class="HBG">Asignaturas</h4>
+    </div>
+    <div style="padding-left:20px; padding-right:20px;">
+        <table id="OfertaA" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead class="Tableback">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Area</th>
+                    <th>Creditos</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Area</th>
+                    <th>Creditos</th>
+                    <th>Detalle</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                @foreach (var item in Model.ListaSubject)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Areas</td>
+                        <td class="text-center">@item.QtyCredits</td>
+                        <td class="text-center"><a class="glyphicon glyphicon-eye-open"></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#OfertaA').DataTable();
+    });
+</script>
