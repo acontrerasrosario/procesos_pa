@@ -44,7 +44,7 @@
                 QtyCredits: $('#qntityCr    edito').val(),
                 AreaId: $('#areaSelect').val()
             };
-            console.log(DTO)
+
             $http.post('/api/Subjects/createSubject', DTO)
                 .then(
 

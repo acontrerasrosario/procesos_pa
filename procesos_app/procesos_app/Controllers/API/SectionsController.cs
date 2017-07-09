@@ -1,20 +1,25 @@
-﻿using System;
+﻿using procesos_app.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using procesos_app.Models;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 
-namespace procesos_app.Controllers
+namespace procesos_app.Controllers.API
 {
-    public class RegistroController : Controller
+    public class SectionsController : ApiController
     {
-        ApplicationDbContext _context = new ApplicationDbContext();
+        private ApplicationDbContext _context;
 
-        public ActionResult Index()
+        public SectionsController()
         {
-            var materiaId = 11;
-            var HorarioId = 1;
+            _context = new ApplicationDbContext();
+        }
+        
+        // GET /api/sections/GetProfesor
+        public object GetProfesor(int materiaId, int HorarioId)
+        {
 
             var teacherRole = _context.Roles.FirstOrDefault(x => x.Name == "Profesor");
 
@@ -45,26 +50,9 @@ namespace procesos_app.Controllers
 
 
 
-            return View();
-        }
-
-        public ActionResult NewSubject()
-        {
-            return View();
-        }
-
-        public ActionResult AdmSubject()
-        {
-            return View();
-        }
-
-        public ActionResult NewTrimester()
-        {
-            return View();
+            return profesor;
         }
 
 
-
-       
     }
 }

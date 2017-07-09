@@ -210,11 +210,17 @@ namespace procesos_app.Models
         // Aula en la que dan la clase - Un Aula tiene varias Secciones (Uno a Mucho)
         public ClassRoom ClassRoom { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Schedule> Schedule { get; set; }
+        
     }
 
+    public class SectionSchedule
+    {
+        public int Id { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public int ScheduleId { get; set; }
+        public virtual Schedule Schedule { get; set; }
+    }
     public class Schedule
     {
         public int Id { get; set; }
@@ -222,8 +228,9 @@ namespace procesos_app.Models
         [Required]
         public string Name { get; set; } // Day + StartTime + EndTime
 
-
+        [DataType(DataType.Time)]
         public DateTime StartTime { get; set; } // permite ser null si es virtual
+        [DataType(DataType.Time)]
         public DateTime EndTime { get; set; } // permite ser null si es virtual
 
 
@@ -233,9 +240,23 @@ namespace procesos_app.Models
         // Trimestre al que pertenece ese horario (puede cambiar)
         public Trimester Trimester { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Section> Section { get; set; }
+        
+    }
+
+    public class ProfesorAutorizacion
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string ProfesorId { get; set; }
+
+        public virtual ApplicationUser Profesor { get; set; }
+        
+        [Required]
+        public int SubjectId { get; set; }
+
+        public virtual Subject Subject { get; set; }
+
     }
 
     public class Builder
@@ -293,7 +314,17 @@ namespace procesos_app.Models
 
 
 
+    public class TandaProfesor
+    {
+        public int Id { get; set; }
+        [Required]
+        public string ProfesorId { get; set; }
+        public virtual ApplicationUser Profesor { get; set; }
+        [Required]
+        public int TandaId { get; set; }
+        public virtual Schedule Tanda { get; set; }
 
+    }
 
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -311,7 +342,9 @@ namespace procesos_app.Models
         public DbSet<Schedule> Schedule { get; set; }
         public DbSet<TeacherSection> TeacherSection { get; set; }
         public DbSet<SubjectCareer> SubjectCareer { get; set; }
-
+        public DbSet<TandaProfesor> TandaProfesor { get; set; }
+        public DbSet<SectionSchedule> SectionSchedule { get; set; }
+        public DbSet<ProfesorAutorizacion> ProfesorAutorizacion { get; set; }
 
         public ApplicationDbContext()
             : base("ProcesosDB", throwIfV1Schema: false)
