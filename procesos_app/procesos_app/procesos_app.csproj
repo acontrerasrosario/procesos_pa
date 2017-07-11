@@ -437,6 +437,7 @@
     <Content Include="Views\Estudiante\Retiro.cshtml" />
     <Content Include="Views\Estudiante\Revision.cshtml" />
     <Content Include="Views\Estudiante\Seleccion.cshtml" />
+    <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
     <Content Include="Views\Registro\NewTrimester.cshtml" />
     <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
     <Content Include="Views\Registro\CrearSecciones.cshtml" />
