@@ -211,7 +211,6 @@ C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_ap
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.dll
 C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.xml
-C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
 E:\procesos_app\procesos_app\bin\ApplicationInsights.config
 E:\procesos_app\procesos_app\bin\roslyn\csc.exe
 E:\procesos_app\procesos_app\bin\roslyn\csc.exe.config
@@ -710,3 +709,21 @@ C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.G
 C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.dll
 C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
 C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandotablasubject.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingSubjectPrerequisitswithcareer.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.SubjectCareerTable.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.codigoenmateria.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeingkeyuserscareers.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotandaprofesor.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingtoyo.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablaSectionSchedule.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablamateriasautorizadasparaelprofesor.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.modificandoprofesorautorizacions.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoaulaidenlatabladeseccion.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.creandoforeignkeydecursoenseccion.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglando.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingsectiontable.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingteachersection.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandotablasubject.resources

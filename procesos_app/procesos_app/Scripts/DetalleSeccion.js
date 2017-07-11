@@ -78,3 +78,19 @@ function Onclic(id) {
         }
     });
 }
+
+$(document).on("click", ".borrar", function () {
+
+    var myBorrar = $(this)[0].id;
+
+    $.ajax({
+        url: '/Estudiante/BorrarSeccion?id=' + myBorrar,
+        type: 'POST',
+        contentType: 'application/json',
+
+        error: function () {
+            alert("ERROR EN EL SERVIDOR");
+        }
+    });
+
+});
