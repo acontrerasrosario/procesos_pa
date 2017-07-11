@@ -12,6 +12,7 @@ namespace procesos_app.Controllers
     public class ProfesorController : Controller
     {
         // GET: Profesor
+        [Authorize(Roles = "Profesor")]
         public ActionResult Index()
         {
             return View();

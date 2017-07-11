@@ -36,7 +36,7 @@ namespace procesos_app.Controllers.API
         }
 
         // GET /api/users/GetTeachers
-        public IEnumerable<ApplicationUser> GetTeachers()
+        public object GetTeachers()
         {
             var teacherRole = _context.Roles.FirstOrDefault(x => x.Name == "PROFESOR");
 
@@ -44,7 +44,15 @@ namespace procesos_app.Controllers.API
                 .Where(x => x.Roles
                     .Select(role => role.RoleId)
                     .Contains(teacherRole.Id)
-                );
+                ).Select(data => new {
+
+                    id = data.Id,
+                    name = data.FirstName + " " + data.SecondName + " " + data.LastName + " " + data.SecondLastName
+                    
+                    
+
+
+                });
 
             return allTeachers.ToList();
         }

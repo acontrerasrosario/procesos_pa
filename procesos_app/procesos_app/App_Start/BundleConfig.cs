@@ -41,6 +41,7 @@ namespace procesos_app
 
             bundles.Add(new ScriptBundle("~/bundles/materializejs").Include(
                 "~/Scripts/materialize.min.js"));
+            
                 
         }
     }

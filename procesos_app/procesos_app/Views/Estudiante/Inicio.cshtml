@@ -10,10 +10,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-
-@* CHEKIAR PORQUE NO SALE!!!!!!!! *@
-
-
 <style>
     .section-title {
         padding-left: 0px;
@@ -84,12 +80,28 @@
                 <b> @Html.Label("Ultima Condición", htmlAttributes: new { @class = "control-label" })</b><br />
                 @Html.Display("FEBRERO - ABRIL 2017", new { @class = "form-control" })<br />
             </div>
+                <b> @Html.Label("ID:", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUser.Id2, new { @class = "form-control ", @readonly = true })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Programa", htmlAttributes: new { @class = "control-label text-center" }) </b><br />
+                @Html.TextBoxFor(m => m.DataInicioCarrer.Name, new { @class = "form-control", @readonly = true })<br />
+            </div>
+            <div>
+                <b>@Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.Status, new { @class = "form-control", @readonly = true })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Trimestre Acutual", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUser.Trimester.Inicio, new { @class = "form-control", @readonly = true })<br />
+            </div>
+
         </div>
 
         <div class="col-xs-6">
             <div>
-                <b> @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label" })</b><br />
-                @Html.DisplayFor(m => m.UserCareers.QuarterlyIndex, new { @class = "form-control" })<br />
+                <b> @Html.Label("Indice Trimestral", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QuarterlyIndex, new { @class = "form-control", @readonly = true })<br />
             </div>
             <div>
                 <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label" })</b><br />
@@ -106,6 +118,16 @@
             <div>
                 <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label" })</b><br />
                 @Html.DisplayFor(m => m.UserCareers.QtyApprovedQuarter, new { @class = "form-control" })<br />
+                <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.GeneralIndex, new { @class = "form-control", @readonly = true, @id = "IndiceGeneral" })<br />
+            </div>
+            <div>
+                <b> @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedCredits, new { @class = "form-control", @readonly = true, @id = "CreditosAprovados" })<br />
+            </div>
+            <div>
+                <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label text-center" })</b><br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedQuarter, new { @class = "form-control", @readonly = true, @id = "TrimestresCursados" })<br />
             </div>
         </div>
 
@@ -123,15 +145,35 @@
 
 <div class="col-md-5">
     <div class="col-xs-6">
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoCredito, new { @class = "form-control", @readonly = true, @id = "TotalCreditos" })<br />
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoTrimester, new { @class = "form-control", @readonly = true, @id = "TotalTrimestres" })<br />
         <canvas id="Materias" width="100" height="100" style="background:#72AF47"></canvas><br />
         <canvas id="Trimestres" width="100" height="100" style="background:#E02F32"></canvas>
     </div>
     <div class="col-xs-6">
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoSubjetcs, new { @class = "form-control", @readonly = true, @id = "TotalMaterias" })<br />
+        @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedSubjects, new { @class = "form-control", @readonly = true, @id = "MateriasAprovadas" })<br />
         <canvas id="Indice" width="100" height="100" style="background:#F5F5F5"></canvas><br />
         <canvas id="Creditos" width="100" height="100" style="background: #404040"></canvas>
     </div>
     <script>
         var Materias = document.getElementById("Materias").getContext('2d');
+        var IndiceGeneral = $("#IndiceGeneral").val();
+
+        var CreditosAprovados = $("#CreditosAprovados").val();
+        var TotalCreditos = $("#TotalCreditos").val();
+        $("#TotalCreditos").hide();
+
+        var TrimestresCursados = $("#TrimestresCursados").val();
+        var TotalTrimestres = $("#TotalTrimestres").val();
+        $("#TotalTrimestres").hide();
+
+        var MateriasAprovadas = $("#MateriasAprovadas").val();
+        var TotalMaterias = $("#TotalMaterias").val();
+        $("#TotalMaterias").hide();
+        $("#MateriasAprovadas").hide();
+
+
         var myChart = new Chart(Materias, {
             type: 'doughnut',
             data: {
@@ -145,6 +187,7 @@
                         "#9dca79"
                     ],
                     data: [40, 23]
+                    data: [MateriasAprovadas, (TotalMaterias - MateriasAprovadas)]
 
                 }]
             },
@@ -158,7 +201,7 @@
                     display: true,
                     position: 'bottom',
                     fontColor: "#FFFFFF",
-                    text: '40 Materias de 63'
+                    text: MateriasAprovadas + ' Materias de ' + TotalMaterias
                 }
             }
         });
@@ -177,7 +220,7 @@
                         "#f27f78",
                         "#FFFFFF"
                     ],
-                    data: [12, 9]
+                    data: [TrimestresCursados, (TotalTrimestres - TrimestresCursados)]
 
                 }]
             },
@@ -191,7 +234,7 @@
                     display: true,
                     position: 'bottom',
                     fontColor: "#FFFFFF",
-                    text: '12 Trimestres de 21'
+                    text: TrimestresCursados + ' Trimestres de ' + TotalTrimestres
 
                 }
             }
@@ -211,7 +254,7 @@
                         "#444",
                         "#FFFFFF"
                     ],
-                    data: [2.97, 1.03]
+                    data: [IndiceGeneral, (4 - IndiceGeneral)]
 
                 }]
             },
@@ -225,7 +268,7 @@
                     display: true,
                     position: 'bottom',
                     fontColor: "#444",
-                    text: '2.97 Indice de 4'
+                    text: IndiceGeneral + ' Indice de 4'
 
                 }
             }
@@ -244,7 +287,7 @@
                         "#FFFFFF",
                         "#666364"
                     ],
-                    data: [162, 91]
+                    data: [CreditosAprovados, (TotalCreditos - CreditosAprovados)]
 
                 }]
             },
@@ -258,7 +301,7 @@
                     display: true,
                     position: 'bottom',
                     fontColor: "#FFFFFF",
-                    text: '162 Creditos de 253'
+                    text: CreditosAprovados + ' Creditos de ' + TotalCreditos
 
                 }
             }

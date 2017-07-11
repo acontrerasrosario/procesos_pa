@@ -12,7 +12,7 @@ using procesos_app.Models.Enums;
 
 namespace procesos_app.Models
 {
-    
+
 
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -30,6 +30,14 @@ namespace procesos_app.Models
         public string FirstName { get; set; }
 
         
+        [MaxLength(100)]
+        public string SecondName { get; set; }
+
+        [Required]
+        [MaxLength(100)]
+        public string FirstName { get; set; }
+
+
         [MaxLength(100)]
         public string SecondName { get; set; }
 
@@ -70,7 +78,7 @@ namespace procesos_app.Models
 
         // Trimestre (saber trimestre en el que ingreso)
         public Trimester Trimester { get; set; } // trimestre de ingreso
-        
+
     }
 
 
@@ -102,16 +110,38 @@ namespace procesos_app.Models
 
         // Area a la que pertenece la carrera - Uno a Muchos
         public Areas Area { get; set; }
+        
 
-        // Materia - Mucho a Mucho
-        public List<Subject> Subject { get; set; }
+    }
+    
+    public class SubjectCareer
+    {
+        public int Id { get; set; }
+
+        public int Trimestre { get; set; }
+
+        // Recursividad por prerequisitos
+        public int SubjectPreRequisits { get; set; } // Id Prerequisito materia
+
+        public int PreRequisitCredits { get; set; } // prerequisito creditos
+
+        public Subject Subject { get; set; }
+        public Career Career { get; set; }
+
 
     }
 
+ 
     public class Subject
     {
         [Required]
         public int Id { get; set; }
+
+
+        [Required]
+        [MaxLength(10)]
+        public string Codigo { get; set; }
+
 
         [Required]
         [MaxLength(255)]
@@ -119,16 +149,14 @@ namespace procesos_app.Models
 
         public int QtyCredits { get; set; }
 
-        // Recursividad por prerequisitos
-        public Subject Subject1 { get; set; } // Prerequisito
-
-        public int PreRequisitCredits { get; set; } // prerequisito creditos
-
-        // Carrera - Mucho a Mucho
-        public List<Career> Career { get; set; }
-
         // una materia tiene un area y un area tiene muchas carreras
-        public Areas Areas { get; set; }
+        public int AreasId { get; set; }
+        public virtual Areas Areas { get; set; }
+
+
+
+      
+
     }
 
     public class Trimester
@@ -150,8 +178,10 @@ namespace procesos_app.Models
     public class StudentSection
     {
         public int Id { get; set; }
-        public Section Section { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public string StudentId { get; set; }
+        public virtual ApplicationUser Student { get; set; }
         public double FinalScore { get; set; }
 
         [Required]
@@ -167,6 +197,10 @@ namespace procesos_app.Models
         public Section Section_Id { get; set; }
         public int Section_Id1 { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public string TeacherId { get; set; }
+        public virtual ApplicationUser Teacher { get; set; }
 
 
     }
@@ -188,18 +222,26 @@ namespace procesos_app.Models
 
         // Trimestre - Un trimestre tiene varias secciones (Uno a Mucho)
         // Aqui es para saber en que trimestre pertenece la seccion
-        public Trimester Trimester { get; set; }
+        public int TrimesterId { get; set; }
+        public virtual Trimester Trimester { get; set; }
 
         public SectionTypeEnum.SectionType SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
 
-        // Aula en la que dan la clase - Un Aula tiene varias Secciones (Uno a Mucho)
-        public ClassRoom ClassRoom { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Schedule> Schedule { get; set; }
+        public int? ClassRoomId { get; set; }
+        public virtual ClassRoom ClassRoom { get; set; }
+
+       
     }
 
+    public class SectionSchedule
+    {
+        public int Id { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public int ScheduleId { get; set; }
+        public virtual Schedule Schedule { get; set; }
+    }
     public class Schedule
     {
         public int Id { get; set; }
@@ -207,8 +249,9 @@ namespace procesos_app.Models
         [Required]
         public string Name { get; set; } // Day + StartTime + EndTime
 
-
+        [DataType(DataType.Time)]
         public DateTime StartTime { get; set; } // permite ser null si es virtual
+        [DataType(DataType.Time)]
         public DateTime EndTime { get; set; } // permite ser null si es virtual
 
 
@@ -218,9 +261,25 @@ namespace procesos_app.Models
         // Trimestre al que pertenece ese horario (puede cambiar)
         public Trimester Trimester { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Section> Section { get; set; }
+
+        
+    }
+
+    public class ProfesorAutorizacion
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string ProfesorId { get; set; }
+
+        public virtual ApplicationUser Profesor { get; set; }
+
+        
+        [Required]
+        public int SubjectId { get; set; }
+
+        public virtual Subject Subject { get; set; }
+
     }
 
     public class Builder
@@ -250,6 +309,11 @@ namespace procesos_app.Models
         [Required]
         public int Id { get; set; }
 
+        public string User_Id { get; set; } // miguel
+        public int Career_Id { get; set; }  // miguel
+
+
+        
         public ApplicationUser User { get; set; }
         public Career Career { get; set; }
 
@@ -274,7 +338,50 @@ namespace procesos_app.Models
 
 
 
+    public class TandaProfesor
+    {
+        public int Id { get; set; }
+        [Required]
+        public string ProfesorId { get; set; }
+        public virtual ApplicationUser Profesor { get; set; }
+        [Required]
+        public int TandaId { get; set; }
+        public virtual Schedule Tanda { get; set; }
 
+    }
+
+    public class Opciones
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool Status { get; set; }
+    }
+
+    public class Revision
+    {
+        public int Id { get; set; }
+        public string StudentId { get; set; }
+        public virtual ApplicationUser Student { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public bool SolicitudStudiante { get; set; }
+        public int AreaId { get; set; }
+        public virtual Areas Area { get; set; }
+        public int SolicidudArea { get; set; }
+        public bool Cambio { get; set; }
+        public string TeacherId { get; set; }
+        public virtual ApplicationUser Teacher { get; set; }
+        public bool Finished { get; set; }
+
+    }
+
+    public class DetalleRevision
+    {
+        public int RevisionId { get; set; }
+        public virtual Revision Revision { get; set; }
+        public double FinalScore { get; set; }
+        public double FinalScoreUpdated { get; set; }
+    }
 
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -291,7 +398,12 @@ namespace procesos_app.Models
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Schedule> Schedule { get; set; }
         public DbSet<TeacherSection> TeacherSection { get; set; }
-
+        public DbSet<SubjectCareer> SubjectCareer { get; set; }
+        public DbSet<TandaProfesor> TandaProfesor { get; set; }
+        public DbSet<SectionSchedule> SectionSchedule { get; set; }
+        public DbSet<ProfesorAutorizacion> ProfesorAutorizacion { get; set; }
+        public DbSet<Opciones> Opciones { get; set; }
+        public DbSet<Revision> Revisiones { get; set; }
 
         public ApplicationDbContext()
             : base("ProcesosDB", throwIfV1Schema: false)
@@ -310,8 +422,8 @@ namespace procesos_app.Models
         {
             return new ApplicationDbContext();
         }
-        
+
     }
 
-    
+
 }
