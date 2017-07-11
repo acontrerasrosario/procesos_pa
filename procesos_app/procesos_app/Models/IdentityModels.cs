@@ -102,6 +102,23 @@ namespace procesos_app.Models
 
         // Area a la que pertenece la carrera - Uno a Muchos
         public Areas Area { get; set; }
+        
+
+    }
+    
+    public class SubjectCareer
+    {
+        public int Id { get; set; }
+
+        public int Trimestre { get; set; }
+
+        // Recursividad por prerequisitos
+        public int SubjectPreRequisits { get; set; } // Id Prerequisito materia
+
+        public int PreRequisitCredits { get; set; } // prerequisito creditos
+
+        public Subject Subject { get; set; }
+        public Career Career { get; set; }
 
 
     }
@@ -150,6 +167,8 @@ namespace procesos_app.Models
         public virtual Areas Areas { get; set; }
 
 
+
+      
 
     }
 
@@ -220,6 +239,10 @@ namespace procesos_app.Models
         public int? ClassRoomId { get; set; }
         public virtual ClassRoom ClassRoom { get; set; }
 
+        
+        public int? ClassRoomId { get; set; }
+        public virtual ClassRoom ClassRoom { get; set; }
+
     }
 
     public class SectionSchedule
@@ -250,6 +273,7 @@ namespace procesos_app.Models
         public Trimester Trimester { get; set; }
 
 
+        
     }
 
     public class ProfesorAutorizacion
@@ -261,6 +285,7 @@ namespace procesos_app.Models
 
         public virtual ApplicationUser Profesor { get; set; }
 
+        
         [Required]
         public int SubjectId { get; set; }
 
@@ -299,6 +324,7 @@ namespace procesos_app.Models
         public int Career_Id { get; set; }  // miguel
 
 
+        
         public ApplicationUser User { get; set; }
         public Career Career { get; set; }
 

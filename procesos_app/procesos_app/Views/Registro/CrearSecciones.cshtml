@@ -7,6 +7,10 @@
 
 <h2>Crear secciones</h2>
 
+
+<h2>Crear secciones</h2>
+
+
 <div class="container body-content" ng-controller="AddSectionController">
     <form class="form-horizontal">
         <div class="row">
@@ -50,6 +54,7 @@
 
 
                             <select class="form-control select" id="dia1" required>
+                            <select class="form-control" id="dia1" required>
                                 <option value="0" disabled selected hidden> - Seleccionar - </option>
                                 <option ng-repeat="h1 in horario" value="{{h1.horarioId}}">{{h1.nameTotal}}</option>
                             </select>
@@ -60,6 +65,22 @@
                     </div>
                 </div>
             </div>
+                        @*<div class="col-md-4">
+                            <select class="form-control" id="dia2" required>
+                                <option value="0" disabled selected hidden> - Seleccionar - </option>
+                                <option ng-repeat="h2 in horario" value="{{h2.horarioId}}">{{h2.nameTotal}}</option>
+                            </select>
+                        </div>*@
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" ng-click="Agregar()" class="btn btn-default" href="#" role="button">Agregar</button>
+                </div>
+            </div>
+        </div>
 
     </form>
 
@@ -101,3 +122,4 @@
     $(".chosen-select").chosen({ no_results_text: "Opss, no se encuentra!" }, { max_selected_options: 5 }); 
 </script>
 
+</div>

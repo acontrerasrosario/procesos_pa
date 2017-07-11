@@ -9,6 +9,29 @@ $(document).on("click", ".open-Modal", function () {
         contentType: "application/json; charset=utf-8",
         success: function (response) {
             var asd = response;
+            $('#TablaSecciones tbody').empty();
+
+            $('#Seleccion').DataTable().destroy();
+
+            var data = [];
+            $.each(asd, function (key, value) {
+                
+                var currentRow =
+                    '<tbody>' + 
+                    '<tr>' +
+                    '<td>' + value.secName + '</td>' + 
+                    '<td>' + value.materia + '</td>' + 
+                    '<td>' + value.curso + '</td>' + 
+                    '<td>' + value.nombreProf + '</td>' + 
+                    '<td>' + value.horario + '</td>' +
+                    '<td>' + "<a onclick='Onclic(" + value.secId + ")' id='" + value.secId + "'class='btn btn-default' >Agregar</a >" + '</td>'
+                    + '</tr>' + '</tbody>';
+                data.push(currentRow);
+
+            });
+            var datasource = data.join('');
+            $('#TablaSecciones').append(datasource);
+
 
             var boton = document.createElement('a');
             boton.type = 'button';
@@ -74,6 +97,10 @@ $(document).ready(function () {
     $('#Seleccion').DataTable({
         "language": {
 
+$(document).ready(function () {
+    $('#Seleccion').DataTable({
+        "language": {
+
             "sProcessing": "Procesando...",
             "sLengthMenu": "Mostrar _MENU_ registros",
             "sZeroRecords": "No se encontraron resultados",
@@ -95,3 +122,15 @@ $(document).ready(function () {
         }
     });
 });
+
+function Onclic(id) {
+    $.ajax({
+        url: '/Estudiante/AgregarSeccion?id=' + id,
+        type: 'POST',
+        contentType: 'application/json',
+        
+        error: function () {
+            alert("ERROR EN EL SERVIDOR");
+        }
+    });
+}

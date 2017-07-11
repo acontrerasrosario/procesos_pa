@@ -108,6 +108,9 @@
                 function (result) {
                     console.log(result)
                     alert(result.data.message);
+                },
+                function () {
+                    alert('HUBO UN ERROR, FAVOR CONFIRMAR LOS DATOS');
                 }
                 );
         };

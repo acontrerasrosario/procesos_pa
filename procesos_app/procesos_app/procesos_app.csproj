@@ -347,16 +347,20 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chosen.min.css" />
     <Content Include="Content\Images\logo_top.png" />
+    <Content Include="Content\materialize.css" />
+    <Content Include="Content\materialize.min.css" />
     <Content Include="Scripts\AngularJS\angular.min.js" />
     <Content Include="Scripts\AngularJS\jquery-3.2.1.min.js" />
     <Content Include="Scripts\AngularJS\NgRoute.js" />
     <Content Include="Scripts\AngularExecute.js" />
     <Content Include="Scripts\chosen.jquery.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
     <Content Include="Scripts\DetalleSeccion.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -433,6 +437,7 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registro\NewSubject.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
@@ -443,6 +448,7 @@
     <Content Include="Views\Estudiante\Retiro.cshtml" />
     <Content Include="Views\Estudiante\Revision.cshtml" />
     <Content Include="Views\Estudiante\Seleccion.cshtml" />
+    <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
     <Content Include="Views\Registro\NewTrimester.cshtml" />
     <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
     <Content Include="Views\Registro\CrearSecciones.cshtml" />
