@@ -9,10 +9,12 @@
 
 
           $http.get('/api/revision/getSecciones/')
-          .then(
+              .then(
 
-              function(result){
-                $scope.Seccion = result.data;
+              function (result) {
+
+                  $scope.Seccion = result.data;
+              
               },
               function(){
 

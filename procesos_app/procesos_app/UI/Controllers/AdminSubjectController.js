@@ -7,7 +7,7 @@
     function AdminSubjectController($scope, $http) {
 
 
-        $http.get('/api/trimestre/GetTrimestres/').then(
+        $http.get('/api/subjects/GetMaterias/').then(
             // Gonna excecute if the server returns no errors
             function (result) {
                 

@@ -29,8 +29,8 @@ namespace procesos_app.Controllers.API
 
                 var seccion = from s in _context.Sections
                               join st in _context.TeacherSection on s.Id equals st.SectionId
-
                               join ss in _context.StudentSection on s.Id equals ss.SectionId
+                              join r in _context.Revisiones on s.Id equals r.SectionId
                               where ss.StudentId == currentStudent
                                   select new
                                   {
@@ -40,7 +40,8 @@ namespace procesos_app.Controllers.API
                                       profesor = st.Teacher.FirstName + " " + st.Teacher.SecondName + " "
                                       + st.Teacher.LastName + " " + st.Teacher.SecondLastName,
                                       id = s.Id,
-                                      //calificacion = ss.FinalScore
+                                      calificacion = ss.FinalScore,
+                                      solicitud = r.SolicitudStudiante
                                   };
 
 

@@ -82,10 +82,10 @@ namespace procesos_app.Controllers
                               join s in _cont.Sections on stdS.Section.Id equals s.Id
                               join ss in _cont.SectionSchedule on s.Id equals ss.SectionId
                               join sch in _cont.Schedule on ss.ScheduleId equals sch.Id
-                              join u in _cont.Users on stdS.ApplicationUser.Id equals u.Id
+                              join u in _cont.Users on stdS.StudentId equals u.Id
                               join m in _cont.Subjects on s.SubjectId equals m.Id
                               join cl in _cont.ClassRooms on s.ClassRoomId equals cl.Id
-                              where stdS.ApplicationUser.Id == currentUser
+                              where stdS.StudentId == currentUser
                               select new
                               {
                                   Id = stdS.Id,
@@ -198,34 +198,10 @@ namespace procesos_app.Controllers
 
             return JsonConvert.SerializeObject(w);
 
-            var w = (from s in _context.Sections
-                     join r in _context.ClassRooms on s.ClassRoomId equals r.Id
-                     join ss in _context.SectionSchedule on s.Id equals ss.SectionId
-                     join sch in _context.Schedule on ss.ScheduleId equals sch.Id
-                     join b in _context.Builders on r.Builder.Id equals b.Id
-                     join ts in _context.TeacherSection on s.Id equals ts.SectionId
-                     join u in _context.Users on ts.TeacherId equals u.Id
-                     join subj in _context.Subjects on s.SubjectId equals subj.Id
-                     where subj.Id == id
-                     select new
-                     {
-                         secId = s.Id,
-                         secName = s.Name,
-                         secTrimestre = s.Trimester.Name,
-                         curso = b.NickName + " " + s.ClassRoom.Name,
-                         dia = sch.Day,
-                         horaInicio = sch.StartTime.Hour,
-                         horaFin = sch.EndTime.Hour,
-                         horario = sch.Day + " de " + sch.StartTime.Hour + " a " + sch.EndTime.Hour,
-                         profesorId = u.Id,
-                         nombreProf = u.FirstName + " " + u.SecondName + " " +
-                                         u.LastName + " " + u.SecondLastName,
-                         materia = subj.Name
+            
 
-                     }).ToList();
-
-            return JsonConvert.SerializeObject(w);
         }
+          
 
         public void AgregarSeccion(int id)
         {
@@ -237,8 +213,8 @@ namespace procesos_app.Controllers
                 var stdSeccion = new StudentSection
                 {
                     FinalScore = 0,
-                    ApplicationUser = _context.Users.Where(u => u.Id == currentUser).FirstOrDefault(),
-                    Section = _context.Sections.Where(s => s.Id == id).FirstOrDefault(),
+                    StudentId = currentUser,
+                    SectionId = id,
                     Status = procesos_app.Models.Enums.StatusSectionEnum.SectionStatus.Cusando
 
                 };

@@ -7,7 +7,7 @@
 
 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 <script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 <script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
 <script src="~/Scripts/DetalleSeccion.js"></script>
 
@@ -112,14 +112,8 @@
                     <th>Detalle</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Creditos</th>
-                    <th>Detalle</th>
-                </tr>
-            </thead>          
+            
+                       
             <tbody>
                 @foreach (var item in Model.ListaSubject)
                 {
@@ -149,7 +143,6 @@
                 <h4 class="modal-title">Secciones</h4>
             </div>
             <div class="modal-body" id="Contenedor" style="padding-left:20px; padding-right:20px;">
-                <table id="Prueba" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <table id="TablaSecciones" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead class="Tableback">
                         <tr>
@@ -158,16 +151,11 @@
                             <th>Curso</th>
                             <th>Profesor</th>
                             <th>Horario</th>
-                            <th>asd</th>
-
-                        </tr>
-                    </thead>
-                   
-                    
                             <th>Agregar</th>
 
                         </tr>
-                    </thead>         
+                    </thead>               
+             
                 </table>
             </div>          
         </div>

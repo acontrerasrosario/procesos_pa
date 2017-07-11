@@ -93,9 +93,7 @@ $(document).on("click", ".open-Modal", function () {
     });
 });
 
-$(document).ready(function () {
-    $('#Seleccion').DataTable({
-        "language": {
+
 
 $(document).ready(function () {
     $('#Seleccion').DataTable({

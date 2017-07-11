@@ -123,28 +123,7 @@ namespace procesos_app.Models
 
     }
 
-    public class SubjectCareer
-    {
-        public int Id { get; set; }
-
-        public int Trimestre { get; set; }
-
-        // Recursividad por prerequisitos
-        public int SubjectPreRequisits { get; set; } // Id Prerequisito materia
-
-        public int PreRequisitCredits { get; set; } // prerequisito creditos
-
-        public Subject Subject { get; set; }
-        public Career Career { get; set; }
-
-
-    }
-
-
-
-
-
-
+ 
     public class Subject
     {
         [Required]
@@ -239,10 +218,7 @@ namespace procesos_app.Models
         public int? ClassRoomId { get; set; }
         public virtual ClassRoom ClassRoom { get; set; }
 
-        
-        public int? ClassRoomId { get; set; }
-        public virtual ClassRoom ClassRoom { get; set; }
-
+       
     }
 
     public class SectionSchedule
