@@ -10,10 +10,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-
-@* CHEKIAR PORQUE NO SALE!!!!!!!! *@
-
-
 <style>
     .section-title {
         padding-left: 0px;
@@ -70,7 +66,7 @@
             </div>
             <div>
                 <b> @Html.Label("Programa", htmlAttributes: new { @class = "control-label text-center" }) </b><br />
-                @Html.TextBoxFor(m => m.DataInicioCarrer.Name, new { @class = "form-control" , @readonly = true })<br />
+                @Html.TextBoxFor(m => m.DataInicioCarrer.Name, new { @class = "form-control", @readonly = true })<br />
             </div>
             <div>
                 <b>@Html.Label("Condición Académica", htmlAttributes: new { @class = "control-label text-center" })</b><br />
@@ -80,7 +76,7 @@
                 <b> @Html.Label("Trimestre Acutual", htmlAttributes: new { @class = "control-label text-center" })</b><br />
                 @Html.TextBoxFor(m => m.DataInicioUser.Trimester.Inicio, new { @class = "form-control", @readonly = true })<br />
             </div>
-            
+
         </div>
 
         <div class="col-xs-6">
@@ -90,22 +86,16 @@
             </div>
             <div>
                 <b> @Html.Label("Indice General", htmlAttributes: new { @class = "control-label text-center" })</b><br />
-                @Html.TextBoxFor(m => m.DataInicioUserCarrer.GeneralIndex, new { @class = "form-control", @readonly = true , @id = "IndiceGeneral"})<br />
-            </div>          
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.GeneralIndex, new { @class = "form-control", @readonly = true, @id = "IndiceGeneral" })<br />
+            </div>
             <div>
                 <b> @Html.Label("Creditos Aprovados", htmlAttributes: new { @class = "control-label text-center" })</b><br />
-                @Html.TextBoxFor(m => m.DataInicioCarrer.NoCredito, new { @class = "form-control", @readonly = true, @id = "TotalCreditos" })<br />
-                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedCredits, new { @class = "form-control" , @readonly = true, @id = "CreditosAprovados" })<br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedCredits, new { @class = "form-control", @readonly = true, @id = "CreditosAprovados" })<br />
             </div>
             <div>
                 <b>  @Html.Label("Trimestres Cursados", htmlAttributes: new { @class = "control-label text-center" })</b><br />
-                @Html.TextBoxFor(m => m.DataInicioCarrer.NoTrimester, new { @class = "form-control", @readonly = true, @id = "TotalTrimestres" })<br />
-                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedQuarter, new { @class = "form-control" , @readonly = true, @id = "TrimestresCursados" })<br />
+                @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedQuarter, new { @class = "form-control", @readonly = true, @id = "TrimestresCursados" })<br />
             </div>
-
-
-            @Html.TextBoxFor(m => m.DataInicioCarrer.NoSubjetcs, new { @class = "form-control", @readonly = true, @id = "TotalMaterias" })<br />
-            @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedSubjects, new { @class = "form-control", @readonly = true, @id = "MateriasAprovadas" })<br />
         </div>
 
     </div>
@@ -122,10 +112,14 @@
 
 <div class="col-md-5">
     <div class="col-xs-6">
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoCredito, new { @class = "form-control", @readonly = true, @id = "TotalCreditos" })<br />
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoTrimester, new { @class = "form-control", @readonly = true, @id = "TotalTrimestres" })<br />
         <canvas id="Materias" width="100" height="100" style="background:#72AF47"></canvas><br />
         <canvas id="Trimestres" width="100" height="100" style="background:#E02F32"></canvas>
     </div>
     <div class="col-xs-6">
+        @Html.TextBoxFor(m => m.DataInicioCarrer.NoSubjetcs, new { @class = "form-control", @readonly = true, @id = "TotalMaterias" })<br />
+        @Html.TextBoxFor(m => m.DataInicioUserCarrer.QtyApprovedSubjects, new { @class = "form-control", @readonly = true, @id = "MateriasAprovadas" })<br />
         <canvas id="Indice" width="100" height="100" style="background:#F5F5F5"></canvas><br />
         <canvas id="Creditos" width="100" height="100" style="background: #404040"></canvas>
     </div>

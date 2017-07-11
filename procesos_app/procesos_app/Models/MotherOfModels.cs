@@ -5,6 +5,18 @@ using System.Web;
 
 namespace procesos_app.Models
 {
+    public class estSelecion
+    {
+        public int Id { get; set; }
+        public string Codigo { get; set; }
+        public string Seccion { get; set; }
+        public string Materia { get; set; }
+        public string Profesor { get; set; }
+        public string Horario { get; set; }
+        public string Aula { get; set; }
+        public int Creditos { get; set; }
+
+    }
     public class MotherOfModels
     {
 
@@ -25,10 +37,16 @@ namespace procesos_app.Models
         // miguel
         public IEnumerable<Section> ListaSection { get; set; }
         public IEnumerable<Subject> ListaSubject { get; set; }
+        public IEnumerable<MotherOfModels> Prueba { get; set; }
         public IEnumerable<Areas> ListaArea { get; set; }
         public ApplicationUser DataInicioUser { get; set; }
         public UserCareer DataInicioUserCarrer { get; set; }
         public Career DataInicioCarrer { get; set; }
+
+        public List<estSelecion> estSection { get; set; }
+        public IEnumerable<Section> estSectionS { get; set; }
+        public IEnumerable<Subject> estSectionM { get; set; }
+        public IEnumerable<ApplicationUser> estSectionU { get; set; }
 
 
 

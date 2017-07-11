@@ -11,10 +11,10 @@ namespace procesos_app.Models.Enums
         {
             Lunes = 0,
             Martes = 1,
-                Miercoles = 2,
-                Jueves = 3,
-                Viernes = 4,
-                Sabado = 5
+            Miercoles = 2,
+            Jueves = 3,
+            Viernes = 4,
+            Sabado = 5
         }
     }
 }

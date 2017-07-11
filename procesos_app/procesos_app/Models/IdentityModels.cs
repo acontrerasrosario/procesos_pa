@@ -146,7 +146,11 @@ namespace procesos_app.Models
         public int QtyCredits { get; set; }
 
         // una materia tiene un area y un area tiene muchas carreras
-        public Areas Areas { get; set; }
+        public int AreasId { get; set; }
+        public virtual Areas Areas { get; set; }
+
+      
+
     }
 
     public class Trimester
@@ -181,8 +185,10 @@ namespace procesos_app.Models
     public class TeacherSection
     {
         public int Id { get; set; }
-        public Section Section { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public string TeacherId { get; set; }
+        public virtual ApplicationUser Teacher { get; set; }
 
 
     }
@@ -203,18 +209,25 @@ namespace procesos_app.Models
 
         // Trimestre - Un trimestre tiene varias secciones (Uno a Mucho)
         // Aqui es para saber en que trimestre pertenece la seccion
-        public Trimester Trimester { get; set; }
+        public int TrimesterId { get; set; }
+        public virtual Trimester Trimester { get; set; }
 
         public SectionTypeEnum.SectionType SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
 
-        // Aula en la que dan la clase - Un Aula tiene varias Secciones (Uno a Mucho)
-        public ClassRoom ClassRoom { get; set; }
+        
+        public int? ClassRoomId { get; set; }
+        public virtual ClassRoom ClassRoom { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Schedule> Schedule { get; set; }
     }
 
+    public class SectionSchedule
+    {
+        public int Id { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public int ScheduleId { get; set; }
+        public virtual Schedule Schedule { get; set; }
+    }
     public class Schedule
     {
         public int Id { get; set; }
@@ -222,8 +235,9 @@ namespace procesos_app.Models
         [Required]
         public string Name { get; set; } // Day + StartTime + EndTime
 
-
+        [DataType(DataType.Time)]
         public DateTime StartTime { get; set; } // permite ser null si es virtual
+        [DataType(DataType.Time)]
         public DateTime EndTime { get; set; } // permite ser null si es virtual
 
 
@@ -233,9 +247,23 @@ namespace procesos_app.Models
         // Trimestre al que pertenece ese horario (puede cambiar)
         public Trimester Trimester { get; set; }
 
-        // Horario de la seccion - Mucho a Mucho (una seccion tiene varios horarios)
-        // un horario tiene varias secciones
-        public List<Section> Section { get; set; }
+        
+    }
+
+    public class ProfesorAutorizacion
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public string ProfesorId { get; set; }
+
+        public virtual ApplicationUser Profesor { get; set; }
+        
+        [Required]
+        public int SubjectId { get; set; }
+
+        public virtual Subject Subject { get; set; }
+
     }
 
     public class Builder
@@ -293,7 +321,17 @@ namespace procesos_app.Models
 
 
 
+    public class TandaProfesor
+    {
+        public int Id { get; set; }
+        [Required]
+        public string ProfesorId { get; set; }
+        public virtual ApplicationUser Profesor { get; set; }
+        [Required]
+        public int TandaId { get; set; }
+        public virtual Schedule Tanda { get; set; }
 
+    }
 
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -311,7 +349,9 @@ namespace procesos_app.Models
         public DbSet<Schedule> Schedule { get; set; }
         public DbSet<TeacherSection> TeacherSection { get; set; }
         public DbSet<SubjectCareer> SubjectCareer { get; set; }
-
+        public DbSet<TandaProfesor> TandaProfesor { get; set; }
+        public DbSet<SectionSchedule> SectionSchedule { get; set; }
+        public DbSet<ProfesorAutorizacion> ProfesorAutorizacion { get; set; }
 
         public ApplicationDbContext()
             : base("ProcesosDB", throwIfV1Schema: false)
