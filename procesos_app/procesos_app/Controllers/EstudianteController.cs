@@ -254,5 +254,14 @@ namespace procesos_app.Controllers
 
 
         }
+
+        public void BorrarSeccion(int id)
+        {
+
+            var userInDb = _context.StudentSection.FirstOrDefault(u => u.Id == id);
+            
+            _context.StudentSection.Remove(userInDb);
+            _context.SaveChanges();
+        }
     }
 }
