@@ -181,8 +181,10 @@ namespace procesos_app.Models
     public class TeacherSection
     {
         public int Id { get; set; }
-        public Section Section { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public string TeacherId { get; set; }
+        public virtual ApplicationUser Teacher { get; set; }
 
 
     }
@@ -203,14 +205,15 @@ namespace procesos_app.Models
 
         // Trimestre - Un trimestre tiene varias secciones (Uno a Mucho)
         // Aqui es para saber en que trimestre pertenece la seccion
-        public Trimester Trimester { get; set; }
+        public int TrimesterId { get; set; }
+        public virtual Trimester Trimester { get; set; }
 
         public SectionTypeEnum.SectionType SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
 
-        // Aula en la que dan la clase - Un Aula tiene varias Secciones (Uno a Mucho)
-        public ClassRoom ClassRoom { get; set; }
-
         
+        public int? ClassRoomId { get; set; }
+        public virtual ClassRoom ClassRoom { get; set; }
+
     }
 
     public class SectionSchedule

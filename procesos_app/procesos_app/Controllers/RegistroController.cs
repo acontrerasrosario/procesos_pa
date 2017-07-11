@@ -32,7 +32,7 @@ namespace procesos_app.Controllers
                                        join ss in _context.SectionSchedule on sec.Id equals ss.SectionId
                                        join sch in _context.Schedule on ss.ScheduleId equals sch.Id
                                        where sch.Id == HorarioId
-                                       select x.ApplicationUser.Id).Contains(U.Id)
+                                       select x.TeacherId).Contains(U.Id)
                            select
                             new
                             {
@@ -63,6 +63,15 @@ namespace procesos_app.Controllers
             return View();
         }
 
+        public ActionResult ProfesorAutorizado()
+        {
+            return View();
+        }
+
+        public ActionResult CrearSecciones()
+        {
+            return View();
+        }
 
 
        

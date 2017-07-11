@@ -23,7 +23,7 @@ namespace procesos_app.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -35,9 +35,9 @@ namespace procesos_app.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -137,11 +137,11 @@ namespace procesos_app.Controllers
 
         //
         // GET: /Account/Register
-        
+
         [Authorize(Roles = "Registro")]
         public ActionResult Register()
         {
-            
+
             return View();
         }
 
@@ -155,7 +155,8 @@ namespace procesos_app.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser {
+                var user = new ApplicationUser
+                {
                     UserName = model.Id2.ToString(),
                     Email = model.Email,
                     Id2 = model.Id2,
@@ -167,16 +168,16 @@ namespace procesos_app.Controllers
                     LastName = model.LastName,
                     SecondLastName = model.SecondLastName
                 };
-                var userRole = new IdentityUserRole {RoleId = model.Type.ToString(), UserId = user.Id};
+                var userRole = new IdentityUserRole { RoleId = model.Type.ToString(), UserId = user.Id };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
-                
+
                 if (result.Succeeded)
                 {
 
                     await UserManager.AddToRoleAsync(user.Id, model.Type.ToString());
                     //await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
@@ -193,7 +194,7 @@ namespace procesos_app.Controllers
                         return RedirectToAction("Index", "Profesor");
                     }
                     return RedirectToAction("Index", "Registro");
-                    
+
                 }
                 AddErrors(result);
             }
@@ -476,22 +477,22 @@ namespace procesos_app.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
-            
+
             if (Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
 
-            //if (User.IsInRole("Estudiante"))
-            //{
-            //    return RedirectToAction("Inicio", "Estudiante");
-            //}
-            //if (User.IsInRole("Profesor"))
-            
-            //{
-            //    return RedirectToAction("Inicio", "Profesor");
-            //}
-            
+            if (User.IsInRole("Estudiante"))
+            {
+                return RedirectToAction("Inicio", "Estudiante");
+            }
+            if (User.IsInRole("Profesor"))
+
+            {
+                return RedirectToAction("Inicio", "Profesor");
+            }
+
             return RedirectToAction("Index", "Registro");
         }
 

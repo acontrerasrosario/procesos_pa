@@ -204,6 +204,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\AreasController.cs" />
+    <Compile Include="Controllers\API\CursosController.cs" />
+    <Compile Include="Controllers\API\ValidarProfesorController.cs" />
     <Compile Include="Controllers\API\SectionsController.cs" />
     <Compile Include="Controllers\API\SubjectsController.cs" />
     <Compile Include="Controllers\API\TrimestreController.cs" />
@@ -296,6 +298,26 @@
     <Compile Include="Migrations\201707090207567_modificando profesor autorizacions.Designer.cs">
       <DependentUpon>201707090207567_modificando profesor autorizacions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707092304207_agregando aulaid en la tabla de seccion.cs" />
+    <Compile Include="Migrations\201707092304207_agregando aulaid en la tabla de seccion.Designer.cs">
+      <DependentUpon>201707092304207_agregando aulaid en la tabla de seccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707092306598_creando foreign key de curso en seccion.cs" />
+    <Compile Include="Migrations\201707092306598_creando foreign key de curso en seccion.Designer.cs">
+      <DependentUpon>201707092306598_creando foreign key de curso en seccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707092320415_arreglando.cs" />
+    <Compile Include="Migrations\201707092320415_arreglando.Designer.cs">
+      <DependentUpon>201707092320415_arreglando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707100426197_fixing section table.cs" />
+    <Compile Include="Migrations\201707100426197_fixing section table.Designer.cs">
+      <DependentUpon>201707100426197_fixing section table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707100517047_fixing teacher section.cs" />
+    <Compile Include="Migrations\201707100517047_fixing teacher section.Designer.cs">
+      <DependentUpon>201707100517047_fixing teacher section.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Enums\AreasEnum.cs" />
     <Compile Include="Models\Enums\CareerStatusEnum.cs" />
@@ -360,10 +382,11 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="UI\Controllers\AddSubjectsController.js" />
+    <Content Include="UI\Controllers\AddSectionController.js" />
     <Content Include="UI\Controllers\AddTrimesterController.js" />
+    <Content Include="UI\Controllers\AddSubjectsController.js" />
     <Content Include="UI\Controllers\AdminSubjectController.js" />
-    <Content Include="UI\Controllers\ModifySubjectController.js" />
+    <Content Include="UI\Controllers\ProfesorAutorizacionController.js" />
     <Content Include="UI\Template\ModSubject.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -412,6 +435,8 @@
     <Content Include="Views\Estudiante\Seleccion.cshtml" />
     <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
     <Content Include="Views\Registro\NewTrimester.cshtml" />
+    <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
+    <Content Include="Views\Registro\CrearSecciones.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -484,6 +509,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707090207567_modificando profesor autorizacions.resx">
       <DependentUpon>201707090207567_modificando profesor autorizacions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707092304207_agregando aulaid en la tabla de seccion.resx">
+      <DependentUpon>201707092304207_agregando aulaid en la tabla de seccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707092306598_creando foreign key de curso en seccion.resx">
+      <DependentUpon>201707092306598_creando foreign key de curso en seccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707092320415_arreglando.resx">
+      <DependentUpon>201707092320415_arreglando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707100426197_fixing section table.resx">
+      <DependentUpon>201707100426197_fixing section table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707100517047_fixing teacher section.resx">
+      <DependentUpon>201707100517047_fixing teacher section.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
