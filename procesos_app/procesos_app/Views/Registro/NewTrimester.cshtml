@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "NewTrimester";
+    Layout = "~/Views/Shared/_LayoutRegistro.cshtml";
+}
+
+
+
+<h2>Trimestres</h2>
+<div class="container body-content" ng-controller="AddTrimesterController">
+    <form class="form-horizontal">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Nombre</label>
+                    <input type="text" value="" class="form-control" ng-model="newTrimester.Name" />
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Fecha Inicio</label>
+                    <input type="text" id="FechaInicio" class="form-control" ng-model="newTrimester.Inicio"><span></span>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Fecha fin</label>
+                    <input type="text" id="FechaFin" class="form-control" ng-model="newTrimester.Fin" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" ng-click="Agregar()" class="btn btn-default" href="#" role="button">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="table-reponsive">
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Fin</th>
+                </tr>
+
+            </thead>
+            <tbody class="table-striped">
+                <tr ng-repeat="t in Trimestres | orderBy: 'name'">
+                    <td>{{t.name}}</td>
+                    <td>{{t.inicio | date:'dd/MM/yyyy' }}</td>
+                    <td>{{t.fin | date:'dd/MM/yyyy' }}</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<script>
+    (function () {
+        $("#FechaInicio").datepicker({ dateFormat: 'mm/dd/yy' });
+        $("#FechaFin").datepicker({ dateFormat: 'mm/dd/yy' });
+     }());
+</script>
+
+
+
+@*<script>
+
+         $(document).ready(function () {
+             $("#FechaInicio").datepicker();
+             //$("#FechaFin").datepicker();
+         });
+    </script>*@
