@@ -205,13 +205,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\AreasController.cs" />
     <Compile Include="Controllers\API\CursosController.cs" />
+    <Compile Include="Controllers\API\RevisionController.cs" />
     <Compile Include="Controllers\API\ValidarProfesorController.cs" />
     <Compile Include="Controllers\API\SectionsController.cs" />
     <Compile Include="Controllers\API\SubjectsController.cs" />
     <Compile Include="Controllers\API\TrimestreController.cs" />
     <Compile Include="Controllers\API\UsersController.cs" />
     <Compile Include="Controllers\EstudianteController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
@@ -322,6 +322,14 @@
     <Compile Include="Migrations\201707110245452_arreglando tabla subject.Designer.cs">
       <DependentUpon>201707110245452_arreglando tabla subject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707111526339_agregando tabla de revision y opciones.cs" />
+    <Compile Include="Migrations\201707111526339_agregando tabla de revision y opciones.Designer.cs">
+      <DependentUpon>201707111526339_agregando tabla de revision y opciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707111748241_agregando id en studentsection table.cs" />
+    <Compile Include="Migrations\201707111748241_agregando id en studentsection table.Designer.cs">
+      <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Enums\AreasEnum.cs" />
     <Compile Include="Models\Enums\CareerStatusEnum.cs" />
@@ -339,18 +347,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\chosen.min.css" />
     <Content Include="Content\Images\logo_top.png" />
-    <Content Include="Content\materialize.css" />
-    <Content Include="Content\materialize.min.css" />
     <Content Include="Scripts\AngularJS\angular.min.js" />
     <Content Include="Scripts\AngularJS\jquery-3.2.1.min.js" />
     <Content Include="Scripts\AngularJS\NgRoute.js" />
     <Content Include="Scripts\AngularExecute.js" />
-    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\chosen.jquery.min.js" />
     <Content Include="Scripts\DetalleSeccion.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -391,6 +397,7 @@
     <Content Include="UI\Controllers\AddSubjectsController.js" />
     <Content Include="UI\Controllers\AdminSubjectController.js" />
     <Content Include="UI\Controllers\ProfesorAutorizacionController.js" />
+    <Content Include="UI\Controllers\RevisionController.js" />
     <Content Include="UI\Template\ModSubject.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -426,7 +433,6 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registro\NewSubject.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
@@ -444,6 +450,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AngularJS\" />
+    <Folder Include="Views\Profesor\" />
     <Folder Include="Views\Subjects\" />
   </ItemGroup>
   <ItemGroup>
@@ -530,6 +537,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707110245452_arreglando tabla subject.resx">
       <DependentUpon>201707110245452_arreglando tabla subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707111526339_agregando tabla de revision y opciones.resx">
+      <DependentUpon>201707111526339_agregando tabla de revision y opciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707111748241_agregando id en studentsection table.resx">
+      <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

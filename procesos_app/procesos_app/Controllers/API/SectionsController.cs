@@ -210,6 +210,11 @@ namespace procesos_app.Controllers.API
         {
             try
             {
+                var errorProf = "No hay profesor disponible para esta seccion";
+                var errorResponse = Request.CreateErrorResponse(HttpStatusCode.NotFound, errorProf);
+
+
+                
                 var today = DateTime.Now;
                 
                 var objeto = new Section
@@ -254,6 +259,10 @@ namespace procesos_app.Controllers.API
                                             select x.TeacherId).Contains(U.Id)
                                 select U.Id).ToList();
 
+
+                if (profesor.Count < 1)
+                    return errorResponse;
+
                 Random rdn = new Random();
                 int ax = rdn.Next(profesor.Count());
 
@@ -271,6 +280,7 @@ namespace procesos_app.Controllers.API
             }
             catch (Exception e)
             {
+                
                 if (e.InnerException != null)
                     return Request.CreateResponse(HttpStatusCode.InternalServerError);
                 return Request.CreateResponse(HttpStatusCode.BadRequest);

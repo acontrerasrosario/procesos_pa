@@ -19,6 +19,7 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
+        [Authorize(Roles = "Estudiante")]
         public ActionResult Inicio()
         {
             MotherOfModels modelo = new MotherOfModels();
@@ -59,6 +60,7 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
+        [Authorize(Roles = "Estudiante")]
         public ActionResult Seleccion()
         {
             ApplicationDbContext _cont = new ApplicationDbContext();
@@ -79,6 +81,7 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
+        [Authorize(Roles = "Estudiante")]
         public ActionResult Preseleccion()
         {
             return View();
@@ -97,6 +100,7 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
+        [Authorize]
         public ActionResult OfertaAcademica()
         {
             ApplicationDbContext _cont = new ApplicationDbContext();
@@ -111,7 +115,7 @@ namespace procesos_app.Controllers
 
             return View(modelo);
         }
-
+        [Authorize(Roles = "Estudiante")]
         public string _DetalleSeccion(int id)
         {
             ApplicationDbContext _cont = new ApplicationDbContext();

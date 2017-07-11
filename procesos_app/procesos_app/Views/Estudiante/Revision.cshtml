@@ -1,15 +1,15 @@
 ﻿
-@model procesos_app.Models.MotherOfModels
+
 @{
     ViewBag.Title = "Revision";
     Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
 }
-
-<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-<script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
-<script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
-
+@*
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
+*@
 
 <style>
     .section-title {
@@ -49,153 +49,173 @@
         
     }
 </style>
-
-<div>
-    <h3 class="section-title text-center">REVISION DE CALIFICACIONES</h3>
-    <hr />
-</div>
-<div>
+<div ng-controller="RevisionController">
     <div>
-        <h4 class="HBG">Asignaturas - [Inserte Trimestre Aqui!]</h4>
+        <h3 class="section-title text-center">REVISION DE CALIFICACIONES</h3>
+        <hr />
     </div>
-    <div style="padding-left:20px; padding-right:20px;">
-        <table class="table table-striped table-bordered" id="SeccionesEstudiante" cellspacing="0" width="100%" >
-            <thead class="Tableback">
-                <tr>
-                    <th>Seccion</th>
-                    <th>Materia</th>
-                    <th>Profesor/a</th>
-                    <th>Calificacion</th>
-                    <th>Solicitar</th>
-                </tr>
-            </thead>
-            <tbody>
-                @* For ecah con la tabla debida  *@
-            </tbody>
-        </table>
-    </div>    
-</div>
-
-<div>
     <div>
-        <h4 class="HBG">[ Revision - Profesores ] - [Inserte Trimestre Aqui!]</h4>
+        @*
+        <div>
+            <h4 class="HBG">Asignaturas - [Inserte Trimestre Aqui!]</h4>
+        </div>
+        <div style="padding-left:20px; padding-right:20px;">
+            <table class="table table-striped table-bordered" id="SeccionesEstudiante" cellspacing="0" width="100%">
+                <thead class="Tableback">
+                    <tr>
+                        <th>Seccion</th>
+                        <th>Materia</th>
+                        <th>Profesor/a</th>
+                        <th>Calificacion</th>
+                        <th>Solicitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @* For ecah con la tabla debida 
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div style="padding-left:20px; padding-right:20px;">
-        <table class="table table-striped table-bordered" id="RevisionProfesores" cellspacing="0" width="100%">
-            <thead class="Tableback">
-                <tr>
-                    <th>Seccion</th>
-                    <th>Materia</th>
-                    <th>Profesor/a</th>
-                    <th>Calificacion</th>
-                    <th>Confirmar</th>
-                    <th>Cancelar</th>
-                </tr>
-            </thead>
-            <tbody> @* For ecah con la tabla debida  *@ </tbody>
-        </table>
-    </div>
-</div>
-
-<div>
+*@
     <div>
-        <h4 class="HBG">[ Revision - Registro ] - [Inserte Trimestre Aqui!]</h4>
+        <div>
+            <h4 class="HBG">[ Revision - Profesores ] - [Inserte Trimestre Aqui!]</h4>
+        </div>
+        <div style="padding-left:20px; padding-right:20px;">
+            <table class="table table-striped table-bordered" id="RevisionProfesores" cellspacing="0" width="100%">
+                <thead class="Tableback">
+                    <tr>
+                        <th>Seccion</th>
+                        <th>Materia</th>
+                        <th>Profesor/a</th>
+                        <th>Calificacion</th>
+                        <th>Confirmar</th>
+                        <th>Cancelar</th>
+                    </tr>
+                </thead>
+                <tbody class="table-striped">
+                    <tr ng-repeat="s in Seccion | orderBy: 'name'">
+                        <td>{{s.codigo}}</td>
+                        <td>{{s.nombre}}</td>
+                        <td>{{s.seccion}}</td>
+                        <td>{{s.profesor}}</td>
+                        <td>{{s.calificacion}}</td>
+                        <td>
+                            <a class="btn btn-primary" ng-click="ver(s)"> Ir </a>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div style="padding-left:20px; padding-right:20px;">
-        <table class="table table-striped table-bordered" id="RevisionRegistro" cellspacing="0" width="100%">
-            <thead class="Tableback">
-                <tr>
-                    <th>Seccion</th>
-                    <th>Materia</th>
-                    <th>Profesor/a</th>
-                    <th>Calificacion</th>
-                    <th>Estado</th>
-                    <th>Fecha</th>
-                </tr>
-            </thead>
-            <tbody> @* For ecah con la tabla debida  *@</tbody>
-        </table>
+@*
+    <div>
+        <div>
+            <h4 class="HBG">[ Revision - Registro ] - [Inserte Trimestre Aqui!]</h4>
+        </div>
+        <div style="padding-left:20px; padding-right:20px;">
+            <table class="table table-striped table-bordered" id="RevisionRegistro" cellspacing="0" width="100%">
+                <thead class="Tableback">
+                    <tr>
+                        <th>Seccion</th>
+                        <th>Materia</th>
+                        <th>Profesor/a</th>
+                        <th>Calificacion</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody> @* For ecah con la tabla debida  </tbody>
+            </table>
+        </div>
     </div>
+
+*@
 </div>
-<script>
 
-    $(document).ready(function () {
-        $('#SeccionesEstudiante').DataTable({
-            "language": {
+@*
+    <script>
 
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
+        $(document).ready(function () {
+            $('#SeccionesEstudiante').DataTable({
+                "language": {
+
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    }
                 }
-            }
+            });
         });
-    });
 
-    $(document).ready(function () {
-        $('#RevisionProfesores').DataTable({
-            "language": {
+        $(document).ready(function () {
+            $('#RevisionProfesores').DataTable({
+                "language": {
 
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    }
                 }
-            }
+            });
         });
-    });
 
-    $(document).ready(function () {
-        $('#RevisionRegistro').DataTable({
-            "language": {
+        $(document).ready(function () {
+            $('#RevisionRegistro').DataTable({
+                "language": {
 
-                "sProcessing": "Procesando...",
-                "sLengthMenu": "Mostrar _MENU_ registros",
-                "sZeroRecords": "No se encontraron resultados",
-                "sEmptyTable": "Ningún dato disponible en esta tabla",
-                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                "sInfoPostFix": "",
-                "sSearch": "Buscar:",
-                "sUrl": "",
-                "sInfoThousands": ",",
-                "sLoadingRecords": "Cargando...",
-                "oPaginate": {
-                    "sFirst": "Primero",
-                    "sLast": "Último",
-                    "sNext": "Siguiente",
-                    "sPrevious": "Anterior"
+                    "sProcessing": "Procesando...",
+                    "sLengthMenu": "Mostrar _MENU_ registros",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Buscar:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Primero",
+                        "sLast": "Último",
+                        "sNext": "Siguiente",
+                        "sPrevious": "Anterior"
+                    }
                 }
-            }
+            });
         });
-    });
 
-</script>
+    </script>
 
+*@

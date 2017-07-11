@@ -102,9 +102,12 @@
                 .then(
                 function (data, status, headers, config) {
                     alert('SE AGREGO CORRECTAMENTE.')
+
+                    console.log(data)
                 },
-                function () {
-                    alert('HUBO UN ERROR, FAVOR CONFIRMAR LOS DATOS');
+                function (result) {
+                    console.log(result)
+                    alert(result.data.message);
                 }
                 );
         };

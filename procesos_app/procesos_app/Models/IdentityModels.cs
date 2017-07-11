@@ -12,7 +12,7 @@ using procesos_app.Models.Enums;
 
 namespace procesos_app.Models
 {
-    
+
 
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -24,12 +24,12 @@ namespace procesos_app.Models
             // Add custom user claims here
             return userIdentity;
         }
-        
+
         [Required]
         [MaxLength(100)]
         public string FirstName { get; set; }
 
-        
+
         [MaxLength(100)]
         public string SecondName { get; set; }
 
@@ -70,7 +70,7 @@ namespace procesos_app.Models
 
         // Trimestre (saber trimestre en el que ingreso)
         public Trimester Trimester { get; set; } // trimestre de ingreso
-        
+
     }
 
 
@@ -102,10 +102,10 @@ namespace procesos_app.Models
 
         // Area a la que pertenece la carrera - Uno a Muchos
         public Areas Area { get; set; }
-        
+
 
     }
-    
+
     public class SubjectCareer
     {
         public int Id { get; set; }
@@ -149,7 +149,7 @@ namespace procesos_app.Models
         public int AreasId { get; set; }
         public virtual Areas Areas { get; set; }
 
-      
+
 
     }
 
@@ -172,8 +172,10 @@ namespace procesos_app.Models
     public class StudentSection
     {
         public int Id { get; set; }
-        public Section Section { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public string StudentId { get; set; }
+        public virtual ApplicationUser Student { get; set; }
         public double FinalScore { get; set; }
 
         [Required]
@@ -214,7 +216,7 @@ namespace procesos_app.Models
 
         public SectionTypeEnum.SectionType SecType { get; set; } // TEORIA, VIRTUAL, LABORATORIO
 
-        
+
         public int? ClassRoomId { get; set; }
         public virtual ClassRoom ClassRoom { get; set; }
 
@@ -247,7 +249,7 @@ namespace procesos_app.Models
         // Trimestre al que pertenece ese horario (puede cambiar)
         public Trimester Trimester { get; set; }
 
-        
+
     }
 
     public class ProfesorAutorizacion
@@ -258,7 +260,7 @@ namespace procesos_app.Models
         public string ProfesorId { get; set; }
 
         public virtual ApplicationUser Profesor { get; set; }
-        
+
         [Required]
         public int SubjectId { get; set; }
 
@@ -296,7 +298,7 @@ namespace procesos_app.Models
         public string User_Id { get; set; } // miguel
         public int Career_Id { get; set; }  // miguel
 
-        
+
         public ApplicationUser User { get; set; }
         public Career Career { get; set; }
 
@@ -333,6 +335,39 @@ namespace procesos_app.Models
 
     }
 
+    public class Opciones
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool Status { get; set; }
+    }
+
+    public class Revision
+    {
+        public int Id { get; set; }
+        public string StudentId { get; set; }
+        public virtual ApplicationUser Student { get; set; }
+        public int SectionId { get; set; }
+        public virtual Section Section { get; set; }
+        public bool SolicitudStudiante { get; set; }
+        public int AreaId { get; set; }
+        public virtual Areas Area { get; set; }
+        public int SolicidudArea { get; set; }
+        public bool Cambio { get; set; }
+        public string TeacherId { get; set; }
+        public virtual ApplicationUser Teacher { get; set; }
+        public bool Finished { get; set; }
+
+    }
+
+    public class DetalleRevision
+    {
+        public int RevisionId { get; set; }
+        public virtual Revision Revision { get; set; }
+        public double FinalScore { get; set; }
+        public double FinalScoreUpdated { get; set; }
+    }
+
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -352,6 +387,8 @@ namespace procesos_app.Models
         public DbSet<TandaProfesor> TandaProfesor { get; set; }
         public DbSet<SectionSchedule> SectionSchedule { get; set; }
         public DbSet<ProfesorAutorizacion> ProfesorAutorizacion { get; set; }
+        public DbSet<Opciones> Opciones { get; set; }
+        public DbSet<Revision> Revisiones { get; set; }
 
         public ApplicationDbContext()
             : base("ProcesosDB", throwIfV1Schema: false)
@@ -370,8 +407,8 @@ namespace procesos_app.Models
         {
             return new ApplicationDbContext();
         }
-        
+
     }
 
-    
+
 }
