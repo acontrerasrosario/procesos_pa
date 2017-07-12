@@ -13,5 +13,17 @@ namespace procesos_app.Controllers
         {
             return View();
         }
+
+        public ActionResult Revision()
+        {
+            return View();
+        }
+
+
+        public PartialViewResult _ModificarRevision()         
+        {
+            return PartialView();
+        }
+
     }
 }

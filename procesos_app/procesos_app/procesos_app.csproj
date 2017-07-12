@@ -426,7 +426,6 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registro\NewSubject.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
@@ -441,6 +440,9 @@
     <Content Include="Views\Registro\NewTrimester.cshtml" />
     <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
     <Content Include="Views\Registro\CrearSecciones.cshtml" />
+    <Content Include="Views\Profesor\Revision.cshtml" />
+    <Content Include="Views\Profesor\Index.cshtml" />
+    <Content Include="Views\Profesor\_ModificarRevision.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

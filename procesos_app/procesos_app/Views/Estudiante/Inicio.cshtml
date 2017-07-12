@@ -74,7 +74,7 @@
             </div>
             <div>
                 <b> @Html.Label("Trimestre Acutual", htmlAttributes: new { @class = "control-label text-center" })</b><br />
-                @Html.TextBoxFor(m => m.DataInicioUser.Trimester.Inicio, new { @class = "form-control", @readonly = true })<br />
+                @Html.TextBoxFor(m => m.Trimesters.Name, new { @class = "form-control", @readonly = true })<br />
             </div>
 
         </div>
@@ -277,135 +277,39 @@
 
 <div class="col-md-12">
     <div>
-        <h4 class="HBG">Asignaturas Seleccionadas - </h4>
+        <h4 class="HBG">Asignaturas Seleccionadas</h4>
     </div>
-    <div class="row section_info" style="padding-left:20px; padding-right:20px;">
-        @* Gestionar las secciones del estuidante logeado. *@
-        <table class="table table-striped table-bordered" cellspacing="0" width="100%">
-            <thead class="Tableback">
-                <tr>
-                    <th>Código</th>
-                    <th>Asignatura</th>
-                    <th>Sec</th>
-                    <th>Aula</th>
-                    <th>Lun</th>
-                    <th>Ma</th>
-                    <th>Mi</th>
-                    <th>Ju</th>
-                    <th>Vi</th>
-                    <th>Sa</th>
-                    <th>Calif</th>
-                    <th>Profesor</th>
-                    <th>Eval</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="uk-text-center">ING211</td>
-                    <td class="">FORMULACION DE PROYECTOS</td>
-                    <td class="uk-text-center">03</td>
-                    <td class="uk-text-center">AJ301</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">16/18</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">16/18</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>HYLLERLINI ANABEL ESPINOSA CARABALLO</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS206</td>
-                    <td class="">BASE DE DATOS I</td>
-                    <td class="uk-text-center">01</td>
-                    <td class="uk-text-center">GC215</td>
-                    <td class="uk-text-center">20/22</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">20/22</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>ALBERTO MORILLO RODRIGUEZ</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS206</td>
-                    <td class="">BASE DE DATOS I</td>
-                    <td class="uk-text-center">70</td>
-                    <td class="uk-text-center">FD411</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">20/22</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>ALBERTO MORILLO RODRIGUEZ</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS307</td>
-                    <td class="">SISTEMAS OPERATIVOS</td>
-                    <td class="uk-text-center">01</td>
-                    <td class="uk-text-center">FD401, FD411</td>
-                    <td class="uk-text-center">18/20</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">18/20</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>ALBERTO MORILLO RODRIGUEZ</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS307</td>
-                    <td class="">SISTEMAS OPERATIVOS</td>
-                    <td class="uk-text-center">70</td>
-                    <td class="uk-text-center">FD411</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">18/20</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>ALBERTO MORILLO RODRIGUEZ</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS320</td>
-                    <td class="">PROGRAMACION AVANZADA</td>
-                    <td class="uk-text-center">01</td>
-                    <td class="uk-text-center">EP202</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">20/22</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center">20/22</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>SAMUEL ALEJANDRO LUCIANO LASSIS</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-                <tr>
-                    <td class="uk-text-center">INS320</td>
-                    <td class="">PROGRAMACION AVANZADA</td>
-                    <td class="uk-text-center">70</td>
-                    <td class="uk-text-center">VIRTU</td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"> </td>
-                    <td class="uk-text-center"></td>
-                    <td>SAMUEL ALEJANDRO LUCIANO LASSIS</td>
-                    <td class="uk-text-center"><input type="checkbox" checked="" disabled=""></td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="text-center">
+        <div style="padding-left:20px; padding-right:20px;">
+            <table id="SeleccionEst" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead class="Tableback">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Seccion</th>
+                        <th>Materia</th>
+                        <th>Profesor</th>
+                        <th>Creditos</th>
+                        <th>Horario</th>
+                        <th>Aula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.estSection)
+                    {
+                        <tr>
+                            <td>@item.Codigo</td>
+                            <td>@item.Seccion</td>
+                            <td>@item.Materia</td>
+                            <td>@item.Profesor</td>
+                            <td>@item.Creditos</td>
+                            <td>@item.Horario</td>
+                            <td>@item.Aula</td>
+                           
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </div>
