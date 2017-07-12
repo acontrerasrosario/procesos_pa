@@ -19,11 +19,14 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
-        [Authorize(Roles = "Estudiante")]
         public ActionResult Inicio()
         {
             MotherOfModels modelo = new MotherOfModels();
             string currentUser = User.Identity.GetUserId();
+
+            modelo.Trimesters = (from t in _context.Trimesters
+                                 where t.Id == 2
+                                 select t).FirstOrDefault();
 
             var DataInicioUser = (from c in _context.Users
                                   join d in _context.UserCareers
@@ -49,73 +52,35 @@ namespace procesos_app.Controllers
                                     where c.Id == currentUser
                                     select z).FirstOrDefault();
 
-            modelo.DataInicioUser = DataInicioUser;
-            modelo.DataInicioUserCarrer = DataInicioUserCarrer;
-            modelo.DataInicioCarrer = DataInicioCarrer;
 
-          
-
-            return View(modelo);
-
-
-        }
-
-        
-        // GET: Estudiante
-        [Authorize(Roles = "Estudiante")]
-        public ActionResult Seleccion()
-        {
-            ApplicationDbContext _cont = new ApplicationDbContext();
-            MotherOfModels modelo = new MotherOfModels();
-
-            var LstSubject = (from x in _cont.Subjects
-                              select x);
-
-            modelo.ListaSubject = LstSubject;
-
-            string currentUser = User.Identity.GetUserId();
-
-            ApplicationDbContext _cont = new ApplicationDbContext();
-            MotherOfModels modelo = new MotherOfModels();
-            
-            var LstSubject = (from x in _cont.Subjects
-                              join a in _cont.Areas on x.AreasId equals a.Id
-                              select x);
-
-            var ListaArea = (from x in _cont.Subjects
-                             join a in _cont.Areas on x.AreasId equals a.Id
-                             select a);
-
-            var estSection = (from stdS in _cont.StudentSection
-                              join s in _cont.Sections on stdS.Section.Id equals s.Id
-                              join ss in _cont.SectionSchedule on s.Id equals ss.SectionId
-                              join sch in _cont.Schedule on ss.ScheduleId equals sch.Id
-                              join u in _cont.Users on stdS.StudentId equals u.Id
-                              join m in _cont.Subjects on s.SubjectId equals m.Id
-                              join cl in _cont.ClassRooms on s.ClassRoomId equals cl.Id
-                              where stdS.StudentId == currentUser
+            var estSection = (from stdSection in _context.StudentSection
+                              join section in _context.Sections on stdSection.SectionId equals section.Id
+                              join teachersection in _context.TeacherSection on section.Id equals teachersection.SectionId
+                              join sectionsched in _context.SectionSchedule on stdSection.Id equals sectionsched.SectionId
+                              join schedule in _context.Schedule on sectionsched.ScheduleId equals schedule.Id
+                              join user in _context.Users on teachersection.TeacherId equals user.Id
+                              join materia in _context.Subjects on section.SubjectId equals materia.Id
+                              join classroom in _context.ClassRooms on section.ClassRoomId equals classroom.Id                             
+                              where stdSection.StudentId == currentUser
+                              
                               select new
                               {
-                                  Id = stdS.Id,
-                                  Codigo = m.Codigo,
-                                  Seccion = s.Name,
-                                  Materia = m.Name,
-                                  Profesor = u.FirstName+ " " + u.LastName,
-                                  Creditos = m.QtyCredits,
-                                  Horario = sch.Day + " de " + sch.StartTime.Hour + " a " + sch.EndTime.Hour,
-                                  Aula = cl.Name
+                                  Id = section.Id,
+                                  Codigo = materia.Codigo,
+                                  Seccion = section.Name,
+                                  Materia = materia.Name,
+                                  Profesor = teachersection.Teacher.FirstName + " " + teachersection.Teacher.LastName,
+                                  Creditos = materia.QtyCredits,
+                                  Horario = schedule.Day + " de " + schedule.StartTime.Hour + " a " + schedule.EndTime.Hour,
+                                  Aula = classroom.Name
                               }).ToList();
 
-            
-            modelo.ListaArea = ListaArea;
-            modelo.ListaSubject = LstSubject;
 
             List<estSelecion> lista = new List<estSelecion>();
             foreach (var item in estSection)
             {
-
                 lista.Add(new estSelecion
-                { 
+                {
                     Id = item.Id,
                     Codigo = item.Codigo,
                     Seccion = item.Seccion,
@@ -129,15 +94,77 @@ namespace procesos_app.Controllers
 
 
             modelo.estSection = lista;
-           
+            modelo.DataInicioUser = DataInicioUser;
+            modelo.DataInicioUserCarrer = DataInicioUserCarrer;
+            modelo.DataInicioCarrer = DataInicioCarrer;
+
+            return View(modelo);
+
+        }
+
+        // GET: Estudiante
+        public ActionResult Seleccion()
+        {
+            string currentUser = User.Identity.GetUserId();
+
+            ApplicationDbContext _cont = new ApplicationDbContext();
+            MotherOfModels modelo = new MotherOfModels();
+
+            var LstSubject = (from x in _cont.Subjects
+                              join a in _cont.Areas on x.AreasId equals a.Id
+                              select x);
+
+            var ListaArea = (from x in _cont.Subjects
+                             join a in _cont.Areas on x.AreasId equals a.Id
+                             select a);
+
+            var estSection = (from stdS in _context.StudentSection
+                              join s in _context.Sections on stdS.Section.Id equals s.Id
+                              join ss in _context.SectionSchedule on s.Id equals ss.SectionId
+                              join sch in _context.Schedule on ss.ScheduleId equals sch.Id
+                              join u in _context.Users on stdS.StudentId equals u.Id
+                              join m in _context.Subjects on s.SubjectId equals m.Id
+                              join cl in _context.ClassRooms on s.ClassRoomId equals cl.Id
+                              join ts in _context.TeacherSection on u.Id equals ts.TeacherId
+                              where stdS.StudentId == currentUser
+                              select new
+                              {
+                                  Id = stdS.Id,
+                                  Codigo = m.Codigo,
+                                  Seccion = s.Name,
+                                  Materia = m.Name,
+                                  Profesor = ts.Teacher.FirstName + " " + ts.Teacher.LastName,
+                                  Creditos = m.QtyCredits,
+                                  Horario = sch.Day + " de " + sch.StartTime.Hour + " a " + sch.EndTime.Hour,
+                                  Aula = cl.Name
+                              }).ToList();
+
+
+            List<estSelecion> lista = new List<estSelecion>();
+            foreach (var item in estSection)
+            {
+                lista.Add(new estSelecion
+                {
+                    Id = item.Id,
+                    Codigo = item.Codigo,
+                    Seccion = item.Seccion,
+                    Materia = item.Materia,
+                    Profesor = item.Profesor,
+                    Creditos = item.Creditos,
+                    Horario = item.Horario,
+                    Aula = item.Aula
+                });
+            }
+
+            modelo.ListaArea = ListaArea;
+            modelo.ListaSubject = LstSubject;
+            modelo.estSection = lista;
+
 
             return View(modelo);
         }
 
-        
-
         // GET: Estudiante
-        [Authorize(Roles = "Estudiante")]
         public ActionResult Preseleccion()
         {
             return View();
@@ -156,18 +183,11 @@ namespace procesos_app.Controllers
         }
 
         // GET: Estudiante
-        [Authorize]
         public ActionResult OfertaAcademica()
         {
             ApplicationDbContext _cont = new ApplicationDbContext();
             MotherOfModels modelo = new MotherOfModels();
 
-
-            //var LstAreas = (from x in _cont.Areas
-            //          select x);
-            var LstSubject = (from x in _cont.Subjects
-                      select x);
-            
 
             var LstSubject = (from x in _cont.Subjects
                               select x);
@@ -177,56 +197,41 @@ namespace procesos_app.Controllers
 
             return View(modelo);
         }
-        [Authorize(Roles = "Estudiante")]
+
         public string _DetalleSeccion(int id)
         {
             ApplicationDbContext _cont = new ApplicationDbContext();
             MotherOfModels modelo = new MotherOfModels();
-            
-            var w = (from s in _context.Sections
-            join r in _context.ClassRooms on s.ClassRoomId equals r.Id
-            join ss in _context.SectionSchedule on s.Id equals ss.SectionId
-            join sch in _context.Schedule on ss.ScheduleId equals sch.Id
-            join b in _context.Builders on r.Builder.Id equals b.Id
-            join ts in _context.TeacherSection on s.Id equals ts.SectionId
-            join u in _context.Users on ts.TeacherId equals u.Id
-            join subj in _context.Subjects on s.SubjectId equals subj.Id
-            where subj.Id == id
-            select new
-            {
-                secId = s.Id,
-                secName = s.Name,
-                secTrimestre = s.Trimester.Name,
-                curso = b.NickName + " " + s.ClassRoom.Name,
-                dia = sch.Day,
-                horaInicio = sch.StartTime.Hour,
-                horaFin = sch.EndTime.Hour,
-                horario = sch.Day + " de " + sch.StartTime.Hour + " a " + sch.EndTime.Hour,
-                profesorId = u.Id,
-                nombreProf = u.FirstName + " " + u.SecondName + " " +
-                                u.LastName + " " + u.SecondLastName,
-                materia = subj.Name
 
-            }).ToList();
+            var w = (from s in _context.Sections
+                     join r in _context.ClassRooms on s.ClassRoomId equals r.Id
+                     join ss in _context.SectionSchedule on s.Id equals ss.SectionId
+                     join sch in _context.Schedule on ss.ScheduleId equals sch.Id
+                     join b in _context.Builders on r.Builder.Id equals b.Id
+                     join ts in _context.TeacherSection on s.Id equals ts.SectionId
+                     join u in _context.Users on ts.TeacherId equals u.Id
+                     join subj in _context.Subjects on s.SubjectId equals subj.Id
+                     where subj.Id == id
+                     select new
+                     {
+                         secId = s.Id,
+                         secName = s.Name,
+                         secTrimestre = s.Trimester.Name,
+                         curso = b.NickName + " " + s.ClassRoom.Name,
+                         dia = sch.Day,
+                         horaInicio = sch.StartTime.Hour,
+                         horaFin = sch.EndTime.Hour,
+                         horario = sch.Day + " de " + sch.StartTime.Hour + " a " + sch.EndTime.Hour,
+                         profesorId = u.Id,
+                         nombreProf = u.FirstName + " " + u.SecondName + " " +
+                                         u.LastName + " " + u.SecondLastName,
+                         materia = subj.Name
+
+                     }).ToList();
 
             return JsonConvert.SerializeObject(w);
-
-            
-
         }
-          
 
-        public string _DetalleSeccion(int id)
-        {
-            ApplicationDbContext _cont = new ApplicationDbContext();
-            MotherOfModels modelo = new MotherOfModels();
-
-            var x = from z in _cont.Sections
-                    join c in _cont.Subjects on z.Subject.Id equals c.Id
-                    where c.Id == id
-                    select z;
-
-            return JsonConvert.SerializeObject(x);
         public void AgregarSeccion(int id)
         {
 
@@ -237,8 +242,8 @@ namespace procesos_app.Controllers
                 var stdSeccion = new StudentSection
                 {
                     FinalScore = 0,
-                    StudentId = currentUser,
-                    SectionId = id,
+                    StudentId = currentUser,//_context.Users.Where(u => u.Id == currentUser).FirstOrDefault(),
+                    Section = _context.Sections.Where(s => s.Id == id).FirstOrDefault(),
                     Status = procesos_app.Models.Enums.StatusSectionEnum.SectionStatus.Cusando
 
                 };
@@ -248,7 +253,7 @@ namespace procesos_app.Controllers
             }
 
             catch (Exception e)
-            {           
+            {
                 return;
             }
 
@@ -259,7 +264,7 @@ namespace procesos_app.Controllers
         {
 
             var userInDb = _context.StudentSection.FirstOrDefault(u => u.Id == id);
-            
+
             _context.StudentSection.Remove(userInDb);
             _context.SaveChanges();
         }

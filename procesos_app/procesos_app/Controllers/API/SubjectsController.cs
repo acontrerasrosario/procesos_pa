@@ -19,19 +19,6 @@ namespace procesos_app.Controllers.API
 
 
 
-        // GET /api/areas/getAreas
-        public IEnumerable<Areas> GetAreas()
-        {
-            var areaList = _context.Areas.ToList();
-            return areaList;
-        }
-
-        // GET /api/areas/getMaterias
-        public IEnumerable<Subject> GetMaterias()
-        {
-            var SubjectsList = _context.Subjects.ToList();
-            return SubjectsList;
-        }
         // GET /api/subjects/getMaterias
         public object GetMaterias()
         {

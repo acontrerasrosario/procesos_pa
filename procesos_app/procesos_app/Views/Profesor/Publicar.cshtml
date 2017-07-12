@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Publicar";
+    Layout = "~/Views/Shared/_LayoutProfesor.cshtml";
+}
+
+<h2>Publicar</h2>
+
+<div class="container body-content" ng-controller="PublicarController">
+    <form class="form-horizontal">
+        <div class="row">
+            <div class="col-xs-9">
+                <div class="form-group">
+                    <label class="col-xs-9" control-label">Seccion: </label>
+                    <select class="form-control" id="seccion" required>
+                        <option value="0" disabled selected hidden> - Seleccionar - </option>
+                        <option ng-repeat="s in Secciones" value="{{s.secId}}">{{s.secName}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <h2>Estudiantes</h2>
+        <div class="row">
+            <div class="table-reponsive">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Calificacion</th>
+                            <th>Publicar </th>
+                        </tr>
+
+                    </thead>
+                    <tbody class="table-striped">
+                        <tr ng-repeat="e in estudiantes | orderBy: 'name'">
+                            <td>{{e.estId}}</td>
+                            <td>{{e.estName }}</td>
+                            <td>{{e.status}}</td>
+                            <td>{{e.cal}}</td>
+                            <td>
+                            <a class="btn btn-danger" ng-click="publicar(e)"> Publicar </a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </form>
+    
+
+</div>

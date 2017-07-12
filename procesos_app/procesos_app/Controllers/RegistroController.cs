@@ -9,20 +9,6 @@ namespace procesos_app.Controllers
 {
     public class RegistroController : Controller
     {
-
-        ApplicationDbContext _context;
-
-        public void ApplicationDbContext()
-        {
-            _context = new ApplicationDbContext();
-        }
-
-        public ActionResult Index()
-        {
-            
-            return View();
-        }
-
        
 
 

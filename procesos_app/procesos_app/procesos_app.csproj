@@ -203,9 +203,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\API\SubjectsController.cs" />
     <Compile Include="Controllers\API\AreasController.cs" />
     <Compile Include="Controllers\API\CursosController.cs" />
+    <Compile Include="Controllers\API\PublicarController.cs" />
     <Compile Include="Controllers\API\RevisionController.cs" />
     <Compile Include="Controllers\API\ValidarProfesorController.cs" />
     <Compile Include="Controllers\API\SectionsController.cs" />
@@ -213,12 +213,9 @@
     <Compile Include="Controllers\API\TrimestreController.cs" />
     <Compile Include="Controllers\API\UsersController.cs" />
     <Compile Include="Controllers\EstudianteController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
-    <Compile Include="Controllers\SubjectsController.cs" />
-    <Compile Include="Controllers\TrimestersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -266,17 +263,6 @@
     <Compile Include="Migrations\201706282248049_seeding classrooms table.Designer.cs">
       <DependentUpon>201706282248049_seeding classrooms table.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707062339296_adding foreignkey_teacersection.cs" />
-    <Compile Include="Migrations\201707062339296_adding foreignkey_teacersection.Designer.cs">
-      <DependentUpon>201707062339296_adding foreignkey_teacersection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707070118264_adding foreignkey_teacersection2.cs" />
-    <Compile Include="Migrations\201707070118264_adding foreignkey_teacersection2.Designer.cs">
-      <DependentUpon>201707070118264_adding foreignkey_teacersection2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707070136139_adding foreignkey_teacersection3.cs" />
-    <Compile Include="Migrations\201707070136139_adding foreignkey_teacersection3.Designer.cs">
-      <DependentUpon>201707070136139_adding foreignkey_teacersection3.cs</DependentUpon>
     <Compile Include="Migrations\201707061532432_Fixing Subject Prerequisits with career.cs" />
     <Compile Include="Migrations\201707061532432_Fixing Subject Prerequisits with career.Designer.cs">
       <DependentUpon>201707061532432_Fixing Subject Prerequisits with career.cs</DependentUpon>
@@ -345,6 +331,22 @@
     <Compile Include="Migrations\201707111748241_agregando id en studentsection table.Designer.cs">
       <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707112024214_fixing attribute solicitudArea.cs" />
+    <Compile Include="Migrations\201707112024214_fixing attribute solicitudArea.Designer.cs">
+      <DependentUpon>201707112024214_fixing attribute solicitudArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112027556_agregando detalle de revision.cs" />
+    <Compile Include="Migrations\201707112027556_agregando detalle de revision.Designer.cs">
+      <DependentUpon>201707112027556_agregando detalle de revision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112058016_agregando motivo de tabla revision.cs" />
+    <Compile Include="Migrations\201707112058016_agregando motivo de tabla revision.Designer.cs">
+      <DependentUpon>201707112058016_agregando motivo de tabla revision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112100527_arreglando motivo de tabla revision.cs" />
+    <Compile Include="Migrations\201707112100527_arreglando motivo de tabla revision.Designer.cs">
+      <DependentUpon>201707112100527_arreglando motivo de tabla revision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Enums\AreasEnum.cs" />
     <Compile Include="Models\Enums\CareerStatusEnum.cs" />
@@ -370,9 +372,6 @@
     <Content Include="Content\Images\logo_top.png" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\materialize.min.css" />
-    <Content Include="Scripts\AwesomeAngularMVCApp.js" />
-    <Content Include="Scripts\materialize.js" />
-    <Content Include="Scripts\materialize.min.js" />
     <Content Include="Scripts\AngularJS\angular.min.js" />
     <Content Include="Scripts\AngularJS\jquery-3.2.1.min.js" />
     <Content Include="Scripts\AngularJS\NgRoute.js" />
@@ -404,7 +403,6 @@
     <Content Include="Scripts\Rules\rulesUsuarios.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\DetalleSeccion.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -415,12 +413,12 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="UI\Controllers\LandingPageController.js" />
     <Content Include="UI\Controllers\AddSectionController.js" />
     <Content Include="UI\Controllers\AddTrimesterController.js" />
     <Content Include="UI\Controllers\AddSubjectsController.js" />
     <Content Include="UI\Controllers\AdminSubjectController.js" />
     <Content Include="UI\Controllers\ProfesorAutorizacionController.js" />
+    <Content Include="UI\Controllers\PublicarController.js" />
     <Content Include="UI\Controllers\RevisionController.js" />
     <Content Include="UI\Template\ModSubject.html" />
     <Content Include="Web.config" />
@@ -457,7 +455,6 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registro\NewSubject.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
@@ -467,35 +464,18 @@
     <Content Include="Views\Estudiante\Preseleccion.cshtml" />
     <Content Include="Views\Estudiante\Retiro.cshtml" />
     <Content Include="Views\Estudiante\Revision.cshtml" />
-    <Content Include="Views\Estudiante\OfertaAcademica.cshtml" />
-    <Content Include="Views\Trimesters\Create.cshtml" />
-    <Content Include="Views\Trimesters\Delete.cshtml" />
-    <Content Include="Views\Trimesters\Details.cshtml" />
-    <Content Include="Views\Trimesters\Edit.cshtml" />
-    <Content Include="Views\Trimesters\Index.cshtml" />
-    <Content Include="Views\Subjects\Create.cshtml" />
-    <Content Include="Views\Subjects\Delete.cshtml" />
-    <Content Include="Views\Subjects\Details.cshtml" />
-    <Content Include="Views\Subjects\Edit.cshtml" />
-    <Content Include="Views\Subjects\Index.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\One.cshtml" />
-    <Content Include="Views\Home\Two.cshtml" />
-    <Content Include="Views\Home\Three.cshtml" />
-    <Content Include="Views\Registro\Index.cshtml" />
-    <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
-    <Content Include="Views\Profesor\PubMT.cshtml" />
-    <Content Include="Views\Shared\_LayoutPubMT.cshtml" />
     <Content Include="Views\Estudiante\Seleccion.cshtml" />
     <Content Include="Views\Estudiante\_DetalleSeccion.cshtml" />
     <Content Include="Views\Registro\NewTrimester.cshtml" />
     <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
     <Content Include="Views\Registro\CrearSecciones.cshtml" />
+    <Content Include="Views\Profesor\Publicar.cshtml" />
+    <Content Include="Views\Profesor\Index.cshtml" />
+    <Content Include="Views\Profesor\Revision.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AngularJS\" />
-    <Folder Include="Views\Profesor\" />
     <Folder Include="Views\Subjects\" />
   </ItemGroup>
   <ItemGroup>
@@ -538,14 +518,6 @@
     <EmbeddedResource Include="Migrations\201706282248049_seeding classrooms table.resx">
       <DependentUpon>201706282248049_seeding classrooms table.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707062339296_adding foreignkey_teacersection.resx">
-      <DependentUpon>201707062339296_adding foreignkey_teacersection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707070118264_adding foreignkey_teacersection2.resx">
-      <DependentUpon>201707070118264_adding foreignkey_teacersection2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707070136139_adding foreignkey_teacersection3.resx">
-      <DependentUpon>201707070136139_adding foreignkey_teacersection3.cs</DependentUpon>
     <EmbeddedResource Include="Migrations\201707061532432_Fixing Subject Prerequisits with career.resx">
       <DependentUpon>201707061532432_Fixing Subject Prerequisits with career.cs</DependentUpon>
     </EmbeddedResource>
@@ -596,6 +568,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707111748241_agregando id en studentsection table.resx">
       <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112024214_fixing attribute solicitudArea.resx">
+      <DependentUpon>201707112024214_fixing attribute solicitudArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112027556_agregando detalle de revision.resx">
+      <DependentUpon>201707112027556_agregando detalle de revision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112058016_agregando motivo de tabla revision.resx">
+      <DependentUpon>201707112058016_agregando motivo de tabla revision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112100527_arreglando motivo de tabla revision.resx">
+      <DependentUpon>201707112100527_arreglando motivo de tabla revision.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

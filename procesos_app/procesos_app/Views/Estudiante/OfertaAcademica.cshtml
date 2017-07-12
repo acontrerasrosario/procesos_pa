@@ -7,7 +7,6 @@
 
 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 <script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 <script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
 
@@ -66,7 +65,6 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Area</th>
                     <th>Creditos</th>
                     <th>Detalle</th>
                 </tr>
@@ -75,7 +73,6 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Area</th>
                     <th>Creditos</th>
                     <th>Detalle</th>
                 </tr>
@@ -86,7 +83,6 @@
                     <tr>
                         <td>@item.Id</td>
                         <td>@item.Name</td>
-                        <td>@item.Areas</td>
                         <td class="text-center">@item.QtyCredits</td>
                         <td class="text-center"><a class="glyphicon glyphicon-eye-open"></a></td>
                     </tr>
@@ -99,7 +95,6 @@
 
 <script>
     $(document).ready(function () {
-        $('#OfertaA').DataTable();
         $('#OfertaA').DataTable({
             "language": {
 

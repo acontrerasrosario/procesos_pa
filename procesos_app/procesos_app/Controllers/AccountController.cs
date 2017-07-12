@@ -137,11 +137,6 @@ namespace procesos_app.Controllers
 
         //
         // GET: /Account/Register
-        
-        [Authorize(Roles = "Registro")]
-        public ActionResult Register()
-        {
-            
 
         [Authorize(Roles = "Registro")]
         public ActionResult Register()
@@ -173,10 +168,6 @@ namespace procesos_app.Controllers
                     LastName = model.LastName,
                     SecondLastName = model.SecondLastName
                 };
-                var userRole = new IdentityUserRole {RoleId = model.Type.ToString(), UserId = user.Id};
-                var result = await UserManager.CreateAsync(user, model.Password);
-
-                
                 var userRole = new IdentityUserRole { RoleId = model.Type.ToString(), UserId = user.Id };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
@@ -186,7 +177,6 @@ namespace procesos_app.Controllers
 
                     await UserManager.AddToRoleAsync(user.Id, model.Type.ToString());
                     //await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
@@ -196,11 +186,6 @@ namespace procesos_app.Controllers
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                     if (User.IsInRole("Estudiante"))
-                    {
-                        return RedirectToAction("Inicio", "Estudiante");
-                    }
-                    if (User.IsInRole("Profesor"))
-                    if (User.IsInRole("ESTUDIANTE"))
                     {
                         return RedirectToAction("Inicio", "Estudiante");
                     }
@@ -493,6 +478,12 @@ namespace procesos_app.Controllers
         private ActionResult RedirectToLocal(string returnUrl)
         {
 
+            var est = User.IsInRole("Estudiante");
+
+            var prof = User.IsInRole("Profesor");
+            var reg = User.IsInRole("Registro");
+
+
             if (Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
@@ -503,14 +494,9 @@ namespace procesos_app.Controllers
                 return RedirectToAction("Inicio", "Estudiante");
             }
             if (User.IsInRole("Profesor"))
-            if (User.IsInRole("ESTUDIANTE"))
-            {
-                return RedirectToAction("Inicio", "Estudiante");
-            }
-            if (User.IsInRole("Profesor"))
 
             {
-                return RedirectToAction("Inicio", "Profesor");
+                return RedirectToAction("Index", "Profesor");
             }
 
             return RedirectToAction("Index", "Registro");

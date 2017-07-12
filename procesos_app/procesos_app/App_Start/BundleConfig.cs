@@ -36,11 +36,6 @@ namespace procesos_app
                 .IncludeDirectory("~/UI/Controllers", "*.js")
                 .Include("~/Scripts/AwesomeAngularMVCApp.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/materializecss").Include(
-                "~/Content/materialize.min.css"));
-
-            bundles.Add(new ScriptBundle("~/bundles/materializejs").Include(
-                "~/Scripts/materialize.min.js"));
             
                 
         }

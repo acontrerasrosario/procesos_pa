@@ -40,31 +40,6 @@
             font-weight: 100;
             margin: 10px;
         }
-
-        .btn {
-            border: 0px;
-            font-weight: 100;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-    </style>
-
-</head>
-<body class="colorBg">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-         
-       
-    </style>
-
-</head>
-
-        .section-title-lyt {
-            padding-left: 15px;
-            padding-top: 20px;
-            font-weight: 100;
-            margin: 10px;
-        }
     </style>
 
     
@@ -118,20 +93,9 @@
 
 
 
-    <div class="col-md-2 colorBg">
-        @Html.ActionLink("Usuario", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Area", "Index", "Areas", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
-        @Html.ActionLink("Materia", "Index", "Subjects", routeValues: null, htmlAttributes: new { @class = "btn colorBg" })<br />
     </div>
 
     <div id="Contenedor">
-        <div class="container BgColor col-md-10">
-            @RenderBody()
-        </div>
-    </div>
-       
-    
-    @Scripts.Render("~/bundles/angular")
         <div class="container BgColor col-md-10"> 
             @RenderBody()
         </div>

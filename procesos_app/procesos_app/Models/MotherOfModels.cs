@@ -32,11 +32,6 @@ namespace procesos_app.Models
         public Subject Subjects { get; set; }
         public Schedule Schedule { get; set; }
 
-        public IEnumerable<Section> ListaSection { get; set; }
-        public IEnumerable<Subject> ListaSubject { get; set; }
-        public IEnumerable<Areas> ListaArea { get; set; }
-        public IEnumerable<Trimester> NombreTrimestre { get; set; }
-        public IEnumerable<TeacherSection> SeccionProfesor { get; set; }
 
 
         // miguel
