@@ -478,6 +478,12 @@ namespace procesos_app.Controllers
         private ActionResult RedirectToLocal(string returnUrl)
         {
 
+            var est = User.IsInRole("Estudiante");
+
+            var prof = User.IsInRole("Profesor");
+            var reg = User.IsInRole("Registro");
+
+
             if (Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
@@ -490,7 +496,7 @@ namespace procesos_app.Controllers
             if (User.IsInRole("Profesor"))
 
             {
-                return RedirectToAction("Inicio", "Profesor");
+                return RedirectToAction("Index", "Profesor");
             }
 
             return RedirectToAction("Index", "Registro");

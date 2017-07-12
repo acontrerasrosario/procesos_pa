@@ -14,5 +14,17 @@ namespace procesos_app.Controllers
         {
             return View();
         }
+
+
+        [Authorize(Roles = "Profesor")]
+        public ActionResult Publicar()
+        {
+            return View();
+        }
+
+
+
+
+
     }
 }

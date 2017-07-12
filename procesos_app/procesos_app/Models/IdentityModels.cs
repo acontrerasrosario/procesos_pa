@@ -347,6 +347,8 @@ namespace procesos_app.Models
     public class Revision
     {
         public int Id { get; set; }
+
+        public string Motivo { get; set; }
         public string StudentId { get; set; }
         public virtual ApplicationUser Student { get; set; }
         public int SectionId { get; set; }
@@ -354,7 +356,7 @@ namespace procesos_app.Models
         public bool SolicitudStudiante { get; set; }
         public int AreaId { get; set; }
         public virtual Areas Area { get; set; }
-        public int SolicidudArea { get; set; }
+        public bool SolicidudArea { get; set; }
         public bool Cambio { get; set; }
         public string TeacherId { get; set; }
         public virtual ApplicationUser Teacher { get; set; }
@@ -364,6 +366,7 @@ namespace procesos_app.Models
 
     public class DetalleRevision
     {
+        public int Id { get; set; }
         public int RevisionId { get; set; }
         public virtual Revision Revision { get; set; }
         public double FinalScore { get; set; }
@@ -391,6 +394,7 @@ namespace procesos_app.Models
         public DbSet<ProfesorAutorizacion> ProfesorAutorizacion { get; set; }
         public DbSet<Opciones> Opciones { get; set; }
         public DbSet<Revision> Revisiones { get; set; }
+        public DbSet<DetalleRevision> DetalleRevision { get; set; }
 
         public ApplicationDbContext()
             : base("ProcesosDB", throwIfV1Schema: false)

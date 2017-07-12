@@ -68,6 +68,7 @@
                         <th>Materia</th>
                         <th>Profesor/a</th>
                         <th>Calificacion</th>
+                        <th>Motivo</th>
                         <th>Solicitar</th>
                     </tr>
                 </thead>
@@ -78,10 +79,12 @@
                         <td>{{s.profesor}}</td>
                         <td>{{s.calificacion}}</td>
                         <td>
-                            <a ng-if="!Seccion.solicitud" class="btn btn-primary" ng-click="solicitar(s)"> Ir </a>
+                            <textarea class="form-control" id="motivo"></textarea>
                         </td>
                         <td>
-                            <a ng-if="Seccion.solicitud" class="btn btn-primary" ng-click="solicitar(s)"> Ir </a>
+                            <a class="btn btn-primary" ng-click="solicitar(s)"> Solicitar </a>
+                            <!--SI YA SOLICITUD PEDIR CANCELAR-->
+                          
                         </td>
                         
                     </tr>
@@ -90,7 +93,7 @@
             </table>
         </div>
     </div>
-    @*
+
     <div>
         <div>
             <h4 class="HBG">[ Revision - Profesores ] - [Inserte Trimestre Aqui!]</h4>
@@ -103,18 +106,39 @@
                         <th>Materia</th>
                         <th>Profesor/a</th>
                         <th>Calificacion</th>
-                        <th>Confirmar</th>
-                        <th>Cancelar</th>
+                        <th>Motivo</th>
+                        <th>Estado</th>
+                        <th>Aprobar</th>
+                        <th>Desaprobar</th>
+                        <th>Cancelar Solicitud</th>
                     </tr>
                 </thead>
                 <tbody class="table-striped">
-                   
+                    <tr ng-repeat="rs in RevisionEstablecida | orderBy: 'name'">
+                        <td>{{rs.seccion}}</td>
+                        <td>{{rs.nombre}} - {{s.nombre}}</td>
+                        <td>{{rs.profesor}}</td>
+                        <td>{{rs.calificacion}}</td>
+                        <td>{{rs.motivo}}</td>
+                        <td>{{rs.status}}</td>
+                        <td><a ng-if="rs.status==false" disabled class="btn btn-primary"        ng-click="Aprobar(rs)"> Aprobar </a></td>
+                        <td>
+                            
+                            <!--SI YA SOLICITUD PEDIR CANCELAR-->
+
+                            <a ng-if="rs.status==false" disabled class="btn btn-danger" ng-click=""> Desaprobar </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger" ng-click="cancelar(rs)"> Cancelar </a>
+                        </td>
+
+                    </tr>
 
                 </tbody>
             </table>
         </div>
     </div>
-*@
+
 @*
     <div>
         <div>

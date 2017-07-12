@@ -205,6 +205,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\AreasController.cs" />
     <Compile Include="Controllers\API\CursosController.cs" />
+    <Compile Include="Controllers\API\PublicarController.cs" />
     <Compile Include="Controllers\API\RevisionController.cs" />
     <Compile Include="Controllers\API\ValidarProfesorController.cs" />
     <Compile Include="Controllers\API\SectionsController.cs" />
@@ -330,6 +331,22 @@
     <Compile Include="Migrations\201707111748241_agregando id en studentsection table.Designer.cs">
       <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707112024214_fixing attribute solicitudArea.cs" />
+    <Compile Include="Migrations\201707112024214_fixing attribute solicitudArea.Designer.cs">
+      <DependentUpon>201707112024214_fixing attribute solicitudArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112027556_agregando detalle de revision.cs" />
+    <Compile Include="Migrations\201707112027556_agregando detalle de revision.Designer.cs">
+      <DependentUpon>201707112027556_agregando detalle de revision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112058016_agregando motivo de tabla revision.cs" />
+    <Compile Include="Migrations\201707112058016_agregando motivo de tabla revision.Designer.cs">
+      <DependentUpon>201707112058016_agregando motivo de tabla revision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707112100527_arreglando motivo de tabla revision.cs" />
+    <Compile Include="Migrations\201707112100527_arreglando motivo de tabla revision.Designer.cs">
+      <DependentUpon>201707112100527_arreglando motivo de tabla revision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Enums\AreasEnum.cs" />
     <Compile Include="Models\Enums\CareerStatusEnum.cs" />
@@ -401,6 +418,7 @@
     <Content Include="UI\Controllers\AddSubjectsController.js" />
     <Content Include="UI\Controllers\AdminSubjectController.js" />
     <Content Include="UI\Controllers\ProfesorAutorizacionController.js" />
+    <Content Include="UI\Controllers\PublicarController.js" />
     <Content Include="UI\Controllers\RevisionController.js" />
     <Content Include="UI\Template\ModSubject.html" />
     <Content Include="Web.config" />
@@ -437,7 +455,6 @@
     <Content Include="Views\Shared\_LayoutRegistro.cshtml" />
     <Content Include="Views\Shared\_LayoutProfesor.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Registro\NewSubject.cshtml" />
     <Content Include="Views\Registro\Index.cshtml" />
@@ -452,11 +469,12 @@
     <Content Include="Views\Registro\NewTrimester.cshtml" />
     <Content Include="Views\Registro\ProfesorAutorizado.cshtml" />
     <Content Include="Views\Registro\CrearSecciones.cshtml" />
+    <Content Include="Views\Profesor\Publicar.cshtml" />
+    <Content Include="Views\Profesor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\AngularJS\" />
-    <Folder Include="Views\Profesor\" />
     <Folder Include="Views\Subjects\" />
   </ItemGroup>
   <ItemGroup>
@@ -549,6 +567,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707111748241_agregando id en studentsection table.resx">
       <DependentUpon>201707111748241_agregando id en studentsection table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112024214_fixing attribute solicitudArea.resx">
+      <DependentUpon>201707112024214_fixing attribute solicitudArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112027556_agregando detalle de revision.resx">
+      <DependentUpon>201707112027556_agregando detalle de revision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112058016_agregando motivo de tabla revision.resx">
+      <DependentUpon>201707112058016_agregando motivo de tabla revision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707112100527_arreglando motivo de tabla revision.resx">
+      <DependentUpon>201707112100527_arreglando motivo de tabla revision.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

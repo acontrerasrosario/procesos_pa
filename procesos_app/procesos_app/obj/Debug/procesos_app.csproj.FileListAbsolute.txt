@@ -713,3 +713,7 @@ C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migratio
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandotablasubject.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotabladerevisionyopciones.resources
 C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoidenstudentsectiontable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingattributesolicitudArea.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandodetallederevision.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandomotivodetablarevision.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandomotivodetablarevision.resources
