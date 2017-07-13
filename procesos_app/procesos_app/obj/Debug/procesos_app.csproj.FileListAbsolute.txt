@@ -1,0 +1,725 @@
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\ApplicationInsights.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csc.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csc.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csi.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\csi.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\vbc.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\procesos_app.dll.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\procesos_app.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\procesos_app.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\EntityFramework.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Razor.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.Razor.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\EntityFramework.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\Procesos_PA\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\ApplicationInsights.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csc.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csi.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\csi.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\vbc.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\procesos_app.dll.config
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\procesos_app.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\procesos_app.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Owin.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Http.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Razor.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Http.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.Razor.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.dll
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\bin\AutoMapper.xml
+C:\Users\migue\Desktop\Prgramacion Avanzada\Repositorio\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.listofclassrooms.resources
+E:\procesos_app\procesos_app\bin\ApplicationInsights.config
+E:\procesos_app\procesos_app\bin\roslyn\csc.exe
+E:\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+E:\procesos_app\procesos_app\bin\roslyn\csc.rsp
+E:\procesos_app\procesos_app\bin\roslyn\csi.exe
+E:\procesos_app\procesos_app\bin\roslyn\csi.rsp
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+E:\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+E:\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+E:\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+E:\procesos_app\procesos_app\bin\roslyn\vbc.exe
+E:\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+E:\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+E:\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+E:\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+E:\procesos_app\procesos_app\bin\procesos_app.dll.config
+E:\procesos_app\procesos_app\bin\procesos_app.dll
+E:\procesos_app\procesos_app\bin\procesos_app.pdb
+E:\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+E:\procesos_app\procesos_app\bin\AutoMapper.dll
+E:\procesos_app\procesos_app\bin\EntityFramework.dll
+E:\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+E:\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+E:\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+E:\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+E:\procesos_app\procesos_app\bin\Owin.dll
+E:\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+E:\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+E:\procesos_app\procesos_app\bin\System.Web.Http.dll
+E:\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+E:\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+E:\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+E:\procesos_app\procesos_app\bin\System.Web.Razor.dll
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+E:\procesos_app\procesos_app\bin\WebGrease.dll
+E:\procesos_app\procesos_app\bin\AutoMapper.xml
+E:\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+E:\procesos_app\procesos_app\bin\System.Web.Http.xml
+E:\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+E:\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+E:\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+E:\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+E:\procesos_app\procesos_app\bin\System.Web.Razor.xml
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+E:\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+E:\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+E:\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+E:\procesos_app\procesos_app\bin\EntityFramework.xml
+E:\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+E:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+E:\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingSubjectPrerequisitswithcareer.resources
+E:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.SubjectCareerTable.resources
+H:\procesos_app\procesos_app\bin\ApplicationInsights.config
+H:\procesos_app\procesos_app\bin\roslyn\csc.exe
+H:\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+H:\procesos_app\procesos_app\bin\roslyn\csc.rsp
+H:\procesos_app\procesos_app\bin\roslyn\csi.exe
+H:\procesos_app\procesos_app\bin\roslyn\csi.rsp
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+H:\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+H:\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+H:\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+H:\procesos_app\procesos_app\bin\roslyn\vbc.exe
+H:\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+H:\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+H:\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+H:\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+H:\procesos_app\procesos_app\bin\procesos_app.dll.config
+H:\procesos_app\procesos_app\bin\procesos_app.dll
+H:\procesos_app\procesos_app\bin\procesos_app.pdb
+H:\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+H:\procesos_app\procesos_app\bin\AutoMapper.dll
+H:\procesos_app\procesos_app\bin\EntityFramework.dll
+H:\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+H:\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+H:\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+H:\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+H:\procesos_app\procesos_app\bin\Owin.dll
+H:\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+H:\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+H:\procesos_app\procesos_app\bin\System.Web.Http.dll
+H:\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+H:\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+H:\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+H:\procesos_app\procesos_app\bin\System.Web.Razor.dll
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+H:\procesos_app\procesos_app\bin\WebGrease.dll
+H:\procesos_app\procesos_app\bin\AutoMapper.xml
+H:\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+H:\procesos_app\procesos_app\bin\System.Web.Http.xml
+H:\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+H:\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+H:\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+H:\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+H:\procesos_app\procesos_app\bin\System.Web.Razor.xml
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+H:\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+H:\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+H:\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+H:\procesos_app\procesos_app\bin\EntityFramework.xml
+H:\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+H:\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+H:\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingSubjectPrerequisitswithcareer.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.SubjectCareerTable.resources
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+H:\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.codigoenmateria.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\ApplicationInsights.config
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csc.rsp
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csi.exe
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\csi.rsp
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\vbc.exe
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll.config
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\procesos_app.pdb
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Owin.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Razor.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\AutoMapper.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.Razor.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingSubjectPrerequisitswithcareer.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.SubjectCareerTable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.codigoenmateria.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeingkeyuserscareers.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotandaprofesor.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingtoyo.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablaSectionSchedule.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablamateriasautorizadasparaelprofesor.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.modificandoprofesorautorizacions.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoaulaidenlatabladeseccion.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.creandoforeignkeydecursoenseccion.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglando.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingsectiontable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingteachersection.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\ApplicationInsights.config
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\csc.exe
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\csc.exe.config
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\csc.rsp
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\csi.exe
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\csi.rsp
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.AppContext.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\vbc.exe
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\vbc.exe.config
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\vbc.rsp
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\procesos_app.dll.config
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\procesos_app.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\procesos_app.pdb
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Antlr3.Runtime.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\AutoMapper.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\EntityFramework.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\EntityFramework.SqlServer.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.Web.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Newtonsoft.Json.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Owin.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Net.Http.Formatting.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Helpers.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Http.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Http.WebHost.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Mvc.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Optimization.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Razor.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\WebGrease.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\AutoMapper.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Net.Http.Formatting.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Http.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Http.WebHost.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Helpers.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Mvc.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Optimization.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.Razor.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.Deployment.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\System.Web.WebPages.Razor.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Antlr3.Runtime.pdb
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Newtonsoft.Json.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\EntityFramework.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\EntityFramework.SqlServer.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.ApplicationInsights.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\bin\Microsoft.AI.Web.xml
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.csprojResolveAssemblyReference.cache
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.InitialModel.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.UpdateDB.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.AddingTeacherSectionandStudentSection.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.Seedingdatabase.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingtable.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingenumsfieldstodifferenttables.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.cedulachartostring.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingforeignkeyofareainusers.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.IndexinganduniquefieldId2.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingUserNameWithid2andcreatingnamefields.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.seedingclassroomstable.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.FixingSubjectPrerequisitswithcareer.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.SubjectCareerTable.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.codigoenmateria.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.addingforeingkeyuserscareers.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotandaprofesor.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingtoyo.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablaSectionSchedule.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotablamateriasautorizadasparaelprofesor.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.modificandoprofesorautorizacions.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoaulaidenlatabladeseccion.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.creandoforeignkeydecursoenseccion.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglando.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingsectiontable.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingteachersection.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.csproj.GenerateResource.Cache
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.dll
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.pdb
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandotablasubject.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandotablasubject.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotabladerevisionyopciones.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoidenstudentsectiontable.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingattributesolicitudArea.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandodetallederevision.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandomotivodetablarevision.resources
+C:\Projects\procesos_pa\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandomotivodetablarevision.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandotabladerevisionyopciones.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandoidenstudentsectiontable.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.fixingattributesolicitudArea.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandodetallederevision.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.agregandomotivodetablarevision.resources
+C:\Users\migue\Desktop\procesos_app\procesos_app\obj\Debug\procesos_app.Migrations.arreglandomotivodetablarevision.resources

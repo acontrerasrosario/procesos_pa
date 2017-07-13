@@ -1,0 +1,4 @@
+C:\Projects\procesos_pa\procesos_app\procesos_app_classes\bin\Debug\netstandard1.4\procesos_app_classes.deps.json
+C:\Projects\procesos_pa\procesos_app\procesos_app_classes\bin\Debug\netstandard1.4\procesos_app_classes.dll
+C:\Projects\procesos_pa\procesos_app\procesos_app_classes\obj\Debug\netstandard1.4\procesos_app_classes.csprojResolveAssemblyReference.cache
+C:\Projects\procesos_pa\procesos_app\procesos_app_classes\obj\Debug\netstandard1.4\procesos_app_classes.AssemblyInfo.cs

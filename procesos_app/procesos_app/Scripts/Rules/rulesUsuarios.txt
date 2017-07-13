@@ -1,0 +1,24 @@
+﻿RANGO DE CREACION PARA ESTUDIANTES
+
+ID RANGE: 1020000 - 1099999 
+Nombre: Miguel Santos
+CORREO EJ. : 1020000@est.intec.edu.do
+
+=================================================
+
+RANGO DE CREACION PARA PROFESORES
+
+ID RANGE: 0001000 - 0009999 
+Nombre: Pedro Santana
+CORREO EJ. : pedro.santana@intec.edu.do
+
+
+=================================================
+
+RANGO DE CREACION PARA ADMINISTRADORES (REGISTRO)
+Nombre: Pablo Corporan
+ID RANGE: 0000000 - 0000999 
+CORREO EJ.: pablo.corporan@intec.edu.do
+
+
+=================================================

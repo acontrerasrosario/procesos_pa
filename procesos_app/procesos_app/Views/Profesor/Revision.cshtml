@@ -1,0 +1,134 @@
+﻿﻿@model procesos_app.Models.MotherOfModels
+@{
+    ViewBag.Title = "Revision";
+    Layout = "~/Views/Shared/_LayoutProfesor.cshtml";
+}
+
+
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="  https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css"></script>
+
+<style>
+    .section-title {
+        padding-left: 0px;
+        padding-top: 20px;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    .Tableback {
+        background: #c10d0d;
+        color: white;
+    }
+
+    .light-bottom-border {
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .section {
+        padding: 5px 0;
+        margin: 20px 10px;
+        background-color: white;
+    }
+
+    .section_info {
+        margin: 20px;
+    }
+
+    .HBG {
+        padding: 7px 10px;
+        background-color: #404040;
+        color: #FFF;
+    }
+
+    .block-dashboard {
+        width: 160px;
+        height: 187px;
+        display: inline-block;
+        padding: 10px;
+    }
+</style>
+
+<div>
+    <h3 class="section-title text-center">Revision</h3>
+    <hr />
+</div>
+<div>
+    <div>
+        <h4 class="HBG">Solicitudes Revision-Estudiantes</h4>
+    </div>
+    <div class="text-center">
+        <div style="padding-left:20px; padding-right:20px;">
+            <table id="SeleccionEst" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead class="Tableback">
+                    <tr>
+                        <th>Seccion</th>
+                        <th>Materia</th>
+                        <th>Estudiante</th>
+                        <th>Calificacion</th>
+                        <th>Motivo</th>
+                        <th>Calificacion Nueva</th>
+                        <th>Aprobar</th>
+                        <th>Cancelar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @* Info Angel *@
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<a class="open-Modal btn-primary " href="#" data-toggle="modal" data-target="#ModifcarModal"> y klk con klk</a>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModifcarModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+
+                @Html.ActionLink("x", "Revision", "Profesor", routeValues: null, htmlAttributes: new { @class = "close" })
+
+                <h4 class="modal-title">Modificar</h4>
+            </div>
+            <div class="modal-body " id="Contenedor" style="padding-left:20px; padding-right:20px;">
+                <div>
+                    <div>
+                        <b> @Html.Label("Seccion:", htmlAttributes: new { @class = "control-label col-md-4" })</b>
+                        @Html.TextBoxFor(m => m.Areas.Id, new { @class = "form-control" })<br />
+                    </div>
+                    <div>
+                        <b> @Html.Label("Materia:", htmlAttributes: new { @class = "control-label col-md-4" })</b>
+                        @Html.TextBoxFor(m => m.Areas.Id, new { @class = "form-control" })<br />
+                    </div>
+                    <div>
+                        <b> @Html.Label("Estudiante:", htmlAttributes: new { @class = "control-label col-md-4" })</b>
+                        @Html.TextBoxFor(m => m.Areas.Id, new { @class = "form-control" })<br />
+                    </div>
+                    <div>
+                        <b> @Html.Label("Calificacion:", htmlAttributes: new { @class = "control-label col-md-4" })</b>
+                        @Html.TextBoxFor(m => m.Areas.Id, new { @class = "form-control" })<br />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="btn-group text-center">
+                            @Html.ActionLink(" Aceptar", "Revision", "Profesor", routeValues: null, htmlAttributes: new { @class = "btn btn-success" })
+                        </div>
+                        <div class="btn-group text-center">
+                            @Html.ActionLink(" Cancelar", "Revision", "Profesor", routeValues: null, htmlAttributes: new { @class = "btn btn-danger" })
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
